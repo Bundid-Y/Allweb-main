@@ -1,0 +1,130 @@
+{
+    "th": {
+        "company": {
+            "title": "ประวัติบริษัท",
+            "subtitle": "บริษัท ทีเอ็นบี โลจิสติกส์ จำกัด",
+            "p1": "ก่อตั้งขึ้นเมื่อวันที่ 14 ตุลาคม 2563 เพื่อให้บริการด้านโลจิสติกส์และการขนส่งแบบครบวงจร ครอบคลุมการขนส่งภายในประเทศและระหว่างประเทศ เพื่อตอบโจทย์ความต้องการของลูกค้าในภาคอุตสาหกรรมและองค์กรธุรกิจ",
+            "p2": "บริษัทเริ่มต้นด้วยทุนจดทะเบียน 1,000,000 บาท และได้เปลี่ยนชื่อเป็น บริษัท ทีเอ็นบี โลจิสติกส์ จำกัด เมื่อวันที่ 22 สิงหาคม 2566 พร้อมเพิ่มทุนจดทะเบียนเป็น 5,000,000 บาท เพื่อรองรับการขยายธุรกิจและการเติบโตอย่างต่อเนื่อง",
+            "p3": "TNB มุ่งเน้นการพัฒนาระบบการขนส่งที่ทันสมัย มีมาตรฐาน และปลอดภัย ให้บริการด้วยรถขนส่งหลากหลายประเภท พร้อมระบบติดตามงานแบบเรียลไทม์ เพื่อสร้างความเชื่อมั่นและส่งมอบบริการที่มีคุณภาพ ตรงต่อเวลา และยั่งยืนแก่ลูกค้า"
+        },
+        "vision": {
+            "title": "วิสัยทัศน์ของเรา",
+            "subtitle": "วิสัยทัศน์ (Vision)",
+            "p1": "มุ่งเป็นผู้ให้บริการด้านโลจิสติกส์และการขนส่งแบบครบวงจรที่มีมาตรฐานสูง ด้วยการนำเทคโนโลยีที่ทันสมัยมาประยุกต์ใช้ในการบริหารจัดการงานขนส่งอย่างมีประสิทธิภาพ ให้ความสำคัญกับคุณภาพ ความปลอดภัย และความตรงต่อเวลาในการให้บริการ เพื่อตอบสนองความต้องการของลูกค้าในภาคอุตสาหกรรมและธุรกิจอย่างแท้จริง พร้อมสร้างความเชื่อมั่น ความพึงพอใจ และเติบโตอย่างยั่งยืนควบคู่กับพันธมิตรทางธุรกิจ ในฐานะองค์กรโลจิสติกส์ที่เชื่อถือได้ในประเทศไทย",
+            "p2": "บริษัทให้ความสำคัญกับคุณภาพ ความปลอดภัย และความตรงต่อเวลาเป็นหัวใจหลักของการดำเนินงาน เพื่อให้สามารถตอบสนองความต้องการของลูกค้าในภาคอุตสาหกรรมและภาคธุรกิจได้อย่างแท้จริง ภายใต้มาตรฐานการทำงานที่โปร่งใส่ ตรวจสอบได้ และคำนึงถึงความคุ้มค่าในระยะยาว",
+            "p3": "พร้อมกันนี้ TNB มุ่งสร้างความเชื่อมั่นและความพึงพอใจสูงสุดแก่ลูกค้าและพันธมิตรทางธุรกิจ ผ่านการพัฒนาบุคลากร กระบวนการทำงาน และนวัตกรรมอย่างต่อเนื่อง เพื่อการเติบโตอย่างมั่นคงและยั่งยืน ควบคู่กับการเป็นองค์กรโลจิสติกส์ที่เชื่อถือได้ และมีบทบาทสำคัญในการขับเคลื่อนระบบโลจิสติกส์ของประเทศไทยในอนาคต"
+        },
+        "expertise": {
+            "title": "ความเชี่ยวชาญของเรา",
+            "subtitle": "ความเชี่ยวชาญเฉพาะด้าน (Our Expertise)",
+            "desc_strong": "\"TNB มุ่งมั่นในการให้บริการด้านการขนส่งและโลจิสติกส์ด้วยความเป็นมืออาชีพ\"",
+            "desc_p": "ครอบคลุมทุกขั้นตอนของการดำเนินงาน โดยผสานประสบการณ์ เทคโนโลยี และความเข้าใจในความต้องการของลูกค้าองค์กร",
+            "item1_title": "01",
+            "item1_desc": "ความเชี่ยวชาญด้านการขนส่งสินค้าและโลจิสติกส์แบบครบวงจร",
+            "item2_title": "02",
+            "item2_desc": "การบริหารจัดการฟลีทรถและตู้คอนเทนเนอร์อย่างมีประสิทธิภาพ",
+            "item3_title": "03",
+            "item3_desc": "ระบบเทคโนโลยีด้านการขนส่งที่ทันสมัย",
+            "item4_title": "04",
+            "item4_desc": "ประสบการณ์ด้านลูกค้าอุตสาหกรรมและองค์กรขนาดใหญ่",
+            "item5_title": "05",
+            "item5_desc": "ความปลอดภัยและมาตรฐานการดำเนินงาน"
+        }
+    },
+    "en": {
+        "company": {
+            "title": "Company History",
+            "subtitle": "TNB Logistics Company Limited",
+            "p1": "Established on October 14, 2020, to provide integrated logistics and transportation services, covering domestic and international transport, to meet the needs of industrial and corporate customers.",
+            "p2": "The company started with a registered capital of 1,000,000 Baht and changed its name to TNB Logistics Co., Ltd. on August 22, 2023, while increasing its registered capital to 5,000,000 Baht to support business expansion and continuous growth.",
+            "p3": "TNB focuses on developing modern, standardized, and safe transportation systems, providing services with a variety of transport vehicles and real-time tracking systems to build trust and deliver quality, timely, and sustainable services to customers."
+        },
+        "vision": {
+            "title": "Our Vision",
+            "subtitle": "Vision",
+            "p1": "Aiming to be a high-standard integrated logistics and transportation service provider by applying modern technology to manage transportation efficiently. We prioritize quality, safety, and punctuality in our services to truly meet the needs of industrial and corporate organizations. We are ready to build trust, satisfaction, and sustainable growth along with our business partners as a reliable logistics organization in Thailand.",
+            "p2": "The company places importance on quality, safety, and punctuality as the core of its operations in order to truly respond to the needs of customers in the industrial and business sectors, under transparent, verifiable working standards, taking long-term value into consideration.",
+            "p3": "At the same time, TNB aims to build maximum confidence and satisfaction for customers and business partners through continuous development of personnel, work processes, and innovation for stable and sustainable growth, along with being a reliable logistics organization that plays an important role in driving Thailand logistics system in the future."
+        },
+        "expertise": {
+            "title": "Our Expertise",
+            "subtitle": "Our Expertise",
+            "desc_strong": "\"TNB is committed to providing transportation and logistics services with professionalism\"",
+            "desc_p": "Covering every step of operations by bringing experience, technology, and an understanding of corporate clients' needs.",
+            "item1_title": "01",
+            "item1_desc": "Comprehensive Freight & Logistics Expertise",
+            "item2_title": "02",
+            "item2_desc": "Efficient Fleet & Container Management",
+            "item3_title": "03",
+            "item3_desc": "Modern Transportation Technology Systems",
+            "item4_title": "04",
+            "item4_desc": "Industrial & Enterprise Customer Experience",
+            "item5_title": "05",
+            "item5_desc": "Safety and Operational Standards"
+        }
+    },
+    "jp": {
+        "company": {
+            "title": "会社概要",
+            "subtitle": "TNBロジスティクス株式会社",
+            "p1": "2020年10月14日に設立され、産業および企業顧客のニーズを満たすために、国内および国際輸送を含む統合ロジスティクスおよび輸送サービスを提供しています。",
+            "p2": "資本金1,000,000バーツで設立され、2023年8月22日にTNBロジスティクス株式会社に社名を変更するとともに、事業拡大と継続的な成長を支援するために資本金を5,000,000バーツに増資しました。",
+            "p3": "TNBは、近代的で標準化された安全な輸送システムの開発に注力し、さまざまな輸送車両とリアルタイムの追跡システムによるサービスを提供して、信頼を構築し、高品質でタイムリーかつ持続可能なサービスを顧客に提供します。"
+        },
+        "vision": {
+            "title": "ビジョンと使命",
+            "subtitle": "ビジョン (Vision)",
+            "p1": "最新の技術を応用して輸送を効率的に管理することにより、高水準の統合ロジスティクスおよび輸送サービスプロバイダーになることを目指しています。タイで信頼される物流組織として、ビジネスパートナーとともに信頼、満足、持続可能な成長を築く準備ができています。",
+            "p2": "産業およびビジネスの顧客のニーズに真に応えるため、長期的価値を考慮し、透明性があり検証可能な作業基準の下で、品質、安全性、および時間厳守を業務の核心として重要視しています。",
+            "p3": "同時に、TNBは、将来のタイの物流システムを推進する上で重要な役割を果たす信頼できる物流組織であるとともに、安定的で持続可能な成長のために、人材、プロセス、および革新の継続的な開発を通じて、顧客およびパートナーの最大の信頼と満足を構築するよう努めています。"
+        },
+        "expertise": {
+            "title": "私たちの専門知識",
+            "subtitle": "専門性 (Our Expertise)",
+            "desc_strong": "\"TNBはプロ意識を持って輸送およびロジスティクスサービスを提供することに尽力しています。\"",
+            "desc_p": "経験、技術、および企業顧客のニーズへの理解を結集することにより、業務のすべてのステップをカバーします。",
+            "item1_title": "01",
+            "item1_desc": "総合的な貨物輸送とロジスティクスの専門知識",
+            "item2_title": "02",
+            "item2_desc": "効率的なフリートとコンテナの管理",
+            "item3_title": "03",
+            "item3_desc": "最新の輸送技術システム",
+            "item4_title": "04",
+            "item4_desc": "産業および企業顧客の経験",
+            "item5_title": "05",
+            "item5_desc": "安全性と運用基準"
+        }
+    },
+    "zh": {
+        "company": {
+            "title": "公司简介",
+            "subtitle": "TNB物流有限公司",
+            "p1": "成立于2020年10月14日，提供综合物流和运输服务，涵盖国内和国际运输，以满足工业和企业客户的需求。",
+            "p2": "公司成立时注册资本为1,000,000泰铢，并于2023年8月22日更名为TNB物流有限公司，同时将注册资本增至5,000,000泰铢，以支持业务扩张和持续增长。",
+            "p3": "TNB专注于开发现代化、标准化和安全的运输系统，提供配备各种运输车辆和实时跟踪系统的服务，以建立信任并为客户提供高质量、及时和可持续的服务。"
+        },
+        "vision": {
+            "title": "愿景与使命",
+            "subtitle": "愿景 (Vision)",
+            "p1": "旨在通过应用现代技术高效管理运输，成为高标准的综合物流和运输服务提供商。 我们准备好作为泰国可靠的物流组织与我们的业务合作伙伴一起建立信任、满意度和可持续增长。",
+            "p2": "公司把质量、安全和准时作为运营的核心，在考虑到长期价值的透明、可验证的工作标准下，真正满足工商界客户的需求。",
+            "p3": "同时，TNB致力于通过不断发展人员、流程和创新来实现稳定和可持续的增长，为客户和合作伙伴建立最大的信心和满意度，同时成为在推动泰国物流发展中发挥重要作用的可靠物流组织。"
+        },
+        "expertise": {
+            "title": "我们的专业知识",
+            "subtitle": "专业领域 (Our Expertise)",
+            "desc_strong": "\"TNB致力于以专业精神提供运输和物流服务\"",
+            "desc_p": "通过引入经验、技术和对企业客户需求的理解，涵盖运营的每一步。",
+            "item1_title": "01",
+            "item1_desc": "全面的货运和物流专业知识",
+            "item2_title": "02",
+            "item2_desc": "高效的车队和集装箱管理",
+            "item3_title": "03",
+            "item3_desc": "现代运输技术系统",
+            "item4_title": "04",
+            "item4_desc": "工业和企业客户的经验",
+            "item5_title": "05",
+            "item5_desc": "安全和运营标准"
+        }
+    }
+}
