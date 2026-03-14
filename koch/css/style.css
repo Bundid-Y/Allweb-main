@@ -5089,14 +5089,15 @@ html:not([lang="th"]) .page-vision .vision-desc strong {
    ========================================= */
 
 .page-technology .tech_section {
-    padding-top: 100px;
+    padding-top: 130px;
     padding-bottom: 20px;
 }
 
 .page-technology .tech_title {
-    font-size: 2.2rem;
+    font-size: 40px;
     font-weight: 700;
-    color: #325662;
+    color: #111111;
+    text-align: center;
     margin-bottom: 10px;
     font-family: 'Sarabun', sans-serif;
 }

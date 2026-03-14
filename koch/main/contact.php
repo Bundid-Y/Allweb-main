@@ -15,7 +15,7 @@
     <?php include '../component/menubar.php'; ?>
 
     <!-- CONTENT SECTION matching technology.php layout -->
-    <div class="tech_section layout_padding" style="padding-top: 110px; padding-bottom: 90px; overflow: hidden;">
+    <div class="tech_section layout_padding" style="padding-top: 130px; padding-bottom: 90px; overflow: hidden;">
 
         <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 15px;">
 
@@ -26,14 +26,12 @@
                     style="width: 100%; max-width: 900px; padding: 0 15px; box-sizing: border-box; text-align: center; margin-bottom: 60px;">
 
                     <h1 class="tech_subtitle"
-                        style="font-size: 40px; color: #1c1c1c; font-weight: bold; margin-bottom: 25px; position: relative; display: inline-block;">
+                        style="font-size: 40px; color: #1c1c1c; font-weight: bold; margin-bottom: 8px; position: relative; display: inline-block;">
                         <span data-i18n="contact.title">ติดต่อเรา</span>
-                        <span
-                            style="position: absolute; width: 80%; height: 4px; background-color: #ED2A2A; left: 10%; bottom: -10px;"></span>
                     </h1>
 
                     <p class="tech_text"
-                        style="font-size: 16px; color: #1c1c1c; line-height: 1.6; padding-top: 10px; margin-bottom: 50px;"
+                        style="font-size: 16px; color: #1c1c1c; line-height: 1.6; padding-top: 0; margin-top: 0; margin-bottom: 50px;"
                         data-i18n="contact.intro">
                         สอบถามข้อมูลบริการบรรจุภัณฑ์ครบวงจร หรือบริการอื่นๆ ของ KOCH
                         Packaging
