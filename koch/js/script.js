@@ -719,4 +719,230 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 })();
+// =========================================
+// Product Carousel — index.php (dev-carousel-root)
+// auto-slide ทุก 5 วิ, pause on hover
+// =========================================
+(function initProductCarousel() {
+    document.addEventListener('DOMContentLoaded', function () {
+        const root = document.querySelector('.dev-carousel-root');
+        if (!root) return;
+        const track = root.querySelector('.dev-carousel-track');
+        const dotsContainer = root.querySelector('.dev-carousel-dots');
+        if (!track || !dotsContainer) return;
+
+        const pages = track.querySelectorAll('.dev-carousel-page');
+        const total = pages.length;
+        if (total <= 1) return;
+
+        let currentIdx = 0;
+        let isHovered = false;
+        let timer = null;
+
+        // Build dots
+        pages.forEach(function (_, i) {
+            const dot = document.createElement('button');
+            dot.className = 'dev-carousel-dot' + (i === 0 ? ' active' : '');
+            dot.setAttribute('aria-label', 'สินค้าหน้า ' + (i + 1));
+            dot.addEventListener('click', function () { goTo(i); });
+            dotsContainer.appendChild(dot);
+        });
+
+        function goTo(index) {
+            currentIdx = ((index % total) + total) % total;
+            track.style.transform = 'translateX(-' + (currentIdx * 100) + '%)';
+            root.querySelectorAll('.dev-carousel-dot').forEach(function (d, i) {
+                d.classList.toggle('active', i === currentIdx);
+            });
+        }
+
+        function tick() {
+            if (!isHovered) goTo(currentIdx + 1);
+        }
+
+        function startTimer() {
+            clearInterval(timer);
+            timer = setInterval(tick, 5000);
+        }
+
+        root.addEventListener('mouseenter', function () { isHovered = true; });
+        root.addEventListener('mouseleave', function () { isHovered = false; });
+
+        // Touch swipe support
+        var touchStartX = 0;
+        root.addEventListener('touchstart', function (e) {
+            touchStartX = e.changedTouches[0].clientX;
+        }, { passive: true });
+        root.addEventListener('touchend', function (e) {
+            var dx = e.changedTouches[0].clientX - touchStartX;
+            if (Math.abs(dx) > 40) {
+                goTo(dx < 0 ? currentIdx + 1 : currentIdx - 1);
+                startTimer();
+            }
+        }, { passive: true });
+
+        startTimer();
+    });
+})();
+
+// =========================================
+// Technology Pagination — technology.php
+// scroll-jack: wheel/keyboard → change panel
+// =========================================
+(function initTechPager() {
+    document.addEventListener('DOMContentLoaded', function () {
+        if (!document.body.classList.contains('page-technology')) return;
+
+        const outer = document.querySelector('.tech-pager-outer');
+        const track = document.querySelector('.tech-pager-track');
+        const dotsEl = document.querySelector('.tech-pager-dots');
+        if (!outer || !track || !dotsEl) return;
+
+        // Mobile: skip (CSS already disables pager layout)
+        if (window.innerWidth <= 767) return;
+
+        const panels = track.querySelectorAll('.tech-panel');
+        const total = panels.length;
+        if (total === 0) return;
+
+        let current = 0;
+        let isAnimating = false;
+        const DURATION = 650;
+
+        // Set track total height = panels * panel-height
+        track.style.height = (total * 100) + '%';
+        panels.forEach(function (panel) {
+            panel.style.height = (100 / total) + '%';
+        });
+
+        // Build dots
+        panels.forEach(function (_, i) {
+            const dot = document.createElement('button');
+            dot.className = 'tech-pager-dot' + (i === 0 ? ' active' : '');
+            dot.setAttribute('aria-label', 'Section ' + (i + 1));
+            dot.addEventListener('click', function () { goToPanel(i); });
+            dotsEl.appendChild(dot);
+        });
+
+        // Activate first panel
+        panels[0].classList.add('panel-active');
+
+        function goToPanel(index) {
+            if (isAnimating) return;
+            var next = Math.max(0, Math.min(index, total - 1));
+            if (next === current) return;
+            isAnimating = true;
+
+            panels[current].classList.remove('panel-active');
+            current = next;
+            panels[current].classList.add('panel-active');
+
+            // translateY by -(current/total)*100% of track height
+            track.style.transform = 'translateY(-' + (current * (100 / total)) + '%)';
+
+            dotsEl.querySelectorAll('.tech-pager-dot').forEach(function (d, i) {
+                d.classList.toggle('active', i === current);
+            });
+
+            setTimeout(function () { isAnimating = false; }, DURATION);
+        }
+
+        // Mouse wheel
+        var wheelDebounce = null;
+        window.addEventListener('wheel', function (e) {
+            if (!document.body.classList.contains('page-technology')) return;
+            if (window.innerWidth <= 767) return;
+            e.preventDefault();
+            if (isAnimating) return;
+            clearTimeout(wheelDebounce);
+            wheelDebounce = setTimeout(function () {
+                goToPanel(e.deltaY > 0 ? current + 1 : current - 1);
+            }, 40);
+        }, { passive: false });
+
+        // Keyboard
+        window.addEventListener('keydown', function (e) {
+            if (!document.body.classList.contains('page-technology')) return;
+            if (window.innerWidth <= 767) return;
+            if (e.key === 'ArrowDown' || e.key === 'PageDown') {
+                e.preventDefault();
+                goToPanel(current + 1);
+            } else if (e.key === 'ArrowUp' || e.key === 'PageUp') {
+                e.preventDefault();
+                goToPanel(current - 1);
+            }
+        });
+
+        // Touch swipe
+        var tStartY = 0;
+        outer.addEventListener('touchstart', function (e) {
+            tStartY = e.changedTouches[0].clientY;
+        }, { passive: true });
+        outer.addEventListener('touchend', function (e) {
+            var dy = e.changedTouches[0].clientY - tStartY;
+            if (Math.abs(dy) > 40) goToPanel(dy < 0 ? current + 1 : current - 1);
+        }, { passive: true });
+
+        // Disable Lenis on this page so it doesn't conflict
+        if (window._lenis) {
+            window._lenis.destroy();
+        }
+    });
+})();
+
+// =========================================
+// Product Scroll Reveal — product.php
+// Reset animation after filterCategory, then
+// re-fire via IntersectionObserver as items enter viewport
+// =========================================
+(function initProductScrollReveal() {
+    document.addEventListener('DOMContentLoaded', function () {
+        const productGrid = document.querySelector('.product-grid');
+        if (!productGrid) return;
+
+        // Triggered when item enters viewport: replay productFadeUp
+        const revealObserver = new IntersectionObserver(function (entries, obs) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    var el = entry.target;
+                    el.style.animation = 'none';
+                    // Force reflow before re-applying
+                    void el.offsetHeight;
+                    el.style.animation = 'productFadeUp 0.55s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards';
+                    obs.unobserve(el);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+
+        // After updateGrid shows items: only reset items NOT yet in viewport
+        // Items already visible keep their existing animation (no flash)
+        function resetAndObserve() {
+            productGrid.querySelectorAll('.product-grid-item').forEach(function (item) {
+                if (item.style.display === 'flex') {
+                    var rect = item.getBoundingClientRect();
+                    var inViewport = rect.top < window.innerHeight && rect.bottom > 0;
+                    if (!inViewport) {
+                        item.style.animation = 'none';
+                        item.style.opacity = '0';
+                        revealObserver.observe(item);
+                    }
+                }
+            });
+        }
+
+        // Patch filterCategory to intercept after updateGrid
+        var _orig = window.filterCategory;
+        if (typeof _orig === 'function') {
+            window.filterCategory = function (category, event) {
+                _orig(category, event);
+                // Short delay lets updateGrid finish setting display:flex
+                setTimeout(resetAndObserve, 30);
+            };
+        }
+
+        // Initial page load
+        setTimeout(resetAndObserve, 120);
+    });
+})();
+
 } // end of window.kochScriptInitialized check

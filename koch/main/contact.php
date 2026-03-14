@@ -15,7 +15,7 @@
     <?php include '../component/menubar.php'; ?>
 
     <!-- CONTENT SECTION matching technology.php layout -->
-    <div class="tech_section layout_padding" style="padding-top: 150px; padding-bottom: 90px; overflow: hidden;">
+    <div class="tech_section layout_padding" style="padding-top: 110px; padding-bottom: 90px; overflow: hidden;">
 
         <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 15px;">
 

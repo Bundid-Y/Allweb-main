@@ -107,13 +107,13 @@
     <!-- CONTENT / DETAILS SECTION — บริการของเรา -->
     <div class="content-section layout_padding">
         <!-- ส่วนหัวข้อ (Heading) -->
-        <div style="margin-bottom: 24px;">
+        <div style="margin-bottom: 8px;">
             <div style="text-align: left;">
                 <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none;"
                     data-i18n="index.services_title">
                     บริการของเรา
                 </h1>
-                <p class="details-desc" style="margin-top: 5px; margin-bottom: 20px; line-height: 1.8;"
+                <p class="details-desc" style="margin-top: 5px; margin-bottom: 10px; line-height: 1.8;"
                     data-i18n="index.services_sub">
                     บริการบรรจุภัณฑ์และการจัดการลอจิสติกส์แบบครบวงจร ที่ตอบสนองทุกความต้องการของธุรกิจด้วยระบบที่ทันสมัย
                 </p>
@@ -239,64 +239,51 @@
              - Performance: loading="lazy" defers off-screen images
              - SEO: Descriptive alt text for all images
         -->
-        <!-- ส่วนของการ์ดรูปภาพ (Cards) แสดงผลรูปสไตล์ Responsive แบบทันสมัย -->
-        <div class="dev-cards-wrapper" style="padding: 0;">
-            <div class="dev-cards">
-                <!-- Card 1: RSC Box -->
-                <div class="dev-card">
-                    <a href="../main/product.php" rel="noopener noreferrer">
-                        <img src="../img/products/box/rsc.png" alt="RSC Box" loading="lazy" />
-                        <div class="dev-card-title">RSC Box</div>
-                        <p class="dev-card-desc">RSC Box</p>
-                    </a>
-                </div>
+        <!-- Product Carousel: 3 pages x 6 cards — auto-slide ทุก 5 วิ -->
+        <div class="dev-carousel-root">
+            <div class="dev-carousel-viewport">
+                <div class="dev-carousel-track">
 
-                <!-- Card 2: FTD Box -->
-                <div class="dev-card">
-                    <a href="../main/product.php" rel="noopener noreferrer">
-                        <img src="../img/products/box/ftd.png" alt="FTD Box" loading="lazy" />
-                        <div class="dev-card-title">FTD Box</div>
-                        <p class="dev-card-desc">FTD Box</p>
-                    </a>
-                </div>
+                    <!-- Page 1: กล่องกระดาษ -->
+                    <div class="dev-carousel-page">
+                        <div class="dev-cards">
+                            <div class="dev-card"><a href="../main/product.php" rel="noopener noreferrer"><img src="../img/products/box/rsc.png" alt="RSC Box" loading="lazy"><div class="dev-card-title">RSC Box</div><p class="dev-card-desc">RSC Box</p></a></div>
+                            <div class="dev-card"><a href="../main/product.php" rel="noopener noreferrer"><img src="../img/products/box/ftd.png" alt="FTD Box" loading="lazy"><div class="dev-card-title">FTD Box</div><p class="dev-card-desc">FTD Box</p></a></div>
+                            <div class="dev-card"><a href="../main/product.php" rel="noopener noreferrer"><img src="../img/products/box/osc.png" alt="OSC Box" loading="lazy"><div class="dev-card-title">OSC Box</div><p class="dev-card-desc">OSC Box</p></a></div>
+                            <div class="dev-card"><a href="../main/product.php" rel="noopener noreferrer"><img src="../img/products/box/die-cut.png" alt="Die-Cut Box" loading="lazy"><div class="dev-card-title">Die-Cut Box</div><p class="dev-card-desc">Die-Cut Box</p></a></div>
+                            <div class="dev-card"><a href="../main/product.php" rel="noopener noreferrer"><img src="../img/products/box/pallet.png" alt="Cardboard Pallet" loading="lazy"><div class="dev-card-title">Cardboard Pallet</div><p class="dev-card-desc">Cardboard Pallet</p></a></div>
+                            <div class="dev-card"><a href="../main/product.php" rel="noopener noreferrer"><img src="../img/products/box/fit_ser.png" alt="Fitting Box Service" loading="lazy"><div class="dev-card-title">Fitting Box Service</div><p class="dev-card-desc">Fitting Box Service</p></a></div>
+                        </div>
+                    </div>
 
-                <!-- Card 3: OSC Box -->
-                <div class="dev-card">
-                    <a href="../main/product.php" rel="noopener noreferrer">
-                        <img src="../img/products/box/osc.png" alt="OSC Box" loading="lazy" />
-                        <div class="dev-card-title">OSC Box</div>
-                        <p class="dev-card-desc">OSC Box</p>
-                    </a>
-                </div>
+                    <!-- Page 2: บรรจุภัณฑ์ไม้ + พลาสติก -->
+                    <div class="dev-carousel-page">
+                        <div class="dev-cards">
+                            <div class="dev-card"><a href="../main/product.php" rel="noopener noreferrer"><img src="../img/products/Wooden/wooden_crates.png" alt="Wooden Crates" loading="lazy"><div class="dev-card-title">Wooden Crates</div><p class="dev-card-desc">Wooden Crates</p></a></div>
+                            <div class="dev-card"><a href="../main/product.php" rel="noopener noreferrer"><img src="../img/products/Wooden/wooden_pallet.png" alt="Wooden Pallet" loading="lazy"><div class="dev-card-title">Wooden Pallet</div><p class="dev-card-desc">Wooden Pallet</p></a></div>
+                            <div class="dev-card"><a href="../main/product.php" rel="noopener noreferrer"><img src="../img/products/Wooden/wooden_case.png" alt="Wooden Case" loading="lazy"><div class="dev-card-title">Wooden Case</div><p class="dev-card-desc">Wooden Case</p></a></div>
+                            <div class="dev-card"><a href="../main/product.php" rel="noopener noreferrer"><img src="../img/products/Plastic/plastic_container.png" alt="Plastic Container" loading="lazy"><div class="dev-card-title">Plastic Container</div><p class="dev-card-desc">Plastic Container</p></a></div>
+                            <div class="dev-card"><a href="../main/product.php" rel="noopener noreferrer"><img src="../img/products/Plastic/pp_box.png" alt="PP Box" loading="lazy"><div class="dev-card-title">PP Box</div><p class="dev-card-desc">PP Box</p></a></div>
+                            <div class="dev-card"><a href="../main/product.php" rel="noopener noreferrer"><img src="../img/products/Plastic/plastic_pallet.png" alt="Plastic Pallet" loading="lazy"><div class="dev-card-title">Plastic Pallet</div><p class="dev-card-desc">Plastic Pallet</p></a></div>
+                        </div>
+                    </div>
 
-                <!-- Card 4: Die-Cut Box -->
-                <div class="dev-card">
-                    <a href="../main/product.php" rel="noopener noreferrer">
-                        <img src="../img/products/box/die-cut.png" alt="Die-Cut Box" loading="lazy" />
-                        <div class="dev-card-title">Die-Cut Box</div>
-                        <p class="dev-card-desc">Die-Cut Box</p>
-                    </a>
-                </div>
+                    <!-- Page 3: พลาสติก ESD + บรรจุภัณฑ์เหล็ก -->
+                    <div class="dev-carousel-page">
+                        <div class="dev-cards">
+                            <div class="dev-card"><a href="../main/product.php" rel="noopener noreferrer"><img src="../img/products/Plastic/pp_box_esd.png" alt="PP Box ESD" loading="lazy"><div class="dev-card-title">PP Box ESD</div><p class="dev-card-desc">PP Box ESD</p></a></div>
+                            <div class="dev-card"><a href="../main/product.php" rel="noopener noreferrer"><img src="../img/products/Plastic/pp_box_partition.png" alt="PP Box Partition" loading="lazy"><div class="dev-card-title">PP Box Partition</div><p class="dev-card-desc">PP Box Partition</p></a></div>
+                            <div class="dev-card"><a href="../main/product.php" rel="noopener noreferrer"><img src="../img/products/Plastic/pp_box_partition2.png" alt="PP Box Partition 2" loading="lazy"><div class="dev-card-title">PP Box Partition 2</div><p class="dev-card-desc">PP Box Partition 2</p></a></div>
+                            <div class="dev-card"><a href="../main/product.php" rel="noopener noreferrer"><img src="../img/products/Steel/steel_rack.png" alt="Steel Rack" loading="lazy"><div class="dev-card-title">Steel Rack</div><p class="dev-card-desc">Steel Rack</p></a></div>
+                            <div class="dev-card"><a href="../main/product.php" rel="noopener noreferrer"><img src="../img/products/Steel/steel_rack2.png" alt="Steel Rack 2" loading="lazy"><div class="dev-card-title">Steel Rack 2</div><p class="dev-card-desc">Steel Rack 2</p></a></div>
+                            <div class="dev-card"><a href="../main/product.php" rel="noopener noreferrer"><img src="../img/products/Steel/steel_rack3.png" alt="Steel Rack 3" loading="lazy"><div class="dev-card-title">Steel Rack 3</div><p class="dev-card-desc">Steel Rack 3</p></a></div>
+                        </div>
+                    </div>
 
-                <!-- Card 5: Cardboard Pallet -->
-                <div class="dev-card">
-                    <a href="../main/product.php" rel="noopener noreferrer">
-                        <img src="../img/products/box/pallet.png" alt="Cardboard Pallet" loading="lazy" />
-                        <div class="dev-card-title">Cardboard Pallet</div>
-                        <p class="dev-card-desc">Cardboard Pallet</p>
-                    </a>
-                </div>
-
-                <!-- Card 6: Fitting Box Service -->
-                <div class="dev-card">
-                    <a href="../main/product.php" rel="noopener noreferrer">
-                        <img src="../img/products/box/fit_ser.png" alt="Fitting Box Service" loading="lazy" />
-                        <div class="dev-card-title">Fitting Box Service</div>
-                        <p class="dev-card-desc">Fitting Box Service</p>
-                    </a>
-                </div>
-            </div>
-        </div>
+                </div><!-- end .dev-carousel-track -->
+            </div><!-- end .dev-carousel-viewport -->
+            <div class="dev-carousel-dots" aria-label="Product carousel navigation"></div>
+        </div><!-- end .dev-carousel-root -->
     </div>
 
     <?php include '../component/footer.php'; ?>

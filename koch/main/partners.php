@@ -18,16 +18,56 @@
                         <div class="container">
                                 <div class="row">
                                         <div class="col-md-6">
-                                                <h1 class="cycles_text" data-i18n="partners.title">พันธมิตร</h1>
+                                <!-- Title -->
+                                <div class="partners-title-wrap anim-fade-up">
+                                        <h1 class="partners-main-title" data-i18n="partners.title">พันธมิตร</h1>
+                                        <div class="partners-title-accent"></div>
+                                </div>
 
+                                <!-- Subtitle paragraph -->
+                                <p class="partners-lead anim-fade-up" data-i18n="partners.desc_short">
+                                        ได้รับความไว้วางใจจากพันธมิตรในอุตสาหกรรมยานยนต์อย่างต่อเนื่อง ทั้งผู้ผลิตรถยนต์ (OEM) และซัพพลายเออร์ระดับ Tier 1
+                                </p>
 
-                                                <ul class="tech_list">
-                                                        <li data-i18n-html="partners.desc"
-                                                                style="line-height: 1.9; text-align: left; word-break: break-word; font-size: 1.05rem;">
-                                                                ได้รับความไว้วางใจจากพันธมิตรใน อุตสาหกรรมยานยนต์ อย่างต่อเนื่อง ทั้งผู้ผลิตรถยนต์ (OEM) และซัพพลายเออร์ระดับ Tier 1 เราไม่ได้เป็นเพียงผู้ให้บริการบรรจุภัณฑ์ แต่คือ <mark style="background-color: #ffe6e6; color: #cc0000; padding: 2px 6px; border-radius: 4px;">พันธมิตรเชิงกลยุทธ์</mark> ที่ร่วมพัฒนาโซลูชันด้านบรรจุภัณฑ์ ระบบ VMI คลังสินค้า และโลจิสติกส์ เพื่อยกระดับประสิทธิภาพการดำเนินงานของคุณ ครอบคลุมตั้งแต่ <span class="highlight-feature">การออกแบบบรรจุภัณฑ์ปกป้องชิ้นงาน</span> <span class="highlight-feature">การบริหารคลังสินค้าอย่างเป็นระบบ</span> ไปจนถึง <span class="highlight-feature">การขนส่งแบบครบวงจร</span> ที่ถูกออกแบบให้สอดคล้องกับความต้องการ <b>ความแม่นยำ รวดเร็ว และตรงเวลา</b> <span style="color: #cc0000; font-weight: 600; font-size: 1.1em;">พร้อมเติบโตและสร้างความสำเร็จอย่างยั่งยืนไปพร้อมกันในระยะยาว</span>
-                                                        </li>
-                                                </ul>
+                                <!-- Stats row -->
+                                <div class="partners-stats anim-fade-up">
+                                        <div class="partners-stat-item">
+                                                <span class="partners-stat-num">12<span class="partners-stat-plus">+</span></span>
+                                                <span class="partners-stat-label" data-i18n="partners.stat1">พันธมิตรชั้นนำ</span>
                                         </div>
+                                        <div class="partners-stat-divider"></div>
+                                        <div class="partners-stat-item">
+                                                <span class="partners-stat-num">10<span class="partners-stat-plus">+</span></span>
+                                                <span class="partners-stat-label" data-i18n="partners.stat2">ปีแห่งความไว้วางใจ</span>
+                                        </div>
+                                        <div class="partners-stat-divider"></div>
+                                        <div class="partners-stat-item">
+                                                <span class="partners-stat-num">99<span class="partners-stat-plus">%</span></span>
+                                                <span class="partners-stat-label" data-i18n="partners.stat3">ความพึงพอใจ</span>
+                                        </div>
+                                </div>
+
+                                <!-- Feature list -->
+                                <ul class="partners-feature-list anim-fade-up">
+                                        <li>
+                                                <span class="partners-feature-icon">▸</span>
+                                                <span data-i18n="partners.feat1">การออกแบบบรรจุภัณฑ์ปกป้องชิ้นงานอย่างแม่นยำ</span>
+                                        </li>
+                                        <li>
+                                                <span class="partners-feature-icon">▸</span>
+                                                <span data-i18n="partners.feat2">ระบบ VMI และการบริหารคลังสินค้าอย่างเป็นระบบ</span>
+                                        </li>
+                                        <li>
+                                                <span class="partners-feature-icon">▸</span>
+                                                <span data-i18n="partners.feat3">การขนส่งครบวงจร รวดเร็ว ตรงเวลา</span>
+                                        </li>
+                                </ul>
+
+                                <!-- CTA tag -->
+                                <p class="partners-cta-text anim-fade-up">
+                                        <span style="color: #ED2A2A; font-weight: 700;" data-i18n="partners.cta">พร้อมเติบโตและสร้างความสำเร็จอย่างยั่งยืนไปพร้อมกัน</span>
+                                </p>
+                        </div>
                                         <div class="col-md-6">
                                                 <div class="right-graphic-container">
                                                         <div class="red-block">

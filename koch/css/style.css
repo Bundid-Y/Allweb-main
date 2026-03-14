@@ -291,7 +291,8 @@ body {
 .card{
   list-style: none;
   position: relative;
-  border-radius: 15px; 
+  border-radius: 15px;
+  transition: transform 0.4s cubic-bezier(0.25,0.8,0.25,1), box-shadow 0.4s ease, opacity 0.4s ease;
   overflow: hidden;
   aspect-ratio: 3 / 4; 
   background-color: #222;
@@ -322,12 +323,23 @@ body {
     transform 200ms linear;
 }
 
-.card:hover .card__background{
-  transform: scale(1.05) translateZ(0);
-}
-
-.card-grid:hover > .card:not(:hover) .card__background{
-  filter: brightness(0.5) saturate(0.5) contrast(1.2) blur(20px);
+/* Card hover scale — only on devices with true hover (non-touch) */
+@media (hover: hover) and (min-width: 769px) {
+  .card:hover{
+    transform: scale(1.04);
+    z-index: 3;
+    box-shadow: 0 14px 40px rgba(0,0,0,0.45);
+  }
+  .card:hover .card__background{
+    transform: scale(1.08) translateZ(0);
+    filter: none;
+  }
+  .card-grid:hover > .card:not(:hover){
+    transform: scale(0.96);
+  }
+  .card-grid:hover > .card:not(:hover) .card__background{
+    filter: brightness(0.45) saturate(0.6);
+  }
 }
 
 /* เนื้อหาข้อความในการ์ด */
@@ -345,8 +357,8 @@ body {
 }
 
 .card:hover .card__content {
-  /* ทำให้ gradient ด้านล่างดำสนิทเมื่อ hover */
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.85) 65%, rgba(0, 0, 0, 0.2) 100%);
+  /* gradient เบาลง — ให้ภาพสว่างชัด เฉพาะด้านล่างมืดเล็กน้อยเพื่อรองรับ text-box */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.1) 40%, transparent 70%);
 }
 
 .card__category{
@@ -388,16 +400,18 @@ body {
 .card__text-box {
   padding: 16px 20px;
   margin: -16px -20px 0 -20px;
-  border-radius: 6px; 
-  transition: background-color 0.4s ease, box-shadow 0.4s ease, backdrop-filter 0.4s ease;
+  border-radius: 6px;
+  transform: translateY(8px);
+  transition: background-color 0.35s ease, box-shadow 0.35s ease, backdrop-filter 0.35s ease, transform 0.35s cubic-bezier(0.25,0.8,0.25,1);
   position: relative;
   z-index: 2;
 }
 
 .card:hover .card__text-box {
-  background-color: rgba(0, 0, 0, 0.7); 
-  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-  backdrop-filter: blur(4px);
+  background-color: rgba(5, 5, 5, 0.93);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  transform: translateY(-6px);
 }
 
 /* ปรับข้อความให้มีขอบดำ (outline) เด้งออกมาเมื่อ Hover */
@@ -777,6 +791,7 @@ section.loop-images-quotation.vertical {
     position: relative;
     overflow: hidden;
     --deco-y: -100%; /* เริ่มต้นซ่อนอยู่ด้านบน, GSAP จะ animate เป็น 0 */
+    padding-top: 55px; /* ขยับ heading ขึ้นใกล้ด้านบนของกรอบสีแดง */
 }
 /* เนื้อหาทั้งหมดอยู่เหนือ ::after */
 .content-section.section-products > * {
@@ -1439,7 +1454,7 @@ section.loop-images-quotation.vertical {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 600px;
+    min-height: 420px; /* ลดจาก 600px ให้พอดีกับขนาดรูป */
 }
 
 .branch_image {
@@ -1461,15 +1476,15 @@ section.loop-images-quotation.vertical {
     content: '';
     background-color: #ED2A2A; /* KOCH red */
     position: absolute;
-    width: 100%;
-    right: 0px;
-    top: 0px;
-    margin: 0 auto;
+    width: 88%;
+    right: auto;
+    top: 5%;
+    margin: 0;
     display: flex;
-    height: 600px;
+    height: 420px;
     left: 0;
     z-index: -1;
-    clip-path: polygon(0 0, 75% 8%, 75% 80%, 0% 100%);
+    clip-path: polygon(0 0, 88% 5%, 88% 90%, 0% 100%);
 }
 
 /* Branch Detail Text */
@@ -1551,7 +1566,7 @@ section.loop-images-quotation.vertical {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 600px;
+    min-height: 420px; /* ลดจาก 600px ให้พอดีกับขนาดรูป */
 }
 
 
@@ -1560,15 +1575,15 @@ section.loop-images-quotation.vertical {
     content: '';
     background-color: #ED2A2A;
     position: absolute;
-    width: 100%;
-    left: 0px;
-    top: 0px;
+    width: 88%;
+    left: 12%;
+    top: 5%;
     margin: 0 auto;
     display: flex;
-    height: 600px;
+    height: 420px; /* ลดจาก 600px */
     right: 0;
     z-index: -1;
-    clip-path: polygon(100% 0, 25% 8%, 25% 80%, 100% 100%);
+    clip-path: polygon(100% 0, 12% 5%, 12% 90%, 100% 100%);
 }
 
 /* --- Responsive Layout Adjustments --- */
@@ -4709,6 +4724,615 @@ html:not([lang="th"]) .page-vision .vision-desc strong {
    ========================================= */
 @media (max-width: 991px) {
     footer.footer-custom { display: none !important; }
+}
+
+/* =========================================
+   Product Carousel — index.php section-products
+   ========================================= */
+.dev-carousel-root {
+    position: relative;
+    width: 100%;
+}
+
+.dev-carousel-viewport {
+    overflow: hidden;
+    width: 100%;
+}
+
+.dev-carousel-track {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: transform;
+}
+
+.dev-carousel-page {
+    flex: 0 0 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 40px 0 20px;
+}
+
+.dev-carousel-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 0 24px;
+}
+
+.dev-carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.45);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    outline: none;
+}
+
+.dev-carousel-dot.active {
+    background: #ffffff;
+    width: 26px;
+    border-radius: 4px;
+}
+
+.dev-carousel-dot:hover:not(.active) {
+    background: rgba(255, 255, 255, 0.75);
+}
+
+@media (max-width: 468px) {
+    .dev-carousel-page {
+        padding: 20px 0 10px;
+    }
+}
+
+/* =========================================
+   Technology Pagination — technology.php
+   ========================================= */
+.page-technology .tech-pager-outer {
+    position: relative;
+    height: calc(100vh - 200px);
+    min-height: 480px;
+    overflow: hidden;
+}
+
+.page-technology .tech-pager-track {
+    height: 100%;
+    transition: transform 0.65s cubic-bezier(0.76, 0, 0.24, 1);
+    will-change: transform;
+}
+
+.page-technology .tech-panel {
+    height: calc(100vh - 200px);
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.page-technology .tech-panel .container {
+    width: 100%;
+}
+
+.page-technology .tech-panel .row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Override layout_padding on panels since height is controlled by pager */
+.page-technology .tech-panel.tech_section_2,
+.page-technology .tech-panel.tech_section_3 {
+    padding-top: 0;
+    padding-bottom: 0;
+    float: none;
+}
+
+/* Reduce min-height so images don't overflow panels */
+.page-technology .tech-panel .tech_box_main,
+.page-technology .tech-panel .tech_box_main_3 {
+    min-height: unset;
+}
+
+.page-technology .tech-panel .tech_box_main:after,
+.page-technology .tech-panel .tech_box_main_3:after {
+    height: 380px;
+}
+
+/* Clear floats inside panels so flexbox alignment works */
+.page-technology .tech-panel .tech_subtitle,
+.page-technology .tech-panel .tech_text,
+.page-technology .tech-panel .tech_list {
+    float: none;
+    width: 100%;
+}
+
+/* Pagination dots sidebar */
+.tech-pager-dots {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 50;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: none;
+    border: none;
+}
+
+.tech-pager-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(50, 86, 98, 0.25);
+    border: 2px solid rgba(50, 86, 98, 0.4);
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s ease;
+    outline: none;
+    display: block;
+    position: relative;
+}
+
+.tech-pager-dot::after {
+    content: '';
+    position: absolute;
+    inset: -6px;
+}
+
+.tech-pager-dot.active {
+    background: #ED2A2A;
+    border-color: #ED2A2A;
+    transform: scale(1.35);
+    box-shadow: 0 0 0 3px rgba(237, 42, 42, 0.2);
+}
+
+.tech-pager-dot:hover:not(.active) {
+    background: rgba(50, 86, 98, 0.5);
+    border-color: rgba(50, 86, 98, 0.7);
+}
+
+/* Panel enter animation */
+.page-technology .tech-panel .row {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease 0.15s, transform 0.5s ease 0.15s;
+}
+
+.page-technology .tech-panel.panel-active .row {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile: disable scroll-jack, revert to normal scroll */
+@media (max-width: 767px) {
+    .page-technology .tech-pager-outer {
+        height: auto;
+        overflow: visible;
+    }
+    .page-technology .tech-pager-track {
+        transform: none !important;
+        transition: none;
+    }
+    .page-technology .tech-panel {
+        height: auto;
+        min-height: unset;
+        padding: 30px 0;
+    }
+    .page-technology .tech-panel .row {
+        opacity: 1;
+        transform: none;
+    }
+    .tech-pager-dots {
+        display: none;
+    }
+}
+
+/* =========================================
+   Partners Page Redesign — partners.php
+   ========================================= */
+.partners-title-wrap {
+    margin-bottom: 8px;
+}
+
+.partners-main-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1.15;
+    margin: 0 0 12px 0;
+    font-family: 'Sarabun', sans-serif;
+    letter-spacing: -0.5px;
+}
+
+.partners-title-accent {
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #ED2A2A, #ff6b6b);
+    border-radius: 2px;
+    margin-bottom: 24px;
+}
+
+.partners-lead {
+    font-size: 1.05rem;
+    color: #444;
+    line-height: 1.85;
+    margin-bottom: 28px;
+    font-family: 'Sarabun', sans-serif;
+}
+
+/* Stats row */
+.partners-stats {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 28px;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.partners-stat-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.partners-stat-num {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #ED2A2A;
+    line-height: 1;
+    font-family: 'Inter', sans-serif;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.partners-stat-plus {
+    font-size: 1.4rem;
+    vertical-align: super;
+}
+
+.partners-stat-label {
+    font-size: 0.82rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    font-family: 'Sarabun', sans-serif;
+    display: block;
+}
+
+.partners-stat-divider {
+    width: 1px;
+    height: 50px;
+    background: #ddd;
+    flex-shrink: 0;
+}
+
+/* Feature list */
+.partners-feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 22px 0;
+}
+
+.partners-feature-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.partners-feature-list li:last-child {
+    border-bottom: none;
+}
+
+.partners-feature-icon {
+    color: #ED2A2A;
+    font-size: 1rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+    font-weight: 700;
+    transition: transform 0.25s ease;
+}
+
+.partners-feature-list li:hover .partners-feature-icon {
+    transform: translateX(4px);
+}
+
+.partners-cta-text {
+    font-size: 1rem;
+    font-family: 'Sarabun', sans-serif;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Stagger animation delay for anim-fade-up in partners */
+.partners-lead.anim-fade-up { transition-delay: 0.1s; }
+.partners-stats.anim-fade-up { transition-delay: 0.2s; }
+.partners-feature-list.anim-fade-up { transition-delay: 0.3s; }
+.partners-cta-text.anim-fade-up { transition-delay: 0.4s; }
+
+@media (max-width: 767px) {
+    .partners-stats {
+        gap: 0;
+    }
+    .partners-stat-num {
+        font-size: 1.7rem;
+    }
+    .partners-main-title {
+        font-size: 2rem;
+    }
+}
+
+/* =========================================
+   Technology Page (technology.php)
+   ========================================= */
+
+.page-technology .tech_section {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.page-technology .tech_title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #325662;
+    margin-bottom: 10px;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.page-technology .tech_desc {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 0;
+    font-family: 'Sarabun', sans-serif;
+    line-height: 1.7;
+}
+
+/* --- Tech Pager Outer: full-viewport scroll-jack --- */
+.tech-pager-outer {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+}
+
+/* --- Track: vertical stack of panels --- */
+.tech-pager-track {
+    width: 100%;
+    transition: transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+}
+
+/* --- Each Panel: occupies full outer height --- */
+.tech-panel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 40px 0;
+}
+
+/* Wider container inside tech panels for better balance */
+.page-technology .tech-panel .container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* --- Force explicit two-column layout inside tech panels --- */
+.page-technology .tech-panel .container > .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.page-technology .tech-panel .container > .row > .col-md-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.tech-panel.tech_section_2 {
+    background-color: #ffffff;
+}
+
+.tech-panel.tech_section_3 {
+    background-color: #f7f9fc;
+}
+
+/* --- Content inside panels --- */
+.page-technology .tech_subtitle {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #325662;
+    margin-bottom: 14px;
+    font-family: 'Sarabun', sans-serif;
+    border-left: 4px solid #ED2A2A;
+    padding-left: 14px;
+}
+
+.page-technology .tech_text {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.75;
+    margin-bottom: 18px;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.page-technology .tech_list {
+    padding-left: 0;
+    list-style: none;
+    margin: 0 0 20px 0;
+}
+
+.page-technology .tech_list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eaeaea;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 0.97rem;
+    color: #333;
+    line-height: 1.65;
+}
+
+.page-technology .tech_list li:last-child {
+    border-bottom: none;
+}
+
+.page-technology .tech_list li strong {
+    color: #ED2A2A;
+    margin-right: 6px;
+}
+
+/* --- Image boxes --- */
+.page-technology .tech_box_main,
+.page-technology .tech_box_main_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.page-technology .tech_image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.12);
+}
+
+.page-technology .tech_image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* --- Pagination Dots (right side, vertical) --- */
+.tech-pager-dots {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 10;
+}
+
+.tech-pager-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #325662;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.25s, transform 0.25s;
+}
+
+.tech-pager-dot.active {
+    background: #ED2A2A;
+    border-color: #ED2A2A;
+    transform: scale(1.3);
+}
+
+.tech-pager-dot:hover:not(.active) {
+    background: rgba(50,86,98,0.3);
+}
+
+/* --- Mobile: disable scroll-jack, show all panels stacked --- */
+@media (max-width: 767px) {
+    .page-technology .tech_title {
+        font-size: 1.7rem;
+    }
+    .tech-pager-outer {
+        height: auto;
+        overflow: visible;
+    }
+    .tech-pager-track {
+        transform: none !important;
+        height: auto !important;
+    }
+    .tech-panel {
+        height: auto !important;
+        padding: 30px 0;
+    }
+    .tech-pager-dots {
+        display: none;
+    }
+    .page-technology .tech_box_main,
+    .page-technology .tech_box_main_3 {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .page-technology .tech_image {
+        max-width: 100%;
+    }
+    /* Stack columns on mobile — !important to override inline styles */
+    .page-technology .tech-panel .container > .row {
+        flex-direction: column !important;
+    }
+    .page-technology .tech-panel .container > .row > .col-md-6 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .tech-pager-outer {
+        height: calc(100vh - 60px);
+    }
+    .page-technology .tech_subtitle {
+        font-size: 1.4rem;
+        margin-top: 20px;
+    }
+    .tech-pager-dots {
+        right: 8px;
+    }
+    .page-technology .tech_image {
+        max-width: 340px;
+    }
 }
 
 
