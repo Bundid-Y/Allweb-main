@@ -48,9 +48,7 @@
             <!-- Right: Details -->
             <div style="flex: 1; min-width: 300px; padding-bottom: 20px;">
                 <h1 class="details-title" data-i18n="company.title">ข้อมูลบริษัท</h1>
-                <h2 style="font-size: 24px; color: #325662; margin-top: 10px; font-weight: 700;"
-                    data-i18n="company.subtitle">บริษัท ทีเอ็นบี โลจิสติกส์ จำกัด</h2>
-
+                
                 <div class="company-text-container" style="margin-top: 20px;">
                     <p class="details-desc" data-i18n="company.p1">ก่อตั้งขึ้นเมื่อวันที่ 14 ตุลาคม 2563
                         เพื่อให้บริการด้านโลจิสติกส์และการขนส่งแบบครบวงจร ครอบคลุมการขนส่งภายในประเทศและระหว่างประเทศ

@@ -44,7 +44,7 @@
 
                         <!-- Paragraph 2 -->
                         <p class="partners-lead anim-fade-up" data-i18n-html="partners.desc_p2">
-                            โดยเฉพาะกลุ่ม<strong class="partners-highlight">อุตสาหกรรมยานยนต์</strong> <strong class="partners-highlight">อิเล็กทรอนิกส์</strong> <strong class="partners-highlight">เคมีภัณฑ์</strong> และ<strong class="partners-highlight">สินค้าอุตสาหกรรม</strong> ทั้งผู้ผลิต (OEM) และ<strong class="partners-highlight">ซัพพลายเออร์ระดับ Tier 1 และ Tier 2</strong>
+                            โดยเฉพาะกลุ่ม<strong class="partners-highlight">อุตสาหกรรมยานยนต์</strong> <strong class="partners-highlight">อิเล็กทรอนิกส์</strong> <strong class="partners-highlight">เคมีภัณฑ์</strong> และ<strong class="partners-highlight">สินค้าอุตสาหกรรม</strong> ทั้งผู้ผลิต (OEM) และ<strong class="partners-highlight">ซัพพลายเออร์ระดับ Tier1 และ Tier2</strong>
                         </p>
 
                         <!-- Paragraph 3 -->
