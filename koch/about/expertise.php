@@ -38,13 +38,12 @@
                     data-i18n="expertise.subtitle">ความเชี่ยวชาญเฉพาะด้าน
                     (Our Expertise)</h2>
 
-                <p class="details-desc" style="margin-bottom: 20px;">
-                    <strong data-i18n="expertise.desc_strong">"ยกระดับการจัดการซัพพลายเชนสู่อนาคต
-                        ด้วยความเชี่ยวชาญระดับมืออาชีพ"</strong><br><br>
-                    <span data-i18n="expertise.desc_p">KOCH มุ่งมั่นสร้างสรรค์ระบบ Supply Chain ที่ "ฉลาด รวดเร็ว
-                        และยั่งยืน" สำหรับอุตสาหกรรมยานยนต์ในไทย
-                        เราพร้อมเป็นพันธมิตรเชิงกลยุทธ์ที่ช่วยคุณบริหารจัดการโลจิสติกส์และระบบ VMI อย่างเต็มรูปแบบ
-                        ด้วยโซลูชันด้านวิศวกรรมและเทคโนโลยีดิจิทัลที่ล้ำสมัยที่สุด</span>
+                <p class="details-desc" style="margin-bottom: 30px; line-height: 1.8;">
+                    <strong data-i18n="expertise.desc_strong">"ยกระดับการจัดการซัพพลายเชนสู่อนาคต ด้วยความเชี่ยวชาญระดับมืออาชีพ"</strong>
+                </p>
+
+                <p class="details-desc" style="margin-bottom: 30px; line-height: 1.8;">
+                    <span data-i18n="expertise.desc_p">KOCH มุ่งมั่นสร้างสรรค์ระบบ Supply Chain ที่ "ฉลาด รวดเร็ว และยั่งยืน" สำหรับอุตสาหกรรมยานยนต์ในไทย เราพร้อมเป็นพันธมิตรเชิงกลยุทธ์ที่ช่วยคุณบริหารจัดการโลจิสติกส์และระบบ VMI อย่างเต็มรูปแบบ ด้วยโซลูชันด้านวิศวกรรมและเทคโนโลยีดิจิทัลที่ล้ำสมัยที่สุด</span>
                 </p>
 
                 <div class="expertise-text-list">

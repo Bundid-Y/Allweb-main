@@ -39,15 +39,15 @@
                 <div class="company-text-container" style="margin-top: 20px;">
                     <!-- Paragraph 1: ชื่อบริษัท + คำอธิบาย -->
                     <p class="details-desc" style="text-align: left !important; text-indent: 0 !important; line-height: 1.8; margin-bottom: 20px;">
-                        <span data-i18n-html="company.p1">ดำเนินธุรกิจด้านการผลิตและให้บริการโซลูชันบรรจุภัณฑ์และซัพพลายเชนครบวงจร ตั้งแต่การออกแบบ การจัดหาวัตถุดิบ การผลิต ไปจนถึงการบริหารคลังสินค้าและโลจิสติกส์</span>
+                        <span data-i18n-html="company.p1">ดำเนินธุรกิจด้านการผลิตและให้บริการ<strong class="company-dark-highlight">โซลูชันบรรจุภัณฑ์และซัพพลายเชนครบวงจร</strong> ตั้งแต่การออกแบบ การจัดหาวัตถุดิบ การผลิต ไปจนถึงการบริหารคลังสินค้าและโลจิสติกส์</span>
                     </p>
                     <!-- Paragraph 2: ขอบเขตบริการ -->
                     <p class="details-desc" style="text-align: left !important; text-indent: 0 !important; line-height: 1.8; margin-bottom: 20px;">
-                        <span data-i18n-html="company.p2">เริ่มต้นจากการผลิตและจำหน่ายบรรจุภัณฑ์กระดาษลูกฟูกและกระดาษแข็ง ซึ่งเป็นหัวใจของการปกป้องสินค้าในการขนส่งและจัดเก็บ บริษัทได้พัฒนาขอบเขตบริการครอบคลุมทั้ง <b>ระบบบริหารบรรจุภัณฑ์ (VMI), การจัดการคลังสินค้า และการขนส่ง</b> รวมถึงบริการโลจิสติกส์อื่นๆ ที่เหมาะกับอุตสาหกรรมยานยนต์และอิเล็กทรอนิกส์</span>
+                        <span data-i18n-html="company.p2">เริ่มต้นจากการผลิตและจำหน่าย<strong class="company-dark-highlight">บรรจุภัณฑ์กระดาษลูกฟูกและกระดาษแข็ง</strong> ซึ่งเป็นหัวใจของการปกป้องสินค้าในการขนส่งและจัดเก็บ บริษัทได้พัฒนาขอบเขตบริการครอบคลุมทั้ง <strong class="company-dark-highlight">ระบบบริหารบรรจุภัณฑ์ (VMI), การจัดการคลังสินค้า และการขนส่ง</strong> รวมถึงบริการโลจิสติกส์อื่นๆ ที่เหมาะกับ<strong class="company-dark-highlight">อุตสาหกรรมยานยนต์และอิเล็กทรอนิกส์</strong></span>
                     </p>
                     <!-- Paragraph 3: เทคโนโลยีและอนาคต -->
                     <p class="details-desc" style="text-align: left !important; text-indent: 0 !important; line-height: 1.8; margin-bottom: 20px;">
-                        <span data-i18n-html="company.p3">ด้วยแนวคิดการพัฒนาอย่างต่อเนื่อง บริษัทมุ่งนำเทคโนโลยีอัตโนมัติและการบริหารจัดการข้อมูลมาใช้ เพื่อให้บริการลูกค้าได้อย่างแม่นยำ รวดเร็ว และมีมาตรฐานสูง พร้อมรองรับการเติบโตของธุรกิจทั้งในและต่างประเทศ</span>
+                        <span data-i18n-html="company.p3">ด้วยแนวคิดการพัฒนาอย่างต่อเนื่อง บริษัทมุ่งนำ<strong class="company-dark-highlight">เทคโนโลยีอัตโนมัติและการบริหารจัดการข้อมูล</strong>มาใช้ เพื่อให้บริการลูกค้าได้อย่าง<strong class="company-dark-highlight">แม่นยำ รวดเร็ว และมีมาตรฐานสูง</strong> พร้อมรองรับการเติบโตของธุรกิจทั้งในและต่างประเทศ</span>
                     </p>
                 </div>
             </div>

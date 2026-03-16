@@ -4969,6 +4969,27 @@ html:not([lang="th"]) .page-vision .vision-desc strong {
     text-decoration: none;
 }
 
+.company-highlight {
+    display: inline;
+    color: #ED2A2A;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.company-dark-highlight {
+    display: inline;
+    color: #1a1a1a;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.vision-highlight {
+    display: inline;
+    color: #1a1a1a;
+    font-weight: 800;
+    text-decoration: none;
+}
+
 .partners-lead {
     font-size: 1.05rem;
     color: #444;

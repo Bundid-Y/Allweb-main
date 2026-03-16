@@ -31,13 +31,13 @@
                 <div class="vision-text-container"
                     style="margin-top: 0; text-align: left;">
                     <h1 class="details-title" style="text-align: left; margin-top: 0; margin-bottom: 20px;" data-i18n="vision.title">วิสัยทัศน์และพันธกิจ</h1>
-                    <p class="details-desc vision-desc" style="text-align: left !important; text-indent: 0 !important; margin-bottom: 15px; width: 100%; display: block;" data-i18n="vision.p1">
+                    <p class="details-desc vision-desc" style="text-align: left !important; text-indent: 0 !important; margin-bottom: 15px; width: 100%; display: block;" data-i18n-html="vision.p1">
                         โค้ช แพคเกจจิ้ง แอนด์ แพคกิ้ง เซอร์วิสเซส จำกัด มุ่งมั่นก้าวสู่การเป็นผู้นำด้าน Supply Chain Services สำหรับอุตสาหกรรมยานยนต์ ด้วยการพัฒนาโซลูชันที่ ชาญฉลาด รวดเร็ว และยั่งยืน เพื่อสนับสนุนการเติบโตของลูกค้าในทุกมิติของซัพพลายเชน
                     </p>
-                    <p class="details-desc vision-desc" style="text-align: left !important; text-indent: 0 !important; margin-bottom: 15px; width: 100%; display: block;" data-i18n="vision.p2">
+                    <p class="details-desc vision-desc" style="text-align: left !important; text-indent: 0 !important; margin-bottom: 15px; width: 100%; display: block;" data-i18n-html="vision.p2">
                         บริษัทมีเป้าหมายในการเชื่อมโยงงานด้าน การพัฒนาบรรจุภัณฑ์ ระบบบริหารจัดการบรรจุภัณฑ์ (VMI) การบริหารคลังสินค้า และการขนส่ง เข้าด้วยกันอย่างเป็นระบบ เพื่อเพิ่มประสิทธิภาพ ลดต้นทุน และลดความซ้ำซ้อนในกระบวนการดำเนินงานของลูกค้า
                     </p>
-                    <p class="details-desc vision-desc" style="text-align: left !important; text-indent: 0 !important; width: 100%; display: block;" data-i18n="vision.p3">
+                    <p class="details-desc vision-desc" style="text-align: left !important; text-indent: 0 !important; width: 100%; display: block;" data-i18n-html="vision.p3">
                         KOCH ให้ความสำคัญกับการพัฒนาระบบวิศวกรรมภายในและระบบดิจิทัล เพื่อยกระดับความแม่นยำ ความโปร่งใส และความสามารถในการควบคุมกระบวนการทำงานแบบเรียลไทม์ พร้อมทั้งมุ่งเน้นการเติบโตอย่างยั่งยืน ควบคู่ไปกับความรับผิดชอบต่อสิ่งแวดล้อมและสังคม
                     </p>
                 </div>
