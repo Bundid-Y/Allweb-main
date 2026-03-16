@@ -185,7 +185,8 @@ body {
 
 /* หัวข้อ (Title) */
 .details-title {
-    width: 100%;
+    width: auto;
+    max-width: 100%;
     font-size: 40px;
     color: #1c1c1c;
     font-weight: bold;
