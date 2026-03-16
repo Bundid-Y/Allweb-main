@@ -13,7 +13,7 @@
                         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                         <circle cx="12" cy="10" r="3"></circle>
                     </svg>
-                    <span data-i18n="contact.address">742/5 หมู่ที่ 1 ตำบลหนองไผ่แก้ว อำเภอบ้านบึง จ.ชลบุรี 20220</span>
+                    <span data-i18n-html="contact.address">742/5 หมู่ที่ 1<br>ตำบลหนองไผ่แก้ว<br>อำเภอบ้านบึง จ.ชลบุรี 20220</span>
                 </li>
                 <li>
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"

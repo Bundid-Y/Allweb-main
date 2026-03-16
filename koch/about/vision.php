@@ -25,10 +25,7 @@
             <!-- Left: Details -->
             <div style="flex: 1; min-width: 300px; text-align: left;">
                 <h1 class="details-title" style="text-align: left;" data-i18n="vision.title">วิสัยทัศน์และพันธกิจ</h1>
-                <h2 style="font-size: 26px; color: #325662; margin-top: 20px; font-weight: 700; text-align: left;"
-                    data-i18n="vision.subtitle">วิสัยทัศน์ (Vision)
-                </h2>
-                <div class="vision-text-container"
+                                <div class="vision-text-container"
                     style="margin-top: 30px; text-align: left;">
                     <p class="details-desc vision-desc" style="text-align: left !important; text-indent: 0 !important; margin-bottom: 15px; width: 100%; display: block;" data-i18n="vision.p1">
                         โค้ช แพคเกจจิ้ง แอนด์ แพคกิ้ง เซอร์วิสเซส จำกัด มุ่งมั่นก้าวสู่การเป็นผู้นำด้าน Supply Chain Services สำหรับอุตสาหกรรมยานยนต์ ด้วยการพัฒนาโซลูชันที่ ชาญฉลาด รวดเร็ว และยั่งยืน เพื่อสนับสนุนการเติบโตของลูกค้าในทุกมิติของซัพพลายเชน

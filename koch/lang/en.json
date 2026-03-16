@@ -61,7 +61,7 @@
     "title": "Contact Us",
     "intro": "We are ready to provide comprehensive packaging and Supply Chain consulting and services. Contact us for more information through the channels below.",
     "address_label": "Office Address",
-    "address": "742/5 Moo 1, Nong Phai Kaew Sub-district, Ban Bueng District, Chonburi 20220",
+    "address": "742/5 Moo 1<br>Nong Phai Kaeo Subdistrict<br>Ban Bueng District, Chonburi 20220",
     "phone_label": "Sales Contact",
     "email_label": "Email"
   },
@@ -99,7 +99,12 @@
     "moq3Topic": "Cost & Stock Reduction:",
     "moq3Text": "Reduces stock holding costs by 55-75% and ordering workload by up to 31%.",
     "moq4Topic": "Inventory Optimization:",
-    "moq4Text": "Prevents shortage problems and increases delivery accuracy up to 99%."
+    "moq4Text": "Prevents shortage problems and increases delivery accuracy up to 99%.",
+    "vmiCardDesc": "Intelligent order management system to boost ordering efficiency and Just-in-Time delivery.",
+    "wmsCardDesc": "End-to-end warehouse management from goods receipt, sorting, and storage through to delivery.",
+    "tmsCardDesc": "In-house developed transportation system with real-time GPS vehicle tracking.",
+    "moqCardDesc": "Supports minimum order quantity of 1 piece, reducing stock holding costs by up to 55-75%.",
+    "cardMore": "Click for details \u2192"
   },
   "branches": {
     "title": "Our Factory Branches",
@@ -124,7 +129,14 @@
   "partners": {
     "title": "Partners",
     "desc": "Continuously trusted by partners in the <b>automotive industry</b>, including OEMs and Tier 1 suppliers nationwide. We act as more than just a packaging provider; we are a <mark style='background-color: #ffe6e6; color: #cc0000; padding: 2px 6px; border-radius: 4px;'>Strategic Partner</mark> collaborating to develop Packaging, VMI, Warehouse, and Logistics solutions to maximize your operational efficiency. Our expertise ranges from <span class='highlight-feature'>designing protective packaging</span> and <span class='highlight-feature'>systematic warehousing</span> to <span class='highlight-feature'>comprehensive transportation</span>. Every process is tailored for <b>precision, speed, and on-time delivery</b>. <span style='color: #cc0000; font-weight: 600; font-size: 1.15em;'>Ready to grow and build sustainable success together in the long term.</span>",
-    "allPartnersTitle": "All Our Partners"
+    "allPartnersTitle": "All Our Partners",
+    "desc_p1": "Continuously trusted by partners and customers in the <strong class=\"partners-highlight\">automotive industry</strong> and related sectors, including <strong class=\"partners-highlight\">OEM manufacturers</strong> and <strong class=\"partners-highlight\">Tier 1 suppliers</strong> nationwide.",
+    "desc_p2": "We do more than just provide packaging — we serve as a <strong class=\"partners-highlight\">\"solution development partner\"</strong> in Packaging, VMI, Warehouse, and Logistics to support our clients' operations at peak efficiency.",
+    "desc_p3": "Our collaboration covers everything from <strong class=\"partners-highlight\">packaging design</strong> suited to each part, to <strong class=\"partners-highlight\">comprehensive warehouse and transportation management</strong> — every process engineered for precision, speed, and on-time delivery.",
+    "stat1": "Leading Partners",
+    "stat2": "Years of Trust",
+    "stat3": "Satisfaction Rate",
+    "cta": "We are ready to grow alongside our partners and build sustainable success together for the long term."
   },
   "company": {
     "title": "Company Information",

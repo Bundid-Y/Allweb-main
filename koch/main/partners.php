@@ -24,13 +24,13 @@
                                 </div>
 
                                 <!-- Paragraph 1 -->
-                                <p class="partners-lead anim-fade-up" data-i18n="partners.desc_p1">ได้รับความไว้วางใจจากพันธมิตรและลูกค้าใน<strong class="partners-highlight">อุตสาหกรรมยานยนต์</strong>และอุตสาหกรรมที่เกี่ยวข้องอย่างต่อเนื่อง ทั้ง<strong class="partners-highlight">ผู้ผลิตรถยนต์ (OEM)</strong> และ<strong class="partners-highlight">ซัพพลายเออร์ระดับ Tier 1</strong> ทั่วประเทศ</p>
+                                <p class="partners-lead anim-fade-up" data-i18n-html="partners.desc_p1">ได้รับความไว้วางใจจากพันธมิตรและลูกค้าใน<strong class="partners-highlight">อุตสาหกรรมยานยนต์</strong>และอุตสาหกรรมที่เกี่ยวข้องอย่างต่อเนื่อง ทั้ง<strong class="partners-highlight">ผู้ผลิตรถยนต์ (OEM)</strong> และ<strong class="partners-highlight">ซัพพลายเออร์ระดับ Tier 1</strong> ทั่วประเทศ</p>
 
                                 <!-- Paragraph 2 -->
-                                <p class="partners-lead anim-fade-up" data-i18n="partners.desc_p2">เราทำหน้าที่มากกว่าผู้ให้บริการบรรจุภัณฑ์ โดยเป็น<strong class="partners-highlight">"พันธมิตรที่ร่วมพัฒนาโซลูชัน"</strong>ด้าน Packaging, VMI, Warehouse และ Logistics เพื่อสนับสนุนการดำเนินงานของลูกค้าให้มีประสิทธิภาพสูงสุด</p>
+                                <p class="partners-lead anim-fade-up" data-i18n-html="partners.desc_p2">เราทำหน้าที่มากกว่าผู้ให้บริการบรรจุภัณฑ์ โดยเป็น<strong class="partners-highlight">"พันธมิตรที่ร่วมพัฒนาโซลูชัน"</strong>ด้าน Packaging, VMI, Warehouse และ Logistics เพื่อสนับสนุนการดำเนินงานของลูกค้าให้มีประสิทธิภาพสูงสุด</p>
 
                                 <!-- Paragraph 3 -->
-                                <p class="partners-lead anim-fade-up" data-i18n="partners.desc_p3">ความร่วมมือครอบคลุมตั้งแต่การ<strong class="partners-highlight">ออกแบบบรรจุภัณฑ์</strong>ที่เหมาะสมกับชิ้นงาน ไปจนถึงการ<strong class="partners-highlight">บริหารจัดการคลังสินค้าและการขนส่งแบบครบวงจร</strong> ทุกกระบวนการถูกออกแบบให้สอดคล้องกับการผลิตที่ต้องการความแม่นยำ ความรวดเร็ว และการส่งมอบตรงเวลา</p>
+                                <p class="partners-lead anim-fade-up" data-i18n-html="partners.desc_p3">ความร่วมมือครอบคลุมตั้งแต่การ<strong class="partners-highlight">ออกแบบบรรจุภัณฑ์</strong>ที่เหมาะสมกับชิ้นงาน ไปจนถึงการ<strong class="partners-highlight">บริหารจัดการคลังสินค้าและการขนส่งแบบครบวงจร</strong> ทุกกระบวนการถูกออกแบบให้สอดคล้องกับการผลิตที่ต้องการความแม่นยำ ความรวดเร็ว และการส่งมอบตรงเวลา</p>
 
                                 <!-- Stats row -->
                                 <div class="partners-stats anim-fade-up">

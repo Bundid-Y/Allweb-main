@@ -61,7 +61,7 @@
     "title": "联系我们",
     "intro": "我们随时准备提供全面的包装与供应链咨询及服务。请通过以下渠道与我们联系。",
     "address_label": "办公地址",
-    "address": "泰国春武里府班滨县农派考区1号村742/5号，邮编20220",
+    "address": "742/5 1号村<br>农派考区，班滨县<br>春武里府 20220",
     "phone_label": "销售联系",
     "email_label": "电子邮件"
   },
@@ -99,7 +99,12 @@
     "moq3Topic": "减少成本与库存：",
     "moq3Text": "有效削减持有库存成本 55-75%，工作量最高也减少至 31%。",
     "moq4Topic": "库存优化：",
-    "moq4Text": "有效防止缺货问题发上，并增加多达 99% 精确送货度。"
+    "moq4Text": "防止缺货问题，将交货准确率提高到99%。",
+    "vmiCardDesc": "智能订单管理系统，提升订购效率和准时交货能力。",
+    "wmsCardDesc": "从收货、分拣、存储到交付的全流程仓储管理系统。",
+    "tmsCardDesc": "自主研发的运输管理系统，支持GPS实时跟踪。",
+    "moqCardDesc": "支持最小订购量仅1件，降低库存持有成本高达55-75%。",
+    "cardMore": "点击查看详情 \u2192"
   },
   "branches": {
     "title": "我们的工厂分支机构",
@@ -124,7 +129,14 @@
   "partners": {
     "title": "合作伙伴",
     "desc": "我们的服务不断获得了<b>汽车产业</b>和相关领域客户伙伴的信任，其中包括整车制造商（OEM）和全国一流（Tier 1）的供应商。我们不仅仅是提供包装的角色。作为<mark style='background-color: #ffe6e6; color: #cc0000; padding: 2px 6px; border-radius: 4px;'>战略合作伙伴</mark>，我们共同开发包装、VMI、仓储以及物流解决方案，以协助客户把企业运营效率提升至最大化。从<span class='highlight-feature'>切合零件特性的包装方案设计</span>、<span class='highlight-feature'>系统化的仓储管理</span>到<span class='highlight-feature'>全面的运输服务</span>，涵盖整个运营过程，满足<b>精确、快速、能准时送达</b>的目标。<span style='color: #cc0000; font-weight: 600; font-size: 1.15em;'>我们立志与伙伴共同成长，共享长久且持续成功的经验。</span>",
-    "allPartnersTitle": "我们所有的合作伙伴"
+    "allPartnersTitle": "我们所有的合作伙伴",
+    "desc_p1": "持续受到<strong class=\"partners-highlight\">汽车行业</strong>及相关领域合作伙伴和客户的信赖，涵盖全国<strong class=\"partners-highlight\">OEM制造商</strong>和<strong class=\"partners-highlight\">Tier 1供应商</strong>。",
+    "desc_p2": "我们不仅仅是包装供应商，更是您的<strong class=\"partners-highlight\">\"解决方案开发伙伴\"</strong>，在包装、VMI、仓储和物流领域为客户的运营提供最大化支持。",
+    "desc_p3": "合作范围从适合零件的<strong class=\"partners-highlight\">包装设计</strong>，到<strong class=\"partners-highlight\">全面的仓储与运输管理</strong>——每一个流程都为精准、快速和准时交付而设计。",
+    "stat1": "核心合作伙伴",
+    "stat2": "年信赖合作",
+    "stat3": "满意度",
+    "cta": "我们愿与合作伙伴共同成长，携手实现长期可持续的成功。"
   },
   "company": {
     "title": "公司信息",

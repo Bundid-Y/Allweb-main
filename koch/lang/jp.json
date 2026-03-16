@@ -61,7 +61,7 @@
     "title": "お問い合わせ",
     "intro": "包装とサプライチェーンに関する総合的なコンサルティングとサービスを提供いたします。下記チャンネルよりお気軽にお問い合わせください。",
     "address_label": "オフィス所在地",
-    "address": "タイ チョンブリー県 バンブン区 ノンパイケーウ地区1番村742/5号 郵便番号20220",
+    "address": "742/5 ノンパイケーウ地区1番村<br>バンブン区<br>チョンブリー県 20220",
     "phone_label": "営業担当",
     "email_label": "メールアドレス"
   },
@@ -99,7 +99,12 @@
     "moq3Topic": "コストと在庫の削減：",
     "moq3Text": "在庫保有コストを最大 55-75% 削減、注文に係るワークロードを最高 31% 削減。",
     "moq4Topic": "在庫の最適化：",
-    "moq4Text": "不足の問題を防ぎ、納品の精度を最大 99% まで向上。"
+    "moq4Text": "不足の問題を防ぎ、納品の精度を最大 99% まで向上。",
+    "vmiCardDesc": "インテリジェントな受注管理システムで発注効率とジャストインタイム納品を強化。",
+    "wmsCardDesc": "入荷から分類・保管・配送までの全プロセスをカバーする倉庫管理システム。",
+    "tmsCardDesc": "自社開発の輸送管理システムでGPSリアルタイム追跡に対応。",
+    "moqCardDesc": "最小発注量1個から対応し、在庫保有コストを最大55-75%削減。",
+    "cardMore": "詳細を見る →"
   },
   "branches": {
     "title": "工場の拠点情報",
@@ -124,7 +129,14 @@
   "partners": {
     "title": "パートナーシップ",
     "desc": "自動車メーカー（OEM）やTier1サプライヤーをはじめ、<b>自動車産業</b>のパートナーから継続的に信頼されています。 私たちは単なる梱包材提供者ではなく、梱包、VMI、倉庫、物流ソリューションを共同開発し、お客様の業務効率を最大化する<mark style='background-color: #ffe6e6; color: #cc0000; padding: 2px 6px; border-radius: 4px;'>戦略的パートナー</mark>です。 私どもの専門知識は、<span class='highlight-feature'>部品を保護する梱包設計</span>や<span class='highlight-feature'>体系的な倉庫管理</span>から<span class='highlight-feature'>総合的な輸送</span>まで多岐にわたります。すべてのプロセスは<b>「正確さ、スピード、納期厳守」</b>に合わせて設計されています。 <span style='color: #cc0000; font-weight: 600; font-size: 1.15em;'>長期的な視点で共に成長し、持続可能な成功を築き上げる準備ができています。</span>",
-    "allPartnersTitle": "すべてのパートナー"
+    "allPartnersTitle": "すべてのパートナー",
+    "desc_p1": "<strong class=\"partners-highlight\">自動車産業</strong>および関連分野のパートナーと顧客から継続的に信頼をいただいており、全国の<strong class=\"partners-highlight\">OEMメーカー</strong>と<strong class=\"partners-highlight\">Tier1サプライヤー</strong>を含みます。",
+    "desc_p2": "私たちは単なる包装提供者を超え、包装・VMI・倉庫・物流における<strong class=\"partners-highlight\">\"ソリューション開発パートナー\"</strong>として、お客様の業務効率を最大化するためにサポートします。",
+    "desc_p3": "各部品に適した<strong class=\"partners-highlight\">包装設計</strong>から<strong class=\"partners-highlight\">総合的な倉庫・輸送管理</strong>まで——すべてのプロセスが精確さ・スピード・納期厳守のために設計されています。",
+    "stat1": "主要パートナー",
+    "stat2": "年の信頼",
+    "stat3": "満足度",
+    "cta": "パートナーと共に成長し、長期的な持続可能な成功を築く準備ができています。"
   },
   "company": {
     "title": "会社概要",
