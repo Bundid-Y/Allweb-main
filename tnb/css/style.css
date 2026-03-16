@@ -2519,6 +2519,99 @@ a {
     font-weight: 700;
 }
 
+/* --- Vision Page Styles --- */
+.vision-page-wrapper .cycles_text {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 0;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.vision-page-wrapper .vision-paragraph {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.vision-page-wrapper .vision-highlight {
+    display: inline;
+    color: #0D2D6B;
+    font-weight: 700;
+}
+
+.vision-page-wrapper .right-graphic-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vision-page-wrapper .vision-image-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    z-index: 1;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vision-page-wrapper .vision-image-container::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    background-color: #0D2D6B;
+    z-index: -1;
+    border-radius: 0;
+    transform: rotate(-3deg);
+    transform-origin: bottom left;
+    opacity: 0.9;
+    box-shadow: 0 10px 20px rgba(13, 45, 107, 0.2);
+}
+
+.vision-page-wrapper .vision-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .vision-page-wrapper .cycles_text {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .vision-page-wrapper .vision-paragraph {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    
+    .vision-page-wrapper .vision-image-container {
+        height: 300px;
+        margin-top: 30px;
+    }
+}
+
 /* Right Side - Red Shape & Logos */
 .partners-page-wrapper .box_main_3 {
     width: 100%;
@@ -3335,17 +3428,17 @@ body.page-company {
 .page-company .company-image-wrap::before {
     content: '';
     position: absolute;
-    bottom: -20px;
-    left: -20px;
-    width: 100%;
-    height: 100%;
+    bottom: -5px;
+    left: -5px;
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
     background-color: #0D2D6B;
     z-index: -1;
     border-radius: 0;
-    transform: rotate(-3deg);
+    transform: rotate(-2deg);
     transform-origin: bottom left;
     opacity: 0.9;
-    box-shadow: 0 10px 20px rgba(232, 36, 51, 0.2);
+    box-shadow: 0 5px 15px rgba(13, 45, 107, 0.15);
 }
 
 /* --- Company Image Inner (กรอบรูปภาพ) --- */
@@ -3416,16 +3509,17 @@ body.page-expertise {
 .page-expertise .expertise-image-wrap::before {
     content: '';
     position: absolute;
-    bottom: -15px; /* Adjusting angle and placement to appear like an offset backing layer */
-    right: -15px;
-    width: 60%;
-    height: 100%;
+    bottom: -5px;
+    right: -5px;
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
     background-color: #0D2D6B;
     z-index: -1;
     border-radius: 0;
     transform: rotate(2deg);
     transform-origin: bottom right;
     opacity: 0.9;
+    box-shadow: 0 5px 15px rgba(13, 45, 107, 0.15);
 }
 
 .page-expertise .expertise-image-wrap img {

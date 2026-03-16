@@ -34,42 +34,47 @@
     <?php include '../component/menubar.php'; ?>
 
     <!-- Main Content -->
+    <div class="vision-page-wrapper">
+        <div class="cycle_section_3 layout_padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="cycles_text" data-i18n="vision.title">วิสัยทัศน์และพันธกิจ</h1>
 
-    <div class="content-section layout_padding" style="flex: 1;">
-        <div class="flex-row"
-            style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 40px; flex-direction: column;">
-            <!-- Top: Details -->
-            <div style="width: 100%; text-align: center;">
-                <h1 class="details-title" style="text-align: center;" data-i18n="vision.title">วิสัยทัศน์และพันธกิจ</h1>
+                        <!-- Paragraph 1 -->
+                        <p class="vision-paragraph anim-fade-up" data-i18n-html="vision.p1">
+                            มุ่งเป็นผู้ให้บริการด้านโลจิสติกส์และการขนส่งแบบครบวงจรที่มี<strong class="vision-highlight">มาตรฐานสูง</strong>
+                            ด้วยการนำ<strong class="vision-highlight">เทคโนโลยีที่ทันสมัย</strong>มาประยุกต์ใช้ในการบริหารจัดการงานขนส่งอย่างมีประสิทธิภาพ
+                            ให้ความสำคัญกับ<strong class="vision-highlight">คุณภาพ</strong> <strong class="vision-highlight">ความปลอดภัย</strong> และ<strong class="vision-highlight">ความตรงต่อเวลา</strong>ในการให้บริการ
+                            เพื่อตอบสนองความต้องการของลูกค้าในภาคอุตสาหกรรมและธุรกิจอย่างแท้จริง พร้อมสร้าง<strong class="vision-highlight">ความเชื่อมั่น</strong>
+                            ความพึงพอใจ และเติบโตอย่างยั่งยืนควบคู่กับพันธมิตรทางธุรกิจ
+                            ในฐานะ<strong class="vision-highlight">องค์กรโลจิสติกส์ที่เชื่อถือได้</strong>ในประเทศไทย
+                        </p>
 
-                <h2 style="font-size: 26px; color: #325662; margin-top: 20px; font-weight: 700;"
-                    data-i18n="vision.subtitle">วิสัยทัศน์ (Vision)
-                </h2>
+                        <!-- Paragraph 2 -->
+                        <p class="vision-paragraph anim-fade-up" data-i18n-html="vision.p2">
+                            บริษัทให้ความสำคัญกับคุณภาพ ความปลอดภัย
+                            และความตรงต่อเวลาเป็น<strong class="vision-highlight">หัวใจหลัก</strong>ของการดำเนินงาน
+                            เพื่อให้สามารถตอบสนองความต้องการของลูกค้าในภาคอุตสาหกรรมและภาคธุรกิจได้อย่างแท้จริง
+                            ภายใต้<strong class="vision-highlight">มาตรฐานการทำงานที่โปร่งใส</strong> ตรวจสอบได้ และคำนึงถึงความคุ้มค่าในระยะยาว
+                        </p>
 
-                <div class="vision-text-container" style="margin-top: 30px;">
-                    <p class="details-desc" data-i18n="vision.p1">
-                        มุ่งเป็นผู้ให้บริการด้านโลจิสติกส์และการขนส่งแบบครบวงจรที่มีมาตรฐานสูง
-                        ด้วยการนำเทคโนโลยีที่ทันสมัยมาประยุกต์ใช้ในการบริหารจัดการงานขนส่งอย่างมีประสิทธิภาพ
-                        ให้ความสำคัญกับคุณภาพ ความปลอดภัย และความตรงต่อเวลาในการให้บริการ
-                        เพื่อตอบสนองความต้องการของลูกค้าในภาคอุตสาหกรรมและธุรกิจอย่างแท้จริง พร้อมสร้างความเชื่อมั่น
-                        ความพึงพอใจ และเติบโตอย่างยั่งยืนควบคู่กับพันธมิตรทางธุรกิจ
-                        ในฐานะองค์กรโลจิสติกส์ที่เชื่อถือได้ในประเทศไทย</p>
-                    <p class="details-desc" data-i18n="vision.p2">บริษัทให้ความสำคัญกับคุณภาพ ความปลอดภัย
-                        และความตรงต่อเวลาเป็นหัวใจหลักของการดำเนินงาน
-                        เพื่อให้สามารถตอบสนองความต้องการของลูกค้าในภาคอุตสาหกรรมและภาคธุรกิจได้อย่างแท้จริง
-                        ภายใต้มาตรฐานการทำงานที่โปร่งใส่ ตรวจสอบได้ และคำนึงถึงความคุ้มค่าในระยะยาว</p>
-                    <p class="details-desc" data-i18n="vision.p3">พร้อมกันนี้ TNB
-                        มุ่งสร้างความเชื่อมั่นและความพึงพอใจสูงสุดแก่ลูกค้าและพันธมิตรทางธุรกิจ ผ่านการพัฒนาบุคลากร
-                        กระบวนการทำงาน และนวัตกรรมอย่างต่อเนื่อง เพื่อการเติบโตอย่างมั่นคงและยั่งยืน
-                        ควบคู่กับการเป็นองค์กรโลจิสติกส์ที่เชื่อถือได้
-                        และมีบทบาทสำคัญในการขับเคลื่อนระบบโลจิสติกส์ของประเทศไทยในอนาคต</p>
-                </div>
-            </div>
-
-            <!-- Bottom: Image with custom red shape -->
-            <div style="width: 100%; max-width: 600px; margin: 20px auto 40px auto;">
-                <div class="vision-image-wrap">
-                    <img src="../img/other/about/vision.webp" alt="Vision and Mission">
+                        <!-- Paragraph 3 -->
+                        <p class="vision-paragraph anim-fade-up" data-i18n-html="vision.p3">
+                            พร้อมกันนี้ TNB
+                            มุ่งสร้างความเชื่อมั่นและความพึงพอใจสูงสุดแก่ลูกค้าและพันธมิตรทางธุรกิจ ผ่านการ<strong class="vision-highlight">พัฒนาบุคลากร</strong>
+                            <strong class="vision-highlight">กระบวนการทำงาน</strong> และ<strong class="vision-highlight">นวัตกรรม</strong>อย่างต่อเนื่อง เพื่อการเติบโตอย่างมั่นคงและยั่งยืน
+                            ควบคู่กับการเป็นองค์กรโลจิสติกส์ที่เชื่อถือได้
+                            และมีบทบาทสำคัญในการขับเคลื่อน<strong class="vision-highlight">ระบบโลจิสติกส์ของประเทศไทย</strong>ในอนาคต
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="right-graphic-container">
+                            <div class="vision-image-container">
+                                <img src="../img/other/about/vision.webp" alt="Vision and Mission">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
