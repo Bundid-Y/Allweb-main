@@ -4,7 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TNB Logistics - บริการขนส่งสินค้าในประเทศ</title>
+  <title>บริการขนส่งสินค้าในประเทศ | TNB Logistics</title>
+  <meta name="description" content="บริการขนส่งสินค้าในประเทศของ TNB Logistics ครอบคลุมทั่วประเทศไทย รองรับทุกประเภทสินค้า" />
+
+     <!-- Google SEO -->
+     <meta name="robots" content="index, follow" />
+     <link rel="canonical" href="https://tnb-logistics.com/service/domestic.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tnb-logistics.com/service/domestic.html" />
+    <meta property="og:title" content="บริการขนส่งสินค้าในประเทศ | TNB Logistics" />
+    <meta property="og:description" content="บริการขนส่งสินค้าในประเทศของ TNB Logistics ครอบคลุมทั่วประเทศไทย รองรับทุกประเภทสินค้า" />
+    <meta property="og:image" content="https://tnb-logistics.com/scr/assets/homepage.webp" />
+    <meta property="og:site_name" content="TNB Logistics" />
+    <meta property="og:locale" content="th_TH" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../img/company_logo/tnb_logo.webp" />
   <!-- Custom CSS & JS -->
   <link rel="stylesheet" href="../css/style.css">
 

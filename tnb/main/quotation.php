@@ -4,7 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koch Packaging - Quotation</title>
+    <title>ขอใบเสนอราคา | TNB Logistics</title>
+    <meta name="description" content="ขอใบเสนอราคาบริการขนส่งและโลจิสติกส์ครบวงจรจาก TNB Logistics สำหรับอุตสาหกรรมยานยนต์และอุตสาหกรรมที่เกี่ยวข้อง" />
+
+     <!-- Google SEO -->
+     <meta name="robots" content="index, follow" />
+     <link rel="canonical" href="https://tnb-logistics.com/quotation.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tnb-logistics.com/quotation.html" />
+    <meta property="og:title" content="ขอใบเสนอราคา | TNB Logistics" />
+    <meta property="og:description" content="ขอใบเสนอราคาบริการขนส่งและโลจิสติกส์ครบวงจรจาก TNB Logistics สำหรับอุตสาหกรรมยานยนต์และอุตสาหกรรมที่เกี่ยวข้อง" />
+    <meta property="og:image" content="https://tnb-logistics.com/scr/assets/homepage.webp" />
+    <meta property="og:site_name" content="TNB Logistics" />
+    <meta property="og:locale" content="th_TH" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../img/company_logo/tnb_logo.webp" />
+
     <!-- Custom CSS & JS -->
     <!-- CSS ของหน้านี้อยู่ใน: css/style.css หัวข้อ "Quotation Page (quotation.php)" -->
     <link rel="stylesheet" href="../css/style.css">

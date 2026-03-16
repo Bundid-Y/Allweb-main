@@ -4,7 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TNB Logistics - Container Arrangement & Container Yard</title>
+  <title>การจัดการคอนเทนเนอร์และคอนเทนเนอร์ยาร์ด | TNB Logistics</title>
+  <meta name="description" content="บริการจัดการคอนเทนเนอร์และคอนเทนเนอร์ยาร์ดของ TNB Logistics รับจัดเก็บ จัดเรียง และบริหารคอนเทนเนอร์" />
+
+     <!-- Google SEO -->
+     <meta name="robots" content="index, follow" />
+     <link rel="canonical" href="https://tnb-logistics.com/service/container.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tnb-logistics.com/service/container.html" />
+    <meta property="og:title" content="การจัดการคอนเทนเนอร์และคอนเทนเนอร์ยาร์ด | TNB Logistics" />
+    <meta property="og:description" content="บริการจัดการคอนเทนเนอร์และคอนเทนเนอร์ยาร์ดของ TNB Logistics รับจัดเก็บ จัดเรียง และบริหารคอนเทนเนอร์" />
+    <meta property="og:image" content="https://tnb-logistics.com/scr/assets/homepage.webp" />
+    <meta property="og:site_name" content="TNB Logistics" />
+    <meta property="og:locale" content="th_TH" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../img/company_logo/tnb_logo.webp" />
   <!-- Custom CSS & JS -->
   <link rel="stylesheet" href="../css/style.css">
 

@@ -4,7 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Koch Packaging - Login</title>
+  <title>เข้าสู่ระบบ | TNB Logistics</title>
+  <meta name="description" content="เข้าสู่ระบบ TNB Logistics สำหรับลูกค้าและพันธมิตร" />
+
+     <!-- Google SEO -->
+     <meta name="robots" content="noindex, nofollow" />
+     <link rel="canonical" href="https://tnb-logistics.com/login.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tnb-logistics.com/login.html" />
+    <meta property="og:title" content="เข้าสู่ระบบ | TNB Logistics" />
+    <meta property="og:description" content="เข้าสู่ระบบ TNB Logistics สำหรับลูกค้าและพันธมิตร" />
+    <meta property="og:image" content="https://tnb-logistics.com/scr/assets/homepage.webp" />
+    <meta property="og:site_name" content="TNB Logistics" />
+    <meta property="og:locale" content="th_TH" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../img/company_logo/tnb_logo.webp" />
   <!-- Login Page Specific Styles & Script -->
   <link rel="stylesheet" href="../css/style.css">
   <script src="../js/script.js" defer></script>

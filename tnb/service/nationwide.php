@@ -4,7 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TNB Logistics - Nationwide Distribution</title>
+  <title>บริการกระจายสินค้าทั่วประเทศ | TNB Logistics</title>
+  <meta name="description" content="บริการกระจายสินค้าทั่วประเทศของ TNB Logistics ครอบคลุมทุกจังหวัดในประเทศไทย" />
+
+     <!-- Google SEO -->
+     <meta name="robots" content="index, follow" />
+     <link rel="canonical" href="https://tnb-logistics.com/service/nationwide.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tnb-logistics.com/service/nationwide.html" />
+    <meta property="og:title" content="บริการกระจายสินค้าทั่วประเทศ | TNB Logistics" />
+    <meta property="og:description" content="บริการกระจายสินค้าทั่วประเทศของ TNB Logistics ครอบคลุมทุกจังหวัดในประเทศไทย" />
+    <meta property="og:image" content="https://tnb-logistics.com/scr/assets/homepage.webp" />
+    <meta property="og:site_name" content="TNB Logistics" />
+    <meta property="og:locale" content="th_TH" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../img/company_logo/tnb_logo.webp" />
   <!-- Custom CSS & JS -->
   <link rel="stylesheet" href="../css/style.css">
 

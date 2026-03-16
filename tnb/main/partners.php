@@ -4,7 +4,25 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Koch Packaging - Partners</title>
+        <title>พันธมิตรและลูกค้า | TNB Logistics</title>
+        <meta name="description" content="พันธมิตรและลูกค้าที่ไว้วางใจ TNB Logistics ในอุตสาหกรรมยานยนต์และอุตสาหกรรมที่เกี่ยวข้อง" />
+
+     <!-- Google SEO -->
+     <meta name="robots" content="index, follow" />
+     <link rel="canonical" href="https://tnb-logistics.com/partners.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tnb-logistics.com/partners.html" />
+    <meta property="og:title" content="พันธมิตรและลูกค้า | TNB Logistics" />
+    <meta property="og:description" content="พันธมิตรและลูกค้าที่ไว้วางใจ TNB Logistics ในอุตสาหกรรมยานยนต์และอุตสาหกรรมที่เกี่ยวข้อง" />
+    <meta property="og:image" content="https://tnb-logistics.com/scr/assets/homepage.webp" />
+    <meta property="og:site_name" content="TNB Logistics" />
+    <meta property="og:locale" content="th_TH" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../img/company_logo/tnb_logo.webp" />
+
         <!-- Custom CSS & JS -->
         <link rel="stylesheet" href="../css/style.css">
         <script src="../js/script.js" defer></script>
