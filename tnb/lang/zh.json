@@ -140,7 +140,10 @@
     },
     "partners": {
         "title": "合作伙伴",
-        "desc": "我们的服务不断获得了汽车及其相关行业领域客户伙伴的信任。其中包括整车制造商（OEM）和全国一流（Tier 1）的供应商。<br><br> 我们不仅仅只是扮演一个包装供应的角色。作为协作伙伴，从包装设计，VMI ，仓储，以及物流，协助客户企业运营的最大效率方案。<br><br> 从提供切合零件设计特性的包装方案到全面整合的完整过程，满足精确并且快速能准时送达目标的运营管理。 <br><br> 我们立志与伙伴共同成长，共享长久且持续成功的经验。"
+        "desc_p1": "多年来，TNB物流有限公司获得了各行业合作伙伴和客户的信任",
+        "desc_p2": "特别是<strong class=\"partners-highlight\">汽车</strong>、<strong class=\"partners-highlight\">电子</strong>、<strong class=\"partners-highlight\">化工</strong>和<strong class=\"partners-highlight\">工业产品</strong>行业，包括原始设备制造商（OEM）以及<strong class=\"partners-highlight\">一级和二级供应商</strong>",
+        "desc_p3": "TNB提供以<strong class=\"partners-highlight\">质量</strong>、<strong class=\"partners-highlight\">安全</strong>和<strong class=\"partners-highlight\">准时</strong>为核心标准的运输服务，准备与客户发展密切的工作关系",
+        "desc_p4": "以支持可持续的业务增长，并建立长期关系，成为<strong class=\"partners-highlight\">值得信赖的物流合作伙伴</strong>"
             },
     "quotation": {
         "title": "请求报价",

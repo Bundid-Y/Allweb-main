@@ -140,7 +140,10 @@
     },
     "partners": {
         "title": "Partners",
-        "desc": "Continuously trusted by partners and customers in the automotive and related industries, including OEMs and Tier 1 suppliers nationwide. <br><br> We act as more than just a packaging provider; we are partners collaborating to develop Packaging, VMI, Warehouse, and Logistics solutions to maximize our customers' operational efficiency. <br><br> Our collaboration ranges from designing appropriate packaging for parts to comprehensive management of warehousing and transportation. Every process is designed to align with production needs requiring precision, speed, and on-time delivery. <br><br> We are ready to grow alongside our partners and build sustainable success together in the long term"
+        "desc_p1": "Over the years, TNB Logistics Co., Ltd. has earned the trust of partners and customers across various industries",
+        "desc_p2": "Especially in the <strong class=\"partners-highlight\">automotive</strong>, <strong class=\"partners-highlight\">electronics</strong>, <strong class=\"partners-highlight\">chemical</strong>, and <strong class=\"partners-highlight\">industrial product</strong> sectors, including both OEMs and <strong class=\"partners-highlight\">Tier 1 and Tier 2 suppliers</strong>",
+        "desc_p3": "TNB provides transportation services with standards focused on <strong class=\"partners-highlight\">quality</strong>, <strong class=\"partners-highlight\">safety</strong>, and <strong class=\"partners-highlight\">punctuality</strong>, ready to develop close working relationships with customers",
+        "desc_p4": "To support sustainable business growth and build long-term relationships as a <strong class=\"partners-highlight\">trusted logistics partner</strong>"
             },
     "quotation": {
         "title": "Request Quotation",
