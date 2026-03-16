@@ -945,4 +945,88 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 })();
 
+// =========================================
+// Card UI Modal — technology.php
+// Open modal on card click, close on X / overlay / ESC
+// =========================================
+(function initCardUiModal() {
+    document.addEventListener('DOMContentLoaded', function () {
+        var cards = document.querySelectorAll('.card-ui-item[data-modal]');
+        if (!cards.length) return;
+
+        function openModal(id) {
+            var overlay = document.getElementById(id);
+            if (!overlay) return;
+            overlay.classList.add('modal-ui-active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(overlay) {
+            overlay.classList.remove('modal-ui-active');
+            document.body.style.overflow = '';
+        }
+
+        function closeAllModals() {
+            document.querySelectorAll('.modal-ui-overlay.modal-ui-active').forEach(function (o) {
+                closeModal(o);
+            });
+        }
+
+        /* Card click → open */
+        cards.forEach(function (card) {
+            card.addEventListener('click', function () {
+                var modalId = card.getAttribute('data-modal');
+                openModal(modalId);
+            });
+        });
+
+        /* Close button click */
+        document.querySelectorAll('.modal-ui-close').forEach(function (btn) {
+            btn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                var overlay = btn.closest('.modal-ui-overlay');
+                if (overlay) closeModal(overlay);
+            });
+        });
+
+        /* Overlay click (outside container) */
+        document.querySelectorAll('.modal-ui-overlay').forEach(function (overlay) {
+            overlay.addEventListener('click', function (e) {
+                if (e.target === overlay) closeModal(overlay);
+            });
+        });
+
+        /* ESC key */
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeAllModals();
+        });
+    });
+})();
+
+// =========================================
+// Card UI Scroll Reveal — fade-up cards on scroll
+// =========================================
+(function initCardUiReveal() {
+    document.addEventListener('DOMContentLoaded', function () {
+        var items = document.querySelectorAll('.card-ui-item');
+        if (!items.length) return;
+
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    /* Stagger delay based on data index */
+                    var idx = Array.prototype.indexOf.call(items, entry.target);
+                    var delay = idx * 120;
+                    setTimeout(function () {
+                        entry.target.classList.add('card-ui-visible');
+                    }, delay);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        items.forEach(function (item) { observer.observe(item); });
+    });
+})();
+
 } // end of window.kochScriptInitialized check

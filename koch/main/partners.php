@@ -21,13 +21,16 @@
                                 <!-- Title -->
                                 <div class="partners-title-wrap anim-fade-up">
                                         <h1 class="partners-main-title" data-i18n="partners.title">พันธมิตร</h1>
-                                        <div class="partners-title-accent"></div>
                                 </div>
 
-                                <!-- Subtitle paragraph -->
-                                <p class="partners-lead anim-fade-up" data-i18n="partners.desc_short">
-                                        ได้รับความไว้วางใจจากพันธมิตรในอุตสาหกรรมยานยนต์อย่างต่อเนื่อง ทั้งผู้ผลิตรถยนต์ (OEM) และซัพพลายเออร์ระดับ Tier 1
-                                </p>
+                                <!-- Paragraph 1 -->
+                                <p class="partners-lead anim-fade-up" data-i18n="partners.desc_p1">ได้รับความไว้วางใจจากพันธมิตรและลูกค้าใน<strong class="partners-highlight">อุตสาหกรรมยานยนต์</strong>และอุตสาหกรรมที่เกี่ยวข้องอย่างต่อเนื่อง ทั้ง<strong class="partners-highlight">ผู้ผลิตรถยนต์ (OEM)</strong> และ<strong class="partners-highlight">ซัพพลายเออร์ระดับ Tier 1</strong> ทั่วประเทศ</p>
+
+                                <!-- Paragraph 2 -->
+                                <p class="partners-lead anim-fade-up" data-i18n="partners.desc_p2">เราทำหน้าที่มากกว่าผู้ให้บริการบรรจุภัณฑ์ โดยเป็น<strong class="partners-highlight">"พันธมิตรที่ร่วมพัฒนาโซลูชัน"</strong>ด้าน Packaging, VMI, Warehouse และ Logistics เพื่อสนับสนุนการดำเนินงานของลูกค้าให้มีประสิทธิภาพสูงสุด</p>
+
+                                <!-- Paragraph 3 -->
+                                <p class="partners-lead anim-fade-up" data-i18n="partners.desc_p3">ความร่วมมือครอบคลุมตั้งแต่การ<strong class="partners-highlight">ออกแบบบรรจุภัณฑ์</strong>ที่เหมาะสมกับชิ้นงาน ไปจนถึงการ<strong class="partners-highlight">บริหารจัดการคลังสินค้าและการขนส่งแบบครบวงจร</strong> ทุกกระบวนการถูกออกแบบให้สอดคล้องกับการผลิตที่ต้องการความแม่นยำ ความรวดเร็ว และการส่งมอบตรงเวลา</p>
 
                                 <!-- Stats row -->
                                 <div class="partners-stats anim-fade-up">
@@ -47,25 +50,9 @@
                                         </div>
                                 </div>
 
-                                <!-- Feature list -->
-                                <ul class="partners-feature-list anim-fade-up">
-                                        <li>
-                                                <span class="partners-feature-icon">▸</span>
-                                                <span data-i18n="partners.feat1">การออกแบบบรรจุภัณฑ์ปกป้องชิ้นงานอย่างแม่นยำ</span>
-                                        </li>
-                                        <li>
-                                                <span class="partners-feature-icon">▸</span>
-                                                <span data-i18n="partners.feat2">ระบบ VMI และการบริหารคลังสินค้าอย่างเป็นระบบ</span>
-                                        </li>
-                                        <li>
-                                                <span class="partners-feature-icon">▸</span>
-                                                <span data-i18n="partners.feat3">การขนส่งครบวงจร รวดเร็ว ตรงเวลา</span>
-                                        </li>
-                                </ul>
-
                                 <!-- CTA tag -->
                                 <p class="partners-cta-text anim-fade-up">
-                                        <span style="color: #ED2A2A; font-weight: 700;" data-i18n="partners.cta">พร้อมเติบโตและสร้างความสำเร็จอย่างยั่งยืนไปพร้อมกัน</span>
+                                        <strong class="partners-highlight" data-i18n="partners.cta">เราพร้อมเติบโตไปพร้อมพันธมิตร และร่วมสร้างความสำเร็จอย่างยั่งยืนในระยะยาว</strong>
                                 </p>
                         </div>
                                         <div class="col-md-6">

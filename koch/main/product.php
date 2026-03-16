@@ -15,7 +15,7 @@
 
     <main>
         <!-- PRODUCT CATEGORY MENU SECTION -->
-        <section class="product-category-section layout_padding" style="padding-top: 130px; padding-bottom: 90px;">
+        <section class="product-category-section layout_padding" style="padding-top: 100px; padding-bottom: 90px;">
             <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
                 <!-- Heading -->
                 <h2 style="width: 100%; float: left; font-size: 40px; color: #111111; text-align: center; font-weight: bold; font-family: 'Sarabun', sans-serif; margin-top: 0px; margin-bottom: 15px;"
