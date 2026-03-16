@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<ht lang="th">
+<html lang="th">
 
 <head>
     <meta charset="UTF-8">
@@ -56,4 +56,4 @@
     <?php include '../component/footer.php'; ?>
 </body>
 
-</ht    ml>
+</html>
