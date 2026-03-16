@@ -6,6 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Koch Packaging - Warehouse</title>
 
+  <!-- Google SEO -->
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://koch-packaging-services.com/expertise.html" />
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="th_TH" />
+    <meta property="og:site_name" content="KOCH Packaging and Packing Services Co.,Ltd" />
+    <meta property="og:title" content="ความเชี่ยวชาญของเรา - KOCH Packaging and Packing Services Co.,Ltd" />
+    <meta property="og:description" content="ความเชี่ยวชาญของ KOCH - ยกระดับการจัดการซัพพลายเชนสู่อนาคต ด้วยความเชี่ยวชาญระดับมืออาชีพ" />
+    <meta property="og:url" content="https://koch-packaging-services.com/expertise.html" />
+    <meta property="og:image" content="https://koch-packaging-services.com/scr/assets/carousel/company/Gemini_Generated_Image_o9ab0wo9.png" />
+
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="../img/company_logo/logo 2.png" />
   

@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koch Packaging - Expertise</title>
 
+      <!-- Google SEO -->
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://koch-packaging-services.com/expertise.html" />
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="th_TH" />
+    <meta property="og:site_name" content="KOCH Packaging and Packing Services Co.,Ltd" />
+    <meta property="og:title" content="ความเชี่ยวชาญของเรา - KOCH Packaging and Packing Services Co.,Ltd" />
+    <meta property="og:description" content="ความเชี่ยวชาญของ KOCH - ยกระดับการจัดการซัพพลายเชนสู่อนาคต ด้วยความเชี่ยวชาญระดับมืออาชีพ" />
+    <meta property="og:url" content="https://koch-packaging-services.com/expertise.html" />
+    <meta property="og:image" content="https://koch-packaging-services.com/scr/assets/carousel/company/Gemini_Generated_Image_o9ab0wo9.png" />
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../img/company_logo/logo 2.png" />
     
@@ -50,7 +63,7 @@
                     <div class="expertise-item">
                         <div class="expertise-number">01</div>
                         <div>
-                            <div class="expertise-title" data-i18n="expertise.item1_title">Packaging Development</div>
+                            <div class="expertise-title" data-i18n-html="expertise.item1_title">Packaging Development</div>
                             <div class="expertise-desc" data-i18n="expertise.item1_desc">
                                 เชี่ยวชาญในการออกแบบและพัฒนาบรรจุภัณฑ์สำหรับอุตสาหกรรมยานยนต์
                                 ครอบคลุมวัสดุหลากหลายประเภท เช่น กระดาษ เหล็ก ไม้ และพลาสติก</div>
@@ -59,7 +72,7 @@
                     <div class="expertise-item">
                         <div class="expertise-number">02</div>
                         <div>
-                            <div class="expertise-title" data-i18n="expertise.item2_title">Smart VMI System</div>
+                            <div class="expertise-title" data-i18n-html="expertise.item2_title">Smart VMI System</div>
                             <div class="expertise-desc" data-i18n="expertise.item2_desc">พัฒนาระบบ VMI
                                 เพื่อช่วยลูกค้าบริหารสต็อกบรรจุภัณฑ์ได้อย่างมีประสิทธิภาพ เชื่อมโยงข้อมูลการผลิต
                                 การสั่งซื้อ และการจัดส่งแบบอัตโนมัติ ช่วยลดต้นทุน ลดปริมาณสต็อกคงค้าง</div>
@@ -68,7 +81,7 @@
                     <div class="expertise-item">
                         <div class="expertise-number">03</div>
                         <div>
-                            <div class="expertise-title" data-i18n="expertise.item3_title">Professional Warehouse</div>
+                            <div class="expertise-title" data-i18n-html="expertise.item3_title">Professional Warehouse</div>
                             <div class="expertise-desc" data-i18n="expertise.item3_desc">
                                 ให้บริการบริหารคลังสินค้าในพื้นที่บ้านบึงและบ่อวิน
                                 รองรับทั้งงานบรรจุภัณฑ์และงานคลังสินค้าอุตสาหกรรม สามารถจัดเก็บ ควบคุม
@@ -78,7 +91,7 @@
                     <div class="expertise-item">
                         <div class="expertise-number">04</div>
                         <div>
-                            <div class="expertise-title" data-i18n="expertise.item4_title">Real-time Logistics</div>
+                            <div class="expertise-title" data-i18n-html="expertise.item4_title">Real-time Logistics</div>
                             <div class="expertise-desc" data-i18n="expertise.item4_desc">
                                 ให้บริการขนส่งด้วยรถของบริษัทเอง พร้อมระบบบริหารจัดการการขนส่ง
                                 (TMS) ที่พัฒนาภายใน สามารถติดตามสถานะการขนส่งแบบ Real-time</div>

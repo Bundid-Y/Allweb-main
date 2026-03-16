@@ -151,13 +151,13 @@
     "subtitle": "ความเชี่ยวชาญเฉพาะด้าน (Our Expertise)",
     "desc_strong": "\"ยกระดับการจัดการซัพพลายเชนสู่อนาคต ด้วยความเชี่ยวชาญระดับมืออาชีพ\"",
     "desc_p": "KOCH มุ่งมั่นสร้างสรรค์ระบบ Supply Chain ที่ \"ฉลาด รวดเร็ว และยั่งยืน\" สำหรับอุตสาหกรรมยานยนต์ในไทย เราพร้อมเป็นพันธมิตรเชิงกลยุทธ์ที่ช่วยคุณบริหารจัดการโลจิสติกส์และระบบ VMI อย่างเต็มรูปแบบ ด้วยโซลูชันด้านวิศวกรรมและเทคโนโลยีดิจิทัลที่ล้ำสมัยที่สุด",
-    "item1_title": "Packaging Development",
+    "item1_title": "<span class=\"expertise-highlight\">Packaging Development</span>",
     "item1_desc": "เชี่ยวชาญในการออกแบบและพัฒนาบรรจุภัณฑ์สำหรับอุตสาหกรรมยานยนต์ ครอบคลุมวัสดุหลากหลายประเภท เช่น กระดาษ เหล็ก ไม้ และพลาสติก",
-    "item2_title": "Smart VMI System",
+    "item2_title": "<span class=\"expertise-highlight\">Smart VMI System</span>",
     "item2_desc": "พัฒนาระบบ VMI เพื่อช่วยลูกค้าบริหารสต็อกบรรจุภัณฑ์ได้อย่างมีประสิทธิภาพ เชื่อมโยงข้อมูลการผลิต การสั่งซื้อ และการจัดส่งแบบอัตโนมัติ ช่วยลดต้นทุน ลดปริมาณสต็อกคงค้าง",
-    "item3_title": "Professional Warehouse",
+    "item3_title": "<span class=\"expertise-highlight\">Professional Warehouse</span>",
     "item3_desc": "ให้บริการบริหารคลังสินค้าในพื้นที่บ้านบึงและบ่อวิน รองรับทั้งงานบรรจุภัณฑ์และงานคลังสินค้าอุตสาหกรรม สามารถจัดเก็บ ควบคุม และกระจายสินค้าได้อย่างเป็นระบบ",
-    "item4_title": "Real-time Logistics",
+    "item4_title": "<span class=\"expertise-highlight\">Real-time Logistics</span>",
     "item4_desc": "ให้บริการขนส่งด้วยรถของบริษัทเอง พร้อมระบบบริหารจัดการการขนส่ง (TMS) ที่พัฒนาภายใน สามารถติดตามสถานะการขนส่งแบบ Real-time"
   },
   "vision": {

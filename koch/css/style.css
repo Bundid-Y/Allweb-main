@@ -5002,6 +5002,19 @@ html:not([lang="th"]) .page-vision .vision-desc strong {
     font-weight: 800 !important;
 }
 
+.expertise-highlight {
+    display: inline !important;
+    color: #000000 !important;
+    font-weight: 800 !important;
+    text-decoration: none !important;
+}
+
+/* Additional specificity for expertise titles */
+.expertise-title .expertise-highlight {
+    color: #000000 !important;
+    font-weight: 800 !important;
+}
+
 /* Cache busting: Updated for highlighting - 2025-03-16 */
 
 .partners-lead {
