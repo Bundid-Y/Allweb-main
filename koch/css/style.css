@@ -4977,18 +4977,32 @@ html:not([lang="th"]) .page-vision .vision-desc strong {
 }
 
 .company-dark-highlight {
-    display: inline;
-    color: #1a1a1a;
-    font-weight: 800;
-    text-decoration: none;
+    display: inline !important;
+    color: #000000 !important;
+    font-weight: 800 !important;
+    text-decoration: none !important;
 }
 
 .vision-highlight {
-    display: inline;
-    color: #1a1a1a;
-    font-weight: 800;
-    text-decoration: none;
+    display: inline !important;
+    color: #000000 !important;
+    font-weight: 800 !important;
+    text-decoration: none !important;
 }
+
+/* Additional specificity to ensure highlighting works */
+.details-desc .vision-highlight,
+.details-desc .company-dark-highlight {
+    color: #000000 !important;
+    font-weight: 800 !important;
+}
+
+.vision-desc .vision-highlight {
+    color: #000000 !important;
+    font-weight: 800 !important;
+}
+
+/* Cache busting: Updated for highlighting - 2025-03-16 */
 
 .partners-lead {
     font-size: 1.05rem;
