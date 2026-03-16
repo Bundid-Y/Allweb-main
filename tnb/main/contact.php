@@ -33,7 +33,7 @@
     <?php include '../component/menubar.php'; ?>
 
     <!-- CONTENT SECTION matching technology.php layout -->
-    <div class="tech_section layout_padding" style="padding-top: 150px; padding-bottom: 90px; overflow: hidden;">
+    <div class="tech_section layout_padding" style="padding-top: 100px; padding-bottom: 90px; overflow: hidden;">
 
         <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 15px;">
 
@@ -44,12 +44,12 @@
                     style="width: 100%; max-width: 900px; padding: 0 15px; box-sizing: border-box; text-align: center; margin-bottom: 60px;">
 
                     <h1 class="tech_subtitle"
-                        style="font-size: 40px; color: #1c1c1c; font-weight: bold; margin-bottom: 25px; position: relative; display: inline-block;">
+                        style="font-size: 40px; color: #1c1c1c; font-weight: bold; margin-bottom: 5px; position: relative; display: inline-block;">
                         <span data-i18n="contact.title">ติดต่อเรา</span>
                     </h1>
 
                     <p class="tech_text"
-                        style="font-size: 16px; color: #1c1c1c; line-height: 1.6; padding-top: 10px; margin-bottom: 50px;"
+                        style="font-size: 16px; color: #1c1c1c; line-height: 1.6; padding-top: 0px; margin-bottom: 40px;"
                         data-i18n="contact.intro">
                         เราพร้อมให้คำปรึกษาและบริการด้านโลจิสติกส์แบบครบวงจร ทันสมัย และตอบโจทย์ทุกความต้องการทางธุรกิจ
                         ติดต่อสอบถามข้อมูลเพิ่มเติมได้ผ่านช่องทางด้านล่าง

@@ -1363,7 +1363,7 @@ section.loop-images-quotation.vertical {
 /* --- Branches Layout --- */
 .layout_padding {
     padding-bottom: 45px;
-    padding-top: 130px; /* Prevent overlap with menubar */
+    padding-top: 100px; /* Prevent overlap with menubar */
 }
 
 .branches_section {
@@ -3160,7 +3160,7 @@ a {
     width: 100%;
     float: left;
     padding-bottom: 45px;
-    padding-top: 130px; /* Added to prevent overlap with menubar */
+    padding-top: 100px; /* Added to prevent overlap with menubar */
 }
 
 /* --- Tech Title (หัวข้อชื่อเทคโนโลยี) --- */
@@ -3171,6 +3171,7 @@ a {
     color: #111111;
     text-align: center;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 /* --- Tech Description (คำอธิบายหัวข้อ) --- */
@@ -3180,7 +3181,7 @@ a {
     font-size: 16px;
     color: #242424;
     text-align: center;
-    margin: 0px;
+    margin: 0px 0px 40px 0px;
 }
 
 /* --- Tech Section 2 (Image Left Layout) --- */
@@ -3439,6 +3440,11 @@ body.page-company {
     transform-origin: bottom left;
     opacity: 0.9;
     box-shadow: 0 5px 15px rgba(13, 45, 107, 0.15);
+}
+
+/* --- Company Page Layout --- */
+.page-company .content-section.layout_padding {
+    padding-top: 60px; /* ลดระยะห่างจากเมนูบาร์ */
 }
 
 /* --- Company Image Inner (กรอบรูปภาพ) --- */
