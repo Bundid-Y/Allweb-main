@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koch Packaging - Vision</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../img/company_logo/logo 2.png" />
+    
     <!-- Custom CSS & JS -->
     <!-- CSS ของหน้านี้อยู่ใน: css/style.css หัวข้อ "Vision Page (about/vision.php)" -->
     <link rel="stylesheet" href="../css/style.css">

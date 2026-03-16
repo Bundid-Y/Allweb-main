@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Koch Packaging - Warehouse</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../img/company_logo/logo 2.png" />
+  
   <!-- Custom CSS & JS -->
   <link rel="stylesheet" href="../css/style.css">
   <script src="../js/script.js" defer></script>
