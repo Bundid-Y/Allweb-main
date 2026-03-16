@@ -37,7 +37,7 @@
   <!-- Main Content Hero (Fixed Missing HTML Tags) -->
   <!-- ส่วนหัวของหน้า (Hero Section) แสดงภาพรวมและคำอธิบายเบื้องต้นของการพัฒนาบรรจุภัณฑ์ -->
   <!-- ใช้ Flexbox ในการจัดวางให้ภาพอยู่ซ้ายและข้อความอยู่ขวา -->
-  <div class="content-section layout_padding" style="margin-top: 150px; margin-bottom: 0;">
+  <div class="content-section layout_padding" style="margin-top: 100px; padding-bottom: 20px; padding-top: 40px;">
     <div class="flex-row"
       style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px; flex-direction: row-reverse;">
       <!-- Left: Image with custom red shape -->
