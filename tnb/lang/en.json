@@ -140,9 +140,8 @@
     },
     "partners": {
         "title": "Partners",
-        "desc": "Continuously trusted by partners and customers in the automotive and related industries, including OEMs and Tier 1 suppliers nationwide. <br><br> We act as more than just a packaging provider; we are partners collaborating to develop Packaging, VMI, Warehouse, and Logistics solutions to maximize our customers' operational efficiency. <br><br> Our collaboration ranges from designing appropriate packaging for parts to comprehensive management of warehousing and transportation. Every process is designed to align with production needs requiring precision, speed, and on-time delivery. <br><br> We are ready to grow alongside our partners and build sustainable success together in the long term.",
-        "allPartnersTitle": "All Our Partners"
-    },
+        "desc": "Continuously trusted by partners and customers in the automotive and related industries, including OEMs and Tier 1 suppliers nationwide. <br><br> We act as more than just a packaging provider; we are partners collaborating to develop Packaging, VMI, Warehouse, and Logistics solutions to maximize our customers' operational efficiency. <br><br> Our collaboration ranges from designing appropriate packaging for parts to comprehensive management of warehousing and transportation. Every process is designed to align with production needs requiring precision, speed, and on-time delivery. <br><br> We are ready to grow alongside our partners and build sustainable success together in the long term"
+            },
     "quotation": {
         "title": "Request Quotation",
         "firstName": "First Name",

@@ -136,77 +136,7 @@
     </div>
   </div>
 
-
-  <!-- CARDS COMPONENT         
-         Semantic HTML structure with accessibility features:
-         - External links open in new tab (target="_blank")
-         - Security: rel="noopener noreferrer" prevents vulnerabilities
-         - Performance: loading="lazy" defers off-screen images
-         - SEO: Descriptive alt text for all images
-    -->
-  <!-- ส่วนของการ์ดรูปภาพ (Cards) แสดงผลรูปสไตล์ Responsive แบบทันสมัย -->
-  <div class="dev-cards-wrapper">
-    <div class="dev-cards">
-      <!-- Card 1 -->
-      <div class="dev-card">
-        <a href="../img/other/service/container/Container.png" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/container/Container.png" alt="Container Yard" loading="lazy" />
-          <div class="dev-card-title">Container Yard</div>
-          <p class="dev-card-desc" data-i18n="service.container_card1">
-            ลานตู้สินค้าที่ได้มาตรฐาน
-          </p>
-        </a>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="dev-card">
-        <a href="../img/other/service/container/containerreceiving.png" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/container/containerreceiving.png" alt="Container Receiving" loading="lazy" />
-          <div class="dev-card-title">Receiving</div>
-          <p class="dev-card-desc" data-i18n="service.container_card2">
-            รับตู้คอนเทนเนอร์อย่างเป็นระบบ
-          </p>
-        </a>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="dev-card">
-        <a href="../img/other/service/container/containeryard.png" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/container/containeryard.png" alt="Container Yard" loading="lazy" />
-          <div class="dev-card-title">Yard Management</div>
-          <p class="dev-card-desc" data-i18n="service.container_card3">
-            จัดเรียงและบริหารพื้นที่ลานตู้
-          </p>
-        </a>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="dev-card">
-        <a href="../img/other/service/container/containerdispatch.png" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/container/containerdispatch.png" alt="Container Dispatch" loading="lazy" />
-          <div class="dev-card-title">Dispatch</div>
-          <p class="dev-card-desc" data-i18n="service.container_card4">
-            จัดส่งตู้คอนเทนเนอร์สู่ปลายทาง
-          </p>
-        </a>
-      </div>
-
-      <!-- Card 5 -->
-      <div class="dev-card">
-        <a href="../img/other/service/container/container2.png" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/container/container2.png" alt="Container Management" loading="lazy" />
-          <div class="dev-card-title">Management</div>
-          <p class="dev-card-desc" data-i18n="service.container_card5">
-            บริหารจัดการตู้คอนเทนเนอร์ครบวงจร
-          </p>
-        </a>
-      </div>
-    </div>
-  </div>
-
-
   <?php include '../component/footer.php'; ?>
-
 
 </body>
 

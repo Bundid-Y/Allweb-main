@@ -130,77 +130,7 @@
     </div>
   </div>
 
-
-  <!-- CARDS COMPONENT         
-         Semantic HTML structure with accessibility features:
-         - External links open in new tab (target="_blank")
-         - Security: rel="noopener noreferrer" prevents vulnerabilities
-         - Performance: loading="lazy" defers off-screen images
-         - SEO: Descriptive alt text for all images
-    -->
-  <!-- ส่วนของการ์ดรูปภาพ (Cards) แสดงผลรูปสไตล์ Responsive แบบทันสมัย -->
-  <div class="dev-cards-wrapper">
-    <div class="dev-cards">
-      <!-- Card 1 -->
-      <div class="dev-card">
-        <a href="../img/other/service/parking/truckparking2.png" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/parking/truckparking2.png" alt="Truck Parking" loading="lazy" />
-          <div class="dev-card-title">Truck Parking</div>
-          <p class="dev-card-desc" data-i18n="service.parking_card1">
-            พื้นที่จอดรถบรรทุกได้มาตรฐาน
-          </p>
-        </a>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="dev-card">
-        <a href="../img/other/service/parking/truckparking.jpeg" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/parking/truckparking.jpeg" alt="Truck Parking Area" loading="lazy" />
-          <div class="dev-card-title">Parking Area</div>
-          <p class="dev-card-desc" data-i18n="service.parking_card2">
-            รองรับรถบรรทุกระยะสั้นและระยะยาว
-          </p>
-        </a>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="dev-card">
-        <a href="../img/other/service/parking/fleetmanagement.png" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/parking/fleetmanagement.png" alt="Fleet Management" loading="lazy" />
-          <div class="dev-card-title">Fleet Mgmt</div>
-          <p class="dev-card-desc" data-i18n="service.parking_card3">
-            บริหารจัดการกองรถอย่างมีระบบ
-          </p>
-        </a>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="dev-card">
-        <a href="../img/other/service/parking/parkinglot.png" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/parking/parkinglot.png" alt="Parking Lot" loading="lazy" />
-          <div class="dev-card-title">Parking Lot</div>
-          <p class="dev-card-desc" data-i18n="service.parking_card4">
-            ลานจอดรถบรรทุกขนาดใหญ่
-          </p>
-        </a>
-      </div>
-
-      <!-- Card 5 -->
-      <div class="dev-card">
-        <a href="../img/other/service/parking/support_services.jpeg" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/parking/support_services.jpeg" alt="Support Services" loading="lazy" />
-          <div class="dev-card-title">Support</div>
-          <p class="dev-card-desc" data-i18n="service.parking_card5">
-            บริการสนับสนุนโลจิสติกส์ครบวงจร
-          </p>
-        </a>
-      </div>
-    </div>
-  </div>
-
-
   <?php include '../component/footer.php'; ?>
-
 
 </body>
 

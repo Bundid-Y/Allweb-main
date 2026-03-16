@@ -136,77 +136,7 @@
     </div>
   </div>
 
-
-  <!-- CARDS COMPONENT         
-         Semantic HTML structure with accessibility features:
-         - External links open in new tab (target="_blank")
-         - Security: rel="noopener noreferrer" prevents vulnerabilities
-         - Performance: loading="lazy" defers off-screen images
-         - SEO: Descriptive alt text for all images
-    -->
-  <!-- ส่วนของการ์ดรูปภาพ (Cards) แสดงผลรูปสไตล์ Responsive แบบทันสมัย -->
-  <div class="dev-cards-wrapper">
-    <div class="dev-cards">
-      <!-- Card 1 -->
-      <div class="dev-card">
-        <a href="../img/other/service/domestic/truck1.png" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/domestic/truck1.png" alt="Domestic Transport Truck" loading="lazy" />
-          <div class="dev-card-title">Domestic Transport</div>
-          <p class="dev-card-desc" data-i18n="service.domestic_card1">
-            บริการขนส่งสินค้าในประเทศครบวงจร
-          </p>
-        </a>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="dev-card">
-        <a href="../img/other/service/domestic/Inboundlogistics.png" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/domestic/Inboundlogistics.png" alt="Inbound Logistics" loading="lazy" />
-          <div class="dev-card-title">Inbound Logistics</div>
-          <p class="dev-card-desc" data-i18n="service.domestic_card2">
-            รับสินค้าเข้าคลังอย่างเป็นระบบ
-          </p>
-        </a>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="dev-card">
-        <a href="../img/other/service/domestic/distributioncenter.png" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/domestic/distributioncenter.png" alt="Distribution Center" loading="lazy" />
-          <div class="dev-card-title">Distribution Center</div>
-          <p class="dev-card-desc" data-i18n="service.domestic_card3">
-            ศูนย์กระจายสินค้าที่มีประสิทธิภาพ
-          </p>
-        </a>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="dev-card">
-        <a href="../img/other/service/domestic/outboundlogistics.png" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/domestic/outboundlogistics.png" alt="Outbound Logistics" loading="lazy" />
-          <div class="dev-card-title">Outbound Logistics</div>
-          <p class="dev-card-desc" data-i18n="service.domestic_card4">
-            จัดส่งสินค้าถึงปลายทางอย่างแม่นยำ
-          </p>
-        </a>
-      </div>
-
-      <!-- Card 5 -->
-      <div class="dev-card">
-        <a href="../img/other/service/domestic/Inboundlogistics2.png" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/domestic/Inboundlogistics2.png" alt="Logistics Planning" loading="lazy" />
-          <div class="dev-card-title">Route Planning</div>
-          <p class="dev-card-desc" data-i18n="service.domestic_card5">
-            วางแผนเส้นทางขนส่งอย่างมีประสิทธิภาพ
-          </p>
-        </a>
-      </div>
-    </div>
-  </div>
-
-
   <?php include '../component/footer.php'; ?>
-
 
 </body>
 

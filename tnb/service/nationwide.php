@@ -135,63 +135,7 @@
     </div>
   </div>
 
-
-  <!-- CARDS COMPONENT         
-         Semantic HTML structure with accessibility features:
-         - External links open in new tab (target="_blank")
-         - Security: rel="noopener noreferrer" prevents vulnerabilities
-         - Performance: loading="lazy" defers off-screen images
-         - SEO: Descriptive alt text for all images
-    -->
-  <!-- ส่วนของการ์ดรูปภาพ (Cards) แสดงผลรูปสไตล์ Responsive แบบทันสมัย -->
-  <div class="dev-cards-wrapper">
-    <div class="dev-cards">
-      <!-- Card 1 -->
-      <div class="dev-card">
-        <a href="../img/other/service/nationwide/domestic.png" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/nationwide/domestic.png" alt="Nationwide Distribution" loading="lazy" />
-          <div class="dev-card-title">Nationwide</div>
-          <p class="dev-card-desc" data-i18n="service.nationwide_card1">การจัดส่งทั่วประเทศ</p>
-        </a>
-      </div>
-      <!-- Card 2 -->
-      <div class="dev-card">
-        <a href="../img/other/service/nationwide/firstmiledelivery.png" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/nationwide/firstmiledelivery.png" alt="First Mile Delivery" loading="lazy" />
-          <div class="dev-card-title">First Mile</div>
-          <p class="dev-card-desc" data-i18n="service.nationwide_card2">รับสินค้าจากต้นทาง</p>
-        </a>
-      </div>
-      <!-- Card 3 -->
-      <div class="dev-card">
-        <a href="../img/other/service/nationwide/middlemiledistribution.png" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/nationwide/middlemiledistribution.png" alt="Middle Mile" loading="lazy" />
-          <div class="dev-card-title">Middle Mile</div>
-          <p class="dev-card-desc" data-i18n="service.nationwide_card3">กระจายสินค้าไปยังจุดพัก</p>
-        </a>
-      </div>
-      <!-- Card 4 -->
-      <div class="dev-card">
-        <a href="../img/other/service/nationwide/lastmiledelivery.png" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/nationwide/lastmiledelivery.png" alt="Last Mile Delivery" loading="lazy" />
-          <div class="dev-card-title">Last Mile</div>
-          <p class="dev-card-desc" data-i18n="service.nationwide_card4">ส่งถึงลูกค้าโดยตรง</p>
-        </a>
-      </div>
-      <!-- Card 5 -->
-      <div class="dev-card">
-        <a href="../img/other/service/nationwide/domestic.png" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/nationwide/domestic.png" alt="All Provinces" loading="lazy" />
-          <div class="dev-card-title">All Provinces</div>
-          <p class="dev-card-desc" data-i18n="service.nationwide_card5">ครอบคลุมทุกจังหวัดทั่วไทย</p>
-        </a>
-      </div>
-    </div>
-  </div>
-
-
   <?php include '../component/footer.php'; ?>
-
 
 </body>
 

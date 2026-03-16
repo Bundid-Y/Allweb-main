@@ -135,78 +135,7 @@
     </div>
   </div>
 
-
-  <!-- CARDS COMPONENT         
-         Semantic HTML structure with accessibility features:
-         - External links open in new tab (target="_blank")
-         - Security: rel="noopener noreferrer" prevents vulnerabilities
-         - Performance: loading="lazy" defers off-screen images
-         - SEO: Descriptive alt text for all images
-    -->
-  <!-- ส่วนของการ์ดรูปภาพ (Cards) แสดงผลรูปสไตล์ Responsive แบบทันสมัย -->
-  <div class="dev-cards-wrapper">
-    <div class="dev-cards">
-      <!-- Card 1 -->
-      <div class="dev-card">
-        <a href="../img/other/service/shuttle/shuttletruck.png" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/shuttle/shuttletruck.png" alt="Shuttle Truck" loading="lazy" />
-          <div class="dev-card-title">Shuttle Truck</div>
-          <p class="dev-card-desc" data-i18n="service.shuttle_card1">
-            รถรับ–ส่งสินค้าระหว่างคลังสินค้า
-          </p>
-        </a>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="dev-card">
-        <a href="../img/other/service/shuttle/suppliersfactories.jpeg" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/shuttle/suppliersfactories.jpeg" alt="Suppliers and Factories"
-            loading="lazy" />
-          <div class="dev-card-title">Suppliers</div>
-          <p class="dev-card-desc" data-i18n="service.shuttle_card2">
-            รับสินค้าจากซัพพลายเออร์และโรงงาน
-          </p>
-        </a>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="dev-card">
-        <a href="../img/other/service/shuttle/shuttletruckservice.jpeg" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/shuttle/shuttletruckservice.jpeg" alt="Shuttle Service" loading="lazy" />
-          <div class="dev-card-title">WH to WH</div>
-          <p class="dev-card-desc" data-i18n="service.shuttle_card3">
-            บริการรับ–ส่งสินค้าต่อเนื่อง
-          </p>
-        </a>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="dev-card">
-        <a href="../img/other/service/shuttle/destinationscustomers.jpeg" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/shuttle/destinationscustomers.jpeg" alt="Destinations" loading="lazy" />
-          <div class="dev-card-title">Destinations</div>
-          <p class="dev-card-desc" data-i18n="service.shuttle_card4">
-            ส่งสินค้าตรงถึงลูกค้าตามกำหนด
-          </p>
-        </a>
-      </div>
-
-      <!-- Card 5 -->
-      <div class="dev-card">
-        <a href="../img/other/service/shuttle/shuttletruck.png" target="_blank" rel="noopener noreferrer">
-          <img src="../img/other/service/shuttle/shuttletruck.png" alt="On-time Delivery" loading="lazy" />
-          <div class="dev-card-title">On-time</div>
-          <p class="dev-card-desc" data-i18n="service.shuttle_card5">
-            ควบคุมตารางการเดินรถอย่างตรงเวลา
-          </p>
-        </a>
-      </div>
-    </div>
-  </div>
-
-
   <?php include '../component/footer.php'; ?>
-
 
 </body>
 
