@@ -427,7 +427,7 @@ body {
 .details-title {
     width: 100%;
     font-size: 40px;
-    color: #1c1c1c;
+    color: #0D2D6B;
     font-weight: bold;
     text-align: left;
     padding-top: 0;
@@ -741,7 +741,7 @@ body {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
-    color: #1c1c1c;
+    color: #0D2D6B;
     margin-bottom: 40px;
     font-family: 'Sarabun', sans-serif;
 }
@@ -1482,7 +1482,7 @@ section.loop-images-quotation.vertical {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #111111;
+    color: #0D2D6B;
     text-align: center;
     font-weight: bold;
     margin-bottom: 10px;
@@ -1549,7 +1549,7 @@ section.loop-images-quotation.vertical {
     width: 100%;
     float: left;
     font-size: 32px;
-    color: #1c1c1c;
+    color: #0D2D6B;
     font-weight: bold;
     text-align: left;
     padding-top: 0px;
@@ -2548,7 +2548,7 @@ a {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #000000;
+    color: #0D2D6B;
     font-weight: bold;
     text-align: left;
     padding-top: 0;
@@ -2631,7 +2631,7 @@ a {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #000000;
+    color: #0D2D6B;
     font-weight: bold;
     text-align: left;
     padding-top: 0;
@@ -3275,7 +3275,7 @@ a {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #111111;
+    color: #0D2D6B;
     text-align: center;
     font-weight: bold;
     margin-bottom: 10px;
@@ -3345,7 +3345,7 @@ a {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #1c1c1c;
+    color: #0D2D6B;
     font-weight: bold;
     text-align: left; /* Text alignment left */
     padding-top: 0px;

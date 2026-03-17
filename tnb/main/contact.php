@@ -44,7 +44,7 @@
                     style="width: 100%; max-width: 900px; padding: 0 15px; box-sizing: border-box; text-align: center; margin-bottom: 60px;">
 
                     <h1 class="tech_subtitle"
-                        style="font-size: 40px; color: #1c1c1c; font-weight: bold; margin-bottom: 5px; position: relative; display: inline-block;">
+                        style="font-size: 40px; color: #0D2D6B; font-weight: bold; margin-bottom: 5px; position: relative; display: inline-block;">
                         <span data-i18n="contact.title">ติดต่อเรา</span>
                     </h1>
 
