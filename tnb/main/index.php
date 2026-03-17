@@ -398,42 +398,23 @@
             }
         }
     </style>
-    <div class="content-section section-partners" style="padding-top: 20px; padding-bottom: 0px;">
-        <!-- ส่วนหัวข้อ (Heading) (Black text for white background) -->
-        <div style="margin-bottom: 16px;">
-            <div style="text-align: left;">
-                <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none; color: #1c1c1c;"
+    <div class="content-section section-partners" style="padding-top: 80px; padding-bottom: 80px;">
+        <!-- ส่วนหัวข้อ (Heading) -->
+        <div style="margin-bottom: 24px;">
+            <div style="text-align: right;">
+                <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none; color: #ffffff; text-align: right;"
                     data-i18n="index.partners_title">
                     พันธมิตรที่ไว้วางใจเรา
                 </h1>
-                <p class="details-desc" style="margin-top: 2px; margin-bottom: 8px; line-height: 1.8; color: #1c1c1c;"
+                <p class="details-desc" style="margin-top: 5px; margin-bottom: 20px; line-height: 1.8; color: #ffffff; text-align: right;"
                     data-i18n="index.partners_sub">
                     ความไว้วางใจจากบริษัทชั้นนำ เป็นเครื่องยืนยันถึง คุณภาพและมาตรฐานการบริการระดับมืออาชีพของเรา
                 </p>
             </div>
         </div>
 
-        <!-- Overlay Text (White text for blue background area) -->
-        <div class="partners-overlay-text">
-            <div style="margin-bottom: 16px;">
-                <div style="text-align: left;">
-                    <h1 class="details-title"
-                        style="margin-top: 0; border: none; text-decoration: none; color: #ffffff;"
-                        data-i18n="index.partners_title">
-                        พันธมิตรที่ไว้วางใจเรา
-                    </h1>
-                    <p class="details-desc"
-                        style="margin-top: 2px; margin-bottom: 8px; line-height: 1.8; color: #ffffff;"
-                        data-i18n="index.partners_sub">
-                        ความไว้วางใจจากบริษัทชั้นนำ เป็นเครื่องยืนยันถึง คุณภาพและมาตรฐานการบริการระดับมืออาชีพของเรา
-                    </p>
-                </div>
-            </div>
-        </div>
-
         <!-- logo ลูกค้าเลื่อน loop slides -->
-        <section class="loop-images-quotation"
-            style="--bg: white; height: auto; min-height: 140px; padding-top: 10px; padding-bottom: 0px;">
+        <section class="loop-images-quotation" style="--bg: white; height: auto; min-height: 220px; padding: 20px 0;">
             <div class="login-track" style="--time: 60s; --total: 10;">
                 <div class="login-item" style="--i: 1;"><img src="../img/customer_logo/Mazda.png" alt="image"></div>
                 <div class="login-item" style="--i: 2;"><img src="../img/customer_logo/Alliance.png" alt="image"></div>
