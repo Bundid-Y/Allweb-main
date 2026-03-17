@@ -842,7 +842,7 @@ section.loop-images-quotation {
 
 .login-track {
 	--left: -150rem;
-	min-width: calc(5rem * var(--total));
+	min-width: calc(2.5rem * var(--total));
 	height: 10rem;
 	transform-style: preserve-3d;
 }
@@ -5203,7 +5203,7 @@ html {
     height: 100%;
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 0;
     background: #ffffff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: flex 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -5227,7 +5227,7 @@ html {
 
 .dev-card img {
     width: 100%;
-    height: 280px;
+    height: 350px;
     object-fit: cover;
     transition: transform 0.5s ease, filter 0.5s ease;
 }
@@ -5253,15 +5253,16 @@ html {
 
 .dev-card-title {
     position: absolute;
-    top: 20px;
+    bottom: 20px;
     left: 20px;
+    right: 20px;
     z-index: 3;
     color: #ffffff;
     font-size: 1.25rem;
     font-weight: 700;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(10px);
     transition: all 0.3s ease;
 }
 
@@ -5271,24 +5272,27 @@ html {
     left: 20px;
     right: 20px;
     bottom: -100%;
-    color: #ffffff;
+    color: #000000;
     font-size: 0.9rem;
     line-height: 1.4;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, opacity 0.3s ease;
     opacity: 0;
+    display: none;
 }
 
 /* Show title and description on hover */
 .dev-card:hover .dev-card-title {
     opacity: 1;
     transform: translateY(0);
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
 }
 
 .dev-card:hover .dev-card-desc {
     transform: translateY(0);
-    opacity: 1;
+    opacity: 0;
     bottom: 20px;
+    display: none;
 }
 
 /* Focus styles for accessibility */
@@ -5329,8 +5333,15 @@ html {
         transform: translateY(0);
     }
 
+    .dev-card-title {
+        bottom: 20px;
+        top: auto;
+        text-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
+    }
+
     .dev-card-desc {
         bottom: 20px;
+        display: none;
     }
 
     .dev-carousel-page {
