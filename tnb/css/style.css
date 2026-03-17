@@ -122,14 +122,14 @@ body {
 }
 
 .tnb-home-slider .tnb-panel__img-col {
-    flex-basis: 65%;              /* เพิ่มความกว้างกรอบรูปภาพ (จาก 60%) */
+    flex-basis: 65%;
     flex-shrink: 0;
-    position: relative;           /* กำหนดบริบทให้ img ไม่ล้นออกนอก */
-    height: 100%;                 /* ความสูงพอดีกับแผง panel */
-    align-self: stretch;          /* ยืดตามความสูงของ flex row */
-    overflow: hidden;             /* ป้องกันรูปล้นออกนอกกรอบเด็ดขาด */
-    background-color: #07183d;    /* พื้นหลังสีน้ำเงินเข้มเมื่อรูปมี letterbox */
-    box-shadow: 0px 20px 100.28px 8.72px rgba(0, 0, 0, 0.35);
+    position: relative;
+    height: 100%;
+    align-self: stretch;
+    overflow: hidden;
+    background-color: #07183d;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
 }
 
 .tnb-home-slider .tnb-panel__addr span:first-child {
@@ -338,15 +338,12 @@ body {
 .content-section {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto; /* จัดกึ่งกลางหน้าจอ */
-    padding-bottom: 90px;
-    padding-top: 60px;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin: 0 auto;
+    padding: 60px 30px;
     box-sizing: border-box;
     position: relative;
-    min-height: 760px; /* รองรับ .details-box::after clip-path 600px + padding ไม่ให้ถูกตัด */
-    overflow: hidden;  /* กัน .details-box::after ล้นออกนอก section */
+    min-height: 760px;
+    overflow: hidden;
 }
 
 /* กล่องเนื้อหาฝั่งซ้าย (รูป + เลข) */
@@ -433,7 +430,8 @@ body {
     color: #1c1c1c;
     font-weight: bold;
     text-align: left;
-    padding-top: 40px;
+    padding-top: 0;
+    margin-bottom: 10px;
     position: relative;
 }
 
@@ -446,8 +444,10 @@ body {
     width: 100%;
     font-size: 16px;
     color: #1c1c1c;
-    margin: 0px; 
-    padding-top: 20px;
+    margin: 0;
+    margin-top: 0;
+    padding-top: 0;
+    line-height: 1.6;
     text-align: left;
 }
 
@@ -1003,10 +1003,9 @@ section.loop-images-quotation.vertical {
 .content-section.section-partners {
     position: relative;
     overflow: hidden;
-    min-height: auto !important; /* Override default 760px — partners section has no decorative box so doesn't need it */
-    padding-top: 40px !important;
-    padding-bottom: 0 !important;
-    --deco-y: -100%; /* เริ่มต้นซ่อนอยู่ด้านบน, GSAP จะ animate เป็น 0 */
+    min-height: auto !important;
+    --deco-y: -100%;
+    contain: layout style;
 }
 .content-section.section-partners::after {
     content: '';
@@ -1020,7 +1019,6 @@ section.loop-images-quotation.vertical {
     height: 420px;
     left: 0;
     z-index: -1;
-    /* ตัดให้พอดีกับส่วนของโลโก้ที่ลดขนาดลงแล้ว */
     clip-path: polygon(100% 0, 35% 10%, 35% 90%, 100% 100%);
     transform: translateY(var(--deco-y));
     will-change: transform;
@@ -1062,7 +1060,12 @@ section.loop-images-quotation.vertical {
 /* --- Responsive: ปรับ clip-path สำหรับจอเล็ก --- */
 @media (max-width: 991px) {
     .content-section.section-partners::after {
-        display: none !important; /* Hide on mobile so black text is readable */
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        clip-path: none !important;
+        display: block !important;
     }
     .content-section.section-products::after {
         height: calc(100% + 50px);
@@ -1323,20 +1326,107 @@ section.loop-images-quotation.vertical {
     transform: scale(0.95); /* ทำให้ภาพหดลงเล็กน้อยขณะเปลี่ยนรูป */
 }
 
-/* RESPONSIVE EXPANDABLE CARDS         
-         A modern, accessible, and performant card component featuring:
-         
-         ✓ Smooth flex-based expand animation on hover
-         ✓ Grayscale to color image transition
-         ✓ Shimmer loading effect while images load
-         ✓ Slide-up description reveal
-         ✓ Full keyboard accessibility (focus-visible)
-         ✓ Mobile-first responsive design
-         ✓ Touch device support (:active states)
-         ✓ Reduced motion support for accessibility
-         ✓ Layered z-index architecture for proper stacking
-         ✓ Performance optimized with will-change hints
-*/
+/* =========================================
+   Truck Grid — 5-card vehicle types (index.php)
+   Desktop: 5 columns | Mobile: horizontal scroll
+   ========================================= */
+.truck-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.truck-grid__card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 3 / 4;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.truck-grid__card:hover {
+    transform: translate3d(0, -6px, 0);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+.truck-grid__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.truck-grid__card:hover .truck-grid__img {
+    transform: scale(1.08);
+}
+
+.truck-grid__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 16px 16px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.3) 60%, transparent 100%);
+    color: #fff;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.truck-grid__card:hover .truck-grid__overlay {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.truck-grid__name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 4px;
+    color: #fff;
+}
+
+.truck-grid__desc {
+    font-size: 0.85rem;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.4;
+}
+
+/* Tablet: 3 columns */
+@media (max-width: 991px) {
+    .truck-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+}
+
+/* Mobile: horizontal scroll */
+@media (max-width: 600px) {
+    .truck-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 12px;
+        padding-bottom: 8px;
+        -webkit-overflow-scrolling: touch;
+    }
+    .truck-grid__card {
+        flex: 0 0 70vw;
+        scroll-snap-align: start;
+        aspect-ratio: 3 / 4;
+    }
+    .truck-grid__overlay {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 /* =========================================
    9. Hero & Branches Section (จากไฟล์ branches.css)
@@ -4876,3 +4966,497 @@ html {
   100% { margin-left: 90%; opacity: 0; }
 }
 /* END: CodePen LTR TruckLoader Component */
+
+/* =========================================
+   Service Pages — Shared Layout Classes
+   Replaces heavy inline styles across all service/*.php pages
+   ========================================= */
+.svc-hero {
+    margin-top: 100px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
+.svc-hero .svc-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.svc-hero .svc-row--reverse {
+    flex-direction: row-reverse;
+}
+
+.svc-img-col {
+    flex: 1.2;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.svc-text-col {
+    flex: 1;
+    min-width: 300px;
+}
+
+.svc-text-col h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0D2D6B;
+    margin-bottom: 10px;
+}
+
+.svc-text-col h2 {
+    font-size: 24px;
+    color: #325662;
+    margin-top: 0;
+}
+
+.svc-divider {
+    width: 50px;
+    height: 4px;
+    background-color: #0D2D6B;
+    margin: 20px 0;
+}
+
+.svc-text-col .details-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Image wrapper with clip-path shape */
+.svc-image-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.svc-image-wrapper .svc-shape {
+    position: absolute;
+    width: 95%;
+    height: 110%;
+    background-color: #0D2D6B;
+    z-index: 1;
+}
+
+.svc-shape--left {
+    top: -5%;
+    left: -5%;
+    clip-path: polygon(0 5%, 85% 0, 85% 100%, 0 95%);
+}
+
+.svc-shape--right {
+    top: -5%;
+    right: -5%;
+    clip-path: polygon(100% 5%, 15% 0, 15% 100%, 100% 95%);
+}
+
+.svc-image-wrapper img {
+    display: block;
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Feature sections inside service pages */
+.svc-features {
+    padding-top: 20px;
+}
+
+.svc-features__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.svc-feature {
+    margin-bottom: 40px;
+}
+
+.svc-feature:last-child {
+    margin-bottom: 0;
+}
+
+.svc-feature__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+}
+
+.svc-feature__row--reverse {
+    flex-direction: row-reverse;
+}
+
+.svc-feature__text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.svc-feature__text h3 {
+    font-size: 28px;
+    color: #325662;
+    margin-bottom: 15px;
+}
+
+.svc-feature__text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.svc-feature__img {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.svc-feature__img-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.svc-feature__img-wrap .svc-shape {
+    position: absolute;
+    width: 85%;
+    height: 110%;
+    background-color: #0D2D6B;
+    z-index: 1;
+}
+
+.svc-feature__img-wrap .svc-shape--feat-right {
+    top: -5%;
+    right: -5%;
+    clip-path: polygon(100% 0, 15% 5%, 15% 95%, 100% 100%);
+}
+
+.svc-feature__img-wrap .svc-shape--feat-left {
+    top: -5%;
+    left: -5%;
+    clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+}
+
+.svc-feature__img-wrap img {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 767px) {
+    .svc-hero .svc-row,
+    .svc-hero .svc-row--reverse,
+    .svc-feature__row,
+    .svc-feature__row--reverse {
+        flex-direction: column;
+    }
+    .svc-image-wrapper img {
+        height: 300px;
+    }
+    .svc-text-col h1 {
+        font-size: 28px;
+    }
+    .svc-text-col h2 {
+        font-size: 20px;
+    }
+}
+
+/* =========================================
+   Truck Types Page — Card Grid (trucktypes.php)
+   ========================================= */
+.trucktypes-page {
+    margin-top: 40px;
+    padding: 60px 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trucktypes-page__heading {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.trucktypes-page__heading h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #0D2D6B;
+    margin-bottom: 10px;
+}
+
+.trucktypes-page__heading p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.trucktypes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.trucktypes-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trucktypes-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.trucktypes-card__img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.trucktypes-card__body {
+    padding: 20px;
+}
+
+.trucktypes-card__name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0D2D6B;
+    margin: 0 0 8px;
+}
+
+.trucktypes-card__desc {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.trucktypes-card__specs {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0;
+}
+
+.trucktypes-card__specs li {
+    font-size: 0.85rem;
+    color: #666;
+    padding: 4px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.trucktypes-card__specs li:last-child {
+    border-bottom: none;
+}
+
+.trucktypes-card__specs strong {
+    color: #333;
+}
+
+/* =========================================
+   Technology Page — Tab Layout (technology.php)
+   Redesign: single section with clickable tabs
+   ========================================= */
+.tech-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 32px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0;
+}
+
+.tech-tab-btn {
+    padding: 12px 24px;
+    border: none;
+    background: transparent;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.tech-tab-btn:hover {
+    color: #0D2D6B;
+}
+
+.tech-tab-btn.active {
+    color: #0D2D6B;
+    border-bottom-color: #0D2D6B;
+}
+
+.tech-tab-content {
+    display: none;
+}
+
+.tech-tab-content.active {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    animation: tabFadeIn 0.4s ease;
+}
+
+@keyframes tabFadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.tech-tab-content__img {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.tech-tab-content__img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.tech-tab-content__text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.tech-tab-content__text h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0D2D6B;
+    margin-bottom: 12px;
+}
+
+.tech-tab-content__text p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+}
+
+.tech-tab-content__text .tech_list {
+    list-style: none;
+    padding: 0;
+    margin-top: 16px;
+}
+
+.tech-tab-content__text .tech_list li {
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+    padding-left: 20px;
+    position: relative;
+}
+
+.tech-tab-content__text .tech_list li:before {
+    content: '\2022';
+    color: #0D2D6B;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: -1px;
+}
+
+.tech-tab-content__text .tech_list li strong {
+    color: #0D2D6B;
+    font-weight: 700;
+}
+
+@media (max-width: 767px) {
+    .tech-tabs {
+        gap: 4px;
+    }
+    .tech-tab-btn {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+    .tech-tab-content.active {
+        flex-direction: column;
+    }
+}
+
+/* =========================================
+   Branches Page — Card Grid (branches.php)
+   ========================================= */
+.branches-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.branch-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.branch-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.branch-card__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.branch-card__body {
+    padding: 20px;
+}
+
+.branch-card__name {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0D2D6B;
+    margin: 0 0 8px;
+}
+
+.branch-card__desc {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.branch-card__services {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.branch-card__services li {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    background: #f0f4ff;
+    color: #0D2D6B;
+    border-radius: 20px;
+    font-weight: 500;
+}

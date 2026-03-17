@@ -30,11 +30,74 @@
 <body>
     <?php include '../component/menubar.php'; ?>
 
-    <div class="contact_section layout_padding">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="contact_taital" data-i18n="trucktypes.title">Truck Types</h1>
+    <div class="trucktypes-page">
+        <div class="trucktypes-page__heading">
+            <h1 data-i18n="trucktypes.title">ประเภทรถบรรทุก</h1>
+            <p data-i18n="trucktypes.subtitle">รถบรรทุกหลากหลายประเภทของ TNB Logistics พร้อมรองรับทุกความต้องการด้านการขนส่ง</p>
+        </div>
+
+        <div class="trucktypes-grid">
+
+            <div class="trucktypes-card">
+                <img class="trucktypes-card__img" src="../img/alltruck/picipjumbo/picup1.png" alt="Pickup Jumbo">
+                <div class="trucktypes-card__body">
+                    <h3 class="trucktypes-card__name" data-i18n="trucktypes.pickup_name">Pickup Jumbo</h3>
+                    <p class="trucktypes-card__desc" data-i18n="trucktypes.pickup_desc">รถกระบะจัมโบ้สำหรับขนส่งสินค้าขนาดเล็กถึงกลาง เหมาะกับการจัดส่งในเขตเมืองและพื้นที่จำกัด</p>
+                    <ul class="trucktypes-card__specs">
+                        <li><strong>น้ำหนักบรรทุก:</strong> 1 – 2 ตัน</li>
+                        <li><strong>ขนาดตู้:</strong> 2.5 x 1.7 x 1.8 ม.</li>
+                    </ul>
+                </div>
             </div>
+
+            <div class="trucktypes-card">
+                <img class="trucktypes-card__img" src="../img/alltruck/6 wheel/6wheel1.png" alt="6 Wheel">
+                <div class="trucktypes-card__body">
+                    <h3 class="trucktypes-card__name" data-i18n="trucktypes.6wheel_name">6 Wheel</h3>
+                    <p class="trucktypes-card__desc" data-i18n="trucktypes.6wheel_desc">รถ 6 ล้อสำหรับขนส่งสินค้าทั่วไป รองรับน้ำหนักปานกลาง เหมาะสำหรับการกระจายสินค้าในประเทศ</p>
+                    <ul class="trucktypes-card__specs">
+                        <li><strong>น้ำหนักบรรทุก:</strong> 5 – 6 ตัน</li>
+                        <li><strong>ขนาดตู้:</strong> 6.0 x 2.3 x 2.3 ม.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="trucktypes-card">
+                <img class="trucktypes-card__img" src="../img/alltruck/6 wheel_trailer/6wheeltrailer_1.png" alt="6 Wheel Trailer">
+                <div class="trucktypes-card__body">
+                    <h3 class="trucktypes-card__name" data-i18n="trucktypes.6wheeltrailer_name">6 Wheel Trailer</h3>
+                    <p class="trucktypes-card__desc" data-i18n="trucktypes.6wheeltrailer_desc">รถ 6 ล้อพ่วงสำหรับสินค้าขนาดใหญ่ ให้ความยืดหยุ่นในการขนส่งด้วยพื้นที่บรรทุกที่เพิ่มขึ้น</p>
+                    <ul class="trucktypes-card__specs">
+                        <li><strong>น้ำหนักบรรทุก:</strong> 10 – 12 ตัน</li>
+                        <li><strong>ขนาดตู้:</strong> 7.5 x 2.3 x 2.3 ม.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="trucktypes-card">
+                <img class="trucktypes-card__img" src="../img/alltruck/10 wheel_trailer/10wheeltrailer_1.png" alt="10 Wheel Trailer">
+                <div class="trucktypes-card__body">
+                    <h3 class="trucktypes-card__name" data-i18n="trucktypes.10wheeltrailer_name">10 Wheel Trailer</h3>
+                    <p class="trucktypes-card__desc" data-i18n="trucktypes.10wheeltrailer_desc">รถ 10 ล้อพ่วงรองรับน้ำหนักบรรทุกสูง เหมาะสำหรับสินค้าอุตสาหกรรมและวัตถุดิบขนาดใหญ่</p>
+                    <ul class="trucktypes-card__specs">
+                        <li><strong>น้ำหนักบรรทุก:</strong> 15 – 20 ตัน</li>
+                        <li><strong>ขนาดตู้:</strong> 9.5 x 2.4 x 2.5 ม.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="trucktypes-card">
+                <img class="trucktypes-card__img" src="../img/alltruck/trailer/trailer3.png" alt="Trailer Head">
+                <div class="trucktypes-card__body">
+                    <h3 class="trucktypes-card__name" data-i18n="trucktypes.trailer_name">Trailer Head</h3>
+                    <p class="trucktypes-card__desc" data-i18n="trucktypes.trailer_desc">หัวลากสำหรับขนส่งตู้คอนเทนเนอร์ รองรับทั้งตู้ 20 ฟุตและ 40 ฟุต เชื่อมต่อท่าเรือกับคลังสินค้า</p>
+                    <ul class="trucktypes-card__specs">
+                        <li><strong>น้ำหนักบรรทุก:</strong> 20 – 30 ตัน</li>
+                        <li><strong>รองรับ:</strong> Container 20' / 40'</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </div>
     <?php include '../component/footer.php'; ?>

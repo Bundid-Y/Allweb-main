@@ -1,9 +1,21 @@
-// Koch Script JS
-console.log('Koch script loaded');
+// TNB Script JS — Performance Optimized
+console.log('TNB script loaded');
+
+// Utility: throttle function to limit event firing
+function _throttle(fn, wait) {
+    let last = 0;
+    return function(...args) {
+        const now = Date.now();
+        if (now - last >= wait) {
+            last = now;
+            fn.apply(this, args);
+        }
+    };
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     // ----------------------------------------------------
-    // TNB Home Slider — 6-Slide Carousel (Prev/Next/Dots/Autoplay/Keyboard)
+    // TNB Home Slider — 7-Slide Carousel (Prev/Next/Dots/Autoplay/Keyboard)
     // Guard: ทำงานเฉพาะหน้าที่มี #tnbHomeSlider เท่านั้น
     // ----------------------------------------------------
     const tnbSliderSection = document.getElementById('tnbHomeSlider');
@@ -15,82 +27,52 @@ document.addEventListener('DOMContentLoaded', () => {
         const TOTAL     = slides.length;
         let current     = 0;
         let autoTimer   = null;
-        const AUTO_MS   = 8000; // autoplay interval — 8 วินาที
+        const AUTO_MS   = 8000;
 
-        /** แสดง slide ตาม index, อัปเดต dots */
         function goTo(index) {
-            // wrap around
             index = ((index % TOTAL) + TOTAL) % TOTAL;
-
-            // ถอด active ออกจาก slide และ dot ปัจจุบัน
             slides[current].classList.remove('tnb-slide--active');
             dots[current].classList.remove('tnb-dot--active');
-
-            // ตั้งค่า current ใหม่
             current = index;
             slides[current].classList.add('tnb-slide--active');
             dots[current].classList.add('tnb-dot--active');
         }
 
-        /** เริ่ม autoplay */
         function startAuto() {
             stopAuto();
             autoTimer = setInterval(() => goTo(current + 1), AUTO_MS);
         }
 
-        /** หยุด autoplay */
         function stopAuto() {
             if (autoTimer) { clearInterval(autoTimer); autoTimer = null; }
         }
 
-        // Prev button
-        if (btnPrev) {
-            btnPrev.addEventListener('click', () => {
-                goTo(current - 1);
-                startAuto(); // reset timer เมื่อคลิก
-            });
-        }
+        if (btnPrev) btnPrev.addEventListener('click', () => { goTo(current - 1); startAuto(); });
+        if (btnNext) btnNext.addEventListener('click', () => { goTo(current + 1); startAuto(); });
 
-        // Next button
-        if (btnNext) {
-            btnNext.addEventListener('click', () => {
-                goTo(current + 1);
-                startAuto();
-            });
-        }
-
-        // Dots click
         dots.forEach(dot => {
             dot.addEventListener('click', () => {
-                const idx = parseInt(dot.getAttribute('data-index'), 10);
-                goTo(idx);
+                goTo(parseInt(dot.getAttribute('data-index'), 10));
                 startAuto();
             });
         });
 
-        // Keyboard: ← →
         document.addEventListener('keydown', (e) => {
-            if (!tnbSliderSection) return;
             if (e.key === 'ArrowLeft')  { goTo(current - 1); startAuto(); }
             if (e.key === 'ArrowRight') { goTo(current + 1); startAuto(); }
         });
 
-        // หยุด autoplay เมื่อ hover (UX)
         tnbSliderSection.addEventListener('mouseenter', stopAuto);
         tnbSliderSection.addEventListener('mouseleave', startAuto);
-
-        // เริ่ม autoplay
         startAuto();
     }
 
     // ----------------------------------------------------
     // ระบบ Infinite Loop สำหรับ Logo Carousel
-    // — Duplicate items เพื่อให้ loop ไม่มีช่องว่าง
     // ----------------------------------------------------
     const carouselTrack = document.querySelector('.carousel-track');
     if (carouselTrack) {
         const items = carouselTrack.querySelectorAll('.carousel-item');
-        // Clone ทุก item แล้วเพิ่มต่อท้าย เพื่อให้ CSS translateX(-50%) ทำงานต่อเนื่อง
         items.forEach(item => {
             const clone = item.cloneNode(true);
             carouselTrack.appendChild(clone);
@@ -98,120 +80,49 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ----------------------------------------------------
-    // GSAP & Lenis Animations for Quotation Section การ์ดสไลด์ logo ลูกค้า
+    // GSAP & Lenis — Optimized with shorter durations & ease-out
     // ----------------------------------------------------
     if (typeof gsap !== 'undefined') {
         gsap.registerPlugin(ScrollTrigger);
-        // Note: SplitText is a GSAP Club plugin, ensure it's loaded if used.
         
         const lenis = new Lenis();
         lenis.on('scroll', ScrollTrigger.update);
-        gsap.ticker.add((time) => {
-            lenis.raf(time * 1000);
-        });
+        gsap.ticker.add((time) => { lenis.raf(time * 1000); });
         gsap.ticker.lagSmoothing(0);
 
         if (document.querySelector('.image-motion')) {
-            gsap.set('.image-motion', {
-                transform: 'rotatex(90deg)',
-            });
-
+            gsap.set('.image-motion', { transform: 'rotatex(90deg)' });
             gsap.to('.image-motion', {
                 transform: 'rotatex(0deg)',
-                scrollTrigger: {
-                    trigger: '.section2',
-                    start: 'top bottom',
-                    end: 'bottom top',
-                    scrub: true,
-                    markers: false,
-                },
+                scrollTrigger: { trigger: '.section2', start: 'top bottom', end: 'bottom top', scrub: true },
             });
         }
 
         if (document.querySelector('.section3')) {
-            gsap.fromTo('.title', {
-                opacity: 0,
-                y: 50,
-            }, {
-                opacity: 1,
-                y: 0,
-                duration: 1,
-                ease: 'power3.out',
-                scrollTrigger: {
-                    trigger: '.section3',
-                    start: 'top 80%',
-                    end: 'bottom 20%',
-                    toggleActions: 'play none none reverse',
-                },
+            gsap.fromTo('.title', { opacity: 0, y: 30 }, {
+                opacity: 1, y: 0, duration: 0.5, ease: 'power2.out',
+                scrollTrigger: { trigger: '.section3', start: 'top 80%', toggleActions: 'play none none reverse' },
             });
-
-            gsap.fromTo('.subtitle', {
-                opacity: 0,
-                y: 30,
-            }, {
-                opacity: 1,
-                y: 0,
-                duration: 0.8,
-                delay: 0.3,
-                ease: 'power3.out',
-                scrollTrigger: {
-                    trigger: '.section3',
-                    start: 'top 80%',
-                    end: 'bottom 20%',
-                    toggleActions: 'play none none reverse',
-                },
+            gsap.fromTo('.subtitle', { opacity: 0, y: 20 }, {
+                opacity: 1, y: 0, duration: 0.5, delay: 0.15, ease: 'power2.out',
+                scrollTrigger: { trigger: '.section3', start: 'top 80%', toggleActions: 'play none none reverse' },
             });
         }
 
         if (document.querySelector('.text-content') && typeof SplitText !== 'undefined') {
-            const text = new SplitText('.text', {
-                types: 'lines',
-                mask: 'lines',
-            });
-
-            gsap.fromTo(text.lines, {
-                opacity: 0,
-                y: 30,
-            }, {
-                opacity: 1,
-                y: 0,
-                stagger: 0.2,
-                duration: 0.8,
-                ease: 'power3.out',
-                scrollTrigger: {
-                    trigger: '.text-content',
-                    start: 'top 80%',
-                    end: 'bottom 20%',
-                    toggleActions: 'play none none reverse',
-                },
+            const text = new SplitText('.text', { types: 'lines', mask: 'lines' });
+            gsap.fromTo(text.lines, { opacity: 0, y: 20 }, {
+                opacity: 1, y: 0, stagger: 0.1, duration: 0.5, ease: 'power2.out',
+                scrollTrigger: { trigger: '.text-content', start: 'top 80%', toggleActions: 'play none none reverse' },
             });
         }
 
         if (document.querySelector('.features')) {
-            gsap.fromTo('.feature', {
-                opacity: 0,
-                y: 50,
-                scale: 0.9,
-            }, {
-                opacity: 1,
-                y: 0,
-                scale: 1,
-                stagger: 0.2,
-                duration: 0.8,
-                ease: 'power3.out',
-                scrollTrigger: {
-                    trigger: '.features',
-                    start: 'top 80%',
-                    end: 'bottom 20%',
-                    toggleActions: 'play none none reverse',
-                },
+            gsap.fromTo('.feature', { opacity: 0, y: 30 }, {
+                opacity: 1, y: 0, stagger: 0.1, duration: 0.5, ease: 'power2.out',
+                scrollTrigger: { trigger: '.features', start: 'top 80%', toggleActions: 'play none none reverse' },
             });
         }
-
-        // ----------------------------------------------------
-        // GSAP Animations — สี่เหลี่ยมแดงตกแต่ง (Decorative Red Shapes)
-        // แต่ละ Section มีอนิเมชั่นไม่ซ้ำกัน
-        // ----------------------------------------------------
 
         // === 8.1 PARTNERS SECTION: สี่เหลี่ยมเลื่อนลงจากบน ===
         const partnersSec = document.querySelector('.section-partners');
@@ -220,14 +131,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 { '--deco-y': '-100%' },
                 {
                     '--deco-y': '0%',
-                    duration: 0.8,
+                    duration: 0.6,
                     ease: 'power2.out',
-                    scrollTrigger: {
-                        trigger: '.section-partners',
-                        start: 'top 85%',
-                        end: 'bottom 20%',
-                        toggleActions: 'play none none reverse',
-                    },
+                    scrollTrigger: { trigger: '.section-partners', start: 'top 85%', toggleActions: 'play none none reverse' },
                 }
             );
         }
@@ -239,31 +145,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 { '--deco-y': '-100%' },
                 {
                     '--deco-y': '0%',
-                    duration: 1.2,
+                    duration: 0.6,
                     ease: 'power2.out',
-                    scrollTrigger: {
-                        trigger: '.section-products',
-                        start: 'top 85%',
-                        end: 'bottom 20%',
-                        toggleActions: 'play none none reverse',
-                    },
+                    scrollTrigger: { trigger: '.section-products', start: 'top 85%', toggleActions: 'play none none reverse' },
                 }
             );
         }
-
-        // Removed legacy 8.3 SLIDER SECTION GSAP logic
     }
 });
 
 // ----------------------------------------------------
 // ระบบฟีเจอร์เลื่อนหน้าจอ (Scrolling Feature Logic for development.php)
+// Uses IntersectionObserver instead of continuous scroll for performance
 // ----------------------------------------------------
 if (typeof $ !== 'undefined') {
     $(document).ready(function() {
-        // ทำงานเมื่อมีคลาส .development-scroll-container อยู่ในหน้าเท่านั้น
         if ($('.development-scroll-container').length === 0) return;
 
-    // กำหนด URL ของรูปภาพให้ตรงกับ ID ของแต่ละส่วนข้อความ
     const images = {
         'dev-section1': 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/0st9yhngses-benjamin-child.jpg',
         'dev-section2': 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/2fgvaqx-fxs-oskar-krawczyk.jpg',
@@ -274,52 +172,58 @@ if (typeof $ !== 'undefined') {
     const $stickyImg = $('#sticky-dev-img');
     let currentSection = '';
 
-    // ฟังก์ชันทำงานเวลาเลื่อนหน้าจอ
-    function onScroll() {
-        // หาจุดกึ่งกลางของหน้าจอเพื่อให้เปลี่ยนรูปเมื่ออ่านถึงตรงกลาง
-        var scrollPosition = $(window).scrollTop() + $(window).height() / 2;
-
-        $sections.each(function() {
-            var $this = $(this);
-            var sectionTop = $this.offset().top;
-            var sectionBottom = sectionTop + $this.outerHeight();
-
-            // ตรวจสอบว่าเลื่อนมาจุดที่แสดงส่วนข้อความนี้หรือยัง
-            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-                var id = $this.attr('id');
-                
-                // เพิ่มคลาส active ให้แสดงข้อความให้ชัดเจนขึ้น
-                $sections.removeClass('active-text');
-                $this.addClass('active-text');
-
-                // ถ้าเลื่อนเปลี่ยนส่วนข้อความ ให้แสดงอนิเมชั่นเปลี่ยนรูป
-                if (currentSection !== id) {
-                    currentSection = id;
-                    
-                    // เฟดภาพออก (เพิ่ม class fade-img)
-                    $stickyImg.addClass('fade-img');
-                    
-                    // หลังจาก 400ms ให้เปลี่ยนรูปและเอาคลาส fade-img ออกเพื่อแสดงรูปใหม่
-                    setTimeout(function() {
-                        // ดึงรูปภาพจากแท็ก img ที่ซ่อนอยู่ใน HTML ก่อน (ถ้ามี)
-                        var dynamicImgUrl = $('#' + id).find('.section-dynamic-image').attr('src');
-                        var finalImgUrl = dynamicImgUrl ? dynamicImgUrl : images[id];
-                        
-                        if (finalImgUrl) {
-                            $stickyImg.attr('src', finalImgUrl);
-                        }
-                        $stickyImg.removeClass('fade-img');
-                    }, 400); // 400ms ให้ตรงกับ transition ใน CSS
+    // Use IntersectionObserver for better performance
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && entry.intersectionRatio > 0.3) {
+                    const el = $(entry.target);
+                    const id = el.attr('id');
+                    $sections.removeClass('active-text');
+                    el.addClass('active-text');
+                    if (currentSection !== id) {
+                        currentSection = id;
+                        $stickyImg.addClass('fade-img');
+                        setTimeout(function() {
+                            var dynamicImgUrl = $('#' + id).find('.section-dynamic-image').attr('src');
+                            var finalImgUrl = dynamicImgUrl ? dynamicImgUrl : images[id];
+                            if (finalImgUrl) $stickyImg.attr('src', finalImgUrl);
+                            $stickyImg.removeClass('fade-img');
+                        }, 300);
+                    }
                 }
-            }
-        });
+            });
+        }, { threshold: [0.3, 0.5], rootMargin: '-20% 0px -20% 0px' });
+
+        $sections.each(function() { observer.observe(this); });
+    } else {
+        // Fallback with throttled scroll
+        const onScroll = _throttle(function() {
+            var scrollPosition = $(window).scrollTop() + $(window).height() / 2;
+            $sections.each(function() {
+                var $this = $(this);
+                var sectionTop = $this.offset().top;
+                var sectionBottom = sectionTop + $this.outerHeight();
+                if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                    var id = $this.attr('id');
+                    $sections.removeClass('active-text');
+                    $this.addClass('active-text');
+                    if (currentSection !== id) {
+                        currentSection = id;
+                        $stickyImg.addClass('fade-img');
+                        setTimeout(function() {
+                            var dynamicImgUrl = $('#' + id).find('.section-dynamic-image').attr('src');
+                            var finalImgUrl = dynamicImgUrl ? dynamicImgUrl : images[id];
+                            if (finalImgUrl) $stickyImg.attr('src', finalImgUrl);
+                            $stickyImg.removeClass('fade-img');
+                        }, 300);
+                    }
+                }
+            });
+        }, 100);
+        $(window).on('scroll resize', onScroll);
+        setTimeout(onScroll, 100);
     }
-
-    // เรียกทำงานตอน scroll และ resize
-    $(window).on('scroll resize', onScroll);
-
-    // ทำงานครั้งแรกเพื่อตั้งค่าเริ่มต้น
-    setTimeout(onScroll, 100);
 });
 }
 
@@ -408,24 +312,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // =========================================
-// Login Page Specific Styles & Script
+// Login Page Specific Script
 // =========================================
+document.addEventListener('DOMContentLoaded', () => {
+    const sign_in_btn = document.querySelector("#sign-in-btn");
+    const sign_up_btn = document.querySelector("#sign-up-btn");
+    const login_container = document.querySelector(".login-container");
 
-    document.addEventListener('DOMContentLoaded', () => {
-      const sign_in_btn = document.querySelector("#sign-in-btn");
-      const sign_up_btn = document.querySelector("#sign-up-btn");
-      const login_container = document.querySelector(".login-container");
-
-      if (sign_up_btn && sign_in_btn && login_container) {
-        sign_up_btn.addEventListener("click", () => {
-          login_container.classList.add("sign-up-mode");
-        });
-
-        sign_in_btn.addEventListener("click", () => {
-          login_container.classList.remove("sign-up-mode");
-        });
-      }
-    });
+    if (sign_up_btn && sign_in_btn && login_container) {
+        sign_up_btn.addEventListener("click", () => login_container.classList.add("sign-up-mode"));
+        sign_in_btn.addEventListener("click", () => login_container.classList.remove("sign-up-mode"));
+    }
+});
 
 // =========================================
 // Product Page Specific Script (Moved from product.php)
@@ -511,7 +409,6 @@ document.addEventListener('DOMContentLoaded', () => {
 // Menubar Component (component/menubar.php)
 // =========================================
 document.addEventListener('DOMContentLoaded', () => {
-    // Guard: ทำงานเฉพาะหน้าที่มี menubar เท่านั้น
     if (!document.getElementById('header')) return;
 
     const header = document.getElementById('header');
@@ -521,9 +418,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const dropdownItems = document.querySelectorAll('.dropdown-item');
     const navLinks = document.querySelectorAll('.header .nav-list .nav-item > a.nav-link');
 
-    /* ===== Scroll Effect: Header compact เมื่อ scroll ลง ===== */
+    /* ===== Scroll Effect: Header compact — throttled for performance ===== */
     let lastScroll = 0;
-    window.addEventListener('scroll', () => {
+    window.addEventListener('scroll', _throttle(() => {
         const currentScroll = window.pageYOffset;
         if (currentScroll > 40) {
             header.classList.add('scrolled');
@@ -531,7 +428,7 @@ document.addEventListener('DOMContentLoaded', () => {
             header.classList.remove('scrolled');
         }
         lastScroll = currentScroll;
-    }, { passive: true });
+    }, 50), { passive: true });
 
     /* ===== ฟังก์ชันเปิดเมนู ===== */
     function openMenu() {

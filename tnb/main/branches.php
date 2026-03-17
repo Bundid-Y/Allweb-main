@@ -31,142 +31,63 @@
 <body>
     <?php include '../component/menubar.php'; ?>
 
-    <!-- Hero & Branches Section -->
-    <div class="branches_section layout_padding">
-        <div class="container">
-            <h1 class="branches_title">สาขาของเรา</h1>
-            <p class="branches_desc">
-                เครือข่ายจุดบริการยุทธศาสตร์ครอบคลุมพื้นที่สำคัญทางอุตสาหกรรมเพื่อรองรับความต้องการของลูกค้าอย่างมีประสิทธิภาพ</p>
+    <div class="trucktypes-page">
+        <div class="trucktypes-page__heading">
+            <h1 style="color: #0D2D6B;" data-i18n="branches.title">สาขาของเรา</h1>
+            <p data-i18n="branches.subtitle">เครือข่ายจุดบริการยุทธศาสตร์ครอบคลุมพื้นที่สำคัญทางอุตสาหกรรมเพื่อรองรับความต้องการของลูกค้าอย่างมีประสิทธิภาพ</p>
+        </div>
 
-            <!-- Branch 1: บางแสน (Image Left, Text Right) -->
-            <div class="branch_block_1">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="branch_img_container">
-                            <div class="branch_image">
-                                <!-- TODO: เพิ่มรูปภาพสาขาบางแสน -->
-                                <img src="../img/other/branches/bangsaen.jpg" alt="สาขาบางแสน">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <h2 class="branch_subtitle">สาขาบางแสน (สำนักงานใหญ่)</h2>
-                        <p class="branch_text">
-                            ศูนย์กลางการบริหารจัดการการขนส่งภายในประเทศ (Domestic Transportation) เป็นสำนักงานใหญ่ที่รวมศูนย์บัญชาการและประสานงานทุกสาขา</p>
-                        <ul class="branch_list">
-                            <li><strong>บริการหลัก:</strong>
-                                ศูนย์กลางการบริหารจัดการการขนส่งภายในประเทศ ควบคุมและประสานงานทุกสาขาทั่วประเทศ
-                            </li>
-                            <li><strong>จุดเด่น:</strong>
-                                เป็นสำนักงานใหญ่ที่รวมศูนย์บัญชาการ มีทีมงานผู้เชี่ยวชาญดูแลลูกค้าทุกระดับ
-                            </li>
-                            <li><strong>ความสามารถ:</strong>
-                                รองรับการประสานงานขนส่งข้ามจังหวัด บริหารจัดการฟลีทรถขนาดใหญ่ และให้บริการลูกค้ารายใหญ่
-                            </li>
-                            <li><strong>ตำแหน่งยุทธศาสตร์:</strong>
-                                ตั้งอยู่ในพื้นที่ใกล้กับเขตอุตสาหกรรมชลบุรี อำนวยความสะดวกในการเข้าถึงลูกค้าในภาคตะวันออก
-                            </li>
-                        </ul>
-                    </div>
+        <div class="branches-grid">
+
+            <div class="branch-card">
+                <img class="branch-card__img" src="../img/other/branches/bangsaen.jpg" alt="สาขาบางแสน">
+                <div class="branch-card__body">
+                    <h3 class="branch-card__name" data-i18n="branches.bangsaen_name">สาขาบางแสน (สำนักงานใหญ่)</h3>
+                    <p class="branch-card__desc" data-i18n="branches.bangsaen_desc">ศูนย์กลางการบริหารจัดการการขนส่งภายในประเทศ เป็นสำนักงานใหญ่ที่รวมศูนย์บัญชาการและประสานงานทุกสาขา</p>
+                    <ul class="branch-card__services">
+                        <li>Domestic Transport</li>
+                        <li>Fleet Management</li>
+                        <li>HQ Operations</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- Branch 2: แหลมฉบัง (Text Left, Image Right) -->
-            <div class="branch_block_2">
-                <div class="row mobile-reverse-row">
-                    <div class="col-md-6">
-                        <h2 class="branch_subtitle">สาขาแหลมฉบัง</h2>
-                        <p class="branch_text">
-                            ให้บริการจัดจองตู้คอนเทนเนอร์และพื้นที่ฝากวางตู้ (Container Drop Yard) เพื่อรองรับการขนส่งสินค้านำเข้า-ส่งออก</p>
-                        <ul class="branch_list">
-                            <li><strong>บริการหลัก:</strong>
-                                จัดจองตู้คอนเทนเนอร์และพื้นที่ฝากวางตู้ (Container Drop Yard) ครบวงจร
-                            </li>
-                            <li><strong>จุดเด่น:</strong>
-                                ตั้งอยู่ใกล้ท่าเรือแหลมฉบัง ซึ่งเป็นท่าเรือสำคัญของประเทศไทย
-                            </li>
-                            <li><strong>ความสามารถ:</strong>
-                                รองรับการจัดการตู้คอนเทนเนอร์ขนาดใหญ่ มีพื้นที่กว้างขวางสำหรับจอดรถและตู้คอนเทนเนอร์
-                            </li>
-                            <li><strong>การเชื่อมต่อ:</strong>
-                                เชื่อมต่อกับท่าเรือแหลมฉบังโดยตรง ช่วยลดเวลาในการขนส่งและเพิ่มประสิทธิภาพการทำงาน
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="branch_img_container_right">
-                            <div class="branch_image">
-                                <!-- TODO: เพิ่มรูปภาพสาขาแหลมฉบัง -->
-                                <img src="../img/other/branches/laemchabang.jpg" alt="สาขาแหลมฉบัง">
-                            </div>
-                        </div>
-                    </div>
+            <div class="branch-card">
+                <img class="branch-card__img" src="../img/other/branches/laemchabang.jpg" alt="สาขาแหลมฉบัง">
+                <div class="branch-card__body">
+                    <h3 class="branch-card__name" data-i18n="branches.laemchabang_name">สาขาแหลมฉบัง</h3>
+                    <p class="branch-card__desc" data-i18n="branches.laemchabang_desc">ให้บริการจัดจองตู้คอนเทนเนอร์และพื้นที่ฝากวางตู้ (Container Drop Yard) เชื่อมต่อท่าเรือแหลมฉบังโดยตรง</p>
+                    <ul class="branch-card__services">
+                        <li>Container Yard</li>
+                        <li>Import/Export</li>
+                        <li>Port Linkage</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- Branch 3: บางกะดี (Image Left, Text Right) -->
-            <div class="branch_block_1">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="branch_img_container">
-                            <div class="branch_image">
-                                <!-- TODO: เพิ่มรูปภาพสาขาบางกะดี -->
-                                <img src="../img/other/branches/bangkapi.jpg" alt="สาขาบางกะดี">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <h2 class="branch_subtitle">สาขาบางกะดี</h2>
-                        <p class="branch_text">
-                            เชี่ยวชาญการให้บริการรถ Shuttle รับ-ส่งสินค้าระหว่างคลังสินค้า (WH <-> WH) และการจัดการตู้คอนเทนเนอร์</p>
-                        <ul class="branch_list">
-                            <li><strong>บริการหลัก:</strong>
-                                บริการรถ Shuttle รับ-ส่งสินค้าระหว่างคลังสินค้า (WH <-> WH) และการจัดการตู้คอนเทนเนอร์
-                            </li>
-                            <li><strong>จุดเด่น:</strong>
-                                เชี่ยวชาญด้านการขนส่งระหว่างคลังสินค้า มีประสบการณ์สูงในการจัดการ Supply Chain
-                            </li>
-                            <li><strong>ความสามารถ:</strong>
-                                มีรถ Shuttle พร้อมให้บริการ สามารถรองรับงานขนส่งขนาดใหญ่และงานประจำ
-                            </li>
-                            <li><strong>ตำแหน่งยุทธศาสตร์:</strong>
-                                ตั้งอยู่ในพื้นที่อุตสาหกรรมสำคัญ ใกล้กับโรงงานลูกค้าและคลังสินค้าต่างๆ
-                            </li>
-                        </ul>
-                    </div>
+            <div class="branch-card">
+                <img class="branch-card__img" src="../img/other/branches/bangkapi.jpg" alt="สาขาบางกะดี">
+                <div class="branch-card__body">
+                    <h3 class="branch-card__name" data-i18n="branches.bangkadi_name">สาขาบางกะดี</h3>
+                    <p class="branch-card__desc" data-i18n="branches.bangkadi_desc">เชี่ยวชาญการให้บริการรถ Shuttle รับ-ส่งสินค้าระหว่างคลังสินค้าและการจัดการตู้คอนเทนเนอร์</p>
+                    <ul class="branch-card__services">
+                        <li>Shuttle Service</li>
+                        <li>WH to WH</li>
+                        <li>Container Mgmt</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- Branch 4: ลาดกระบัง (Text Left, Image Right) -->
-            <div class="branch_block_2">
-                <div class="row mobile-reverse-row">
-                    <div class="col-md-6">
-                        <h2 class="branch_subtitle">สาขาลาดกระบัง</h2>
-                        <p class="branch_text">
-                            ศูนย์กระจายสินค้าและลานจอดรถขนาด 9,000 ตร.ม. ตั้งอยู่ใกล้กับ ICD เพื่อความรวดเร็วในการขนส่ง</p>
-                        <ul class="branch_list">
-                            <li><strong>บริการหลัก:</strong>
-                                ศูนย์กระจายสินค้าและลานจอดรถขนาดใหญ่ รองรับการขนส่งและจัดเก็บสินค้า
-                            </li>
-                            <li><strong>จุดเด่น:</strong>
-                                พื้นที่ขนาด 9,000 ตร.ม. ตั้งอยู่ใกล้กับ ICD (Inland Container Depot)
-                            </li>
-                            <li><strong>ความสามารถ:</strong>
-                                รองรับการจอดรถขนาดใหญ่จำนวนมาก มีพื้นที่สำหรับจัดเก็บและกระจายสินค้า
-                            </li>
-                            <li><strong>การเชื่อมต่อ:</strong>
-                                ใกล้กับ ICD ช่วยเพิ่มความรวดเร็วในการขนส่งและลดต้นทุนการขนส่งสินค้า
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="branch_img_container_right">
-                            <div class="branch_image">
-                                <!-- TODO: เพิ่มรูปภาพสาขาลาดกระบัง -->
-                                <img src="../img/other/branches/latkrabang.jpg" alt="สาขาลาดกระบัง">
-                            </div>
-                        </div>
-                    </div>
+            <div class="branch-card">
+                <img class="branch-card__img" src="../img/other/branches/latkrabang.jpg" alt="สาขาลาดกระบัง">
+                <div class="branch-card__body">
+                    <h3 class="branch-card__name" data-i18n="branches.latkrabang_name">สาขาลาดกระบัง</h3>
+                    <p class="branch-card__desc" data-i18n="branches.latkrabang_desc">ศูนย์กระจายสินค้าและลานจอดรถขนาด 9,000 ตร.ม. ตั้งอยู่ใกล้กับ ICD เพื่อความรวดเร็วในการขนส่ง</p>
+                    <ul class="branch-card__services">
+                        <li>Distribution Center</li>
+                        <li>9,000 sqm Yard</li>
+                        <li>Near ICD</li>
+                    </ul>
                 </div>
             </div>
 

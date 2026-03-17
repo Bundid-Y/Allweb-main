@@ -210,10 +210,10 @@
 
             <!-- คอลัมน์ขวา: เนื้อหา -->
             <div style="flex: 1; min-width: 300px;">
-                <h1 class="details-title" style="padding-top: 0; margin-bottom: 5px;" data-i18n="index.about_title">
+                <h1 class="details-title" style="margin-bottom: 10px;" data-i18n="index.about_title">
                     เกี่ยวกับเรา</h1>
 
-                <p class="details-desc" style="padding-top: 10px; font-size: 18px; line-height: 1.8;">
+                <p class="details-desc" style="margin-top: 0; font-size: 18px; line-height: 1.8;">
                     <span data-i18n="index.about_p1"><strong>TNB Logistics</strong> เป็นผู้ให้บริการด้าน<strong>โลจิสติกส์และการขนส่งครบวงจร</strong>
                         ให้บริการ<strong>ขนส่งสินค้าภายในประเทศ</strong> <strong>การขนส่งตู้คอนเทนเนอร์</strong> และ<strong>งานชัตเทิลระหว่างคลังสินค้า</strong> (WH to WH)
                         บริษัทมีสำนักงานและสาขาใน<strong>พื้นที่ยุทธศาสตร์สำคัญ</strong> เช่น <strong>บางแสน</strong> <strong>แหลมฉบัง</strong> <strong>บางกะดี</strong> และ<strong>ลาดกระบัง</strong>
@@ -221,7 +221,7 @@
                 </p>
 
                 <!-- ย่อหน้าที่สอง -->
-                <p class="details-desc" style="padding-top: 20px; font-size: 18px; line-height: 1.8;">
+                <p class="details-desc" style="margin-top: 16px; font-size: 18px; line-height: 1.8;">
                     <span data-i18n="index.about_p2">TNB มุ่งเน้น<strong>มาตรฐานการบริการ</strong> <strong>ความปลอดภัย</strong>
                         และ<strong>ความตรงต่อเวลา</strong>ในทุกกระบวนการขนส่ง
                         พร้อมนำ<strong>เทคโนโลยีระบบบริหารจัดการการขนส่ง</strong>มาใช้เพื่อเพิ่ม<strong>ความโปร่งใส</strong>และ<strong>ประสิทธิภาพในการทำงาน</strong>
@@ -250,11 +250,11 @@
     <div class="tnb-services-section content-section layout_padding">
         <!-- ส่วนหัวข้อ (Heading) -->
         <div class="tnb-services-section__heading">
-            <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none;"
+            <h1 class="details-title" style="margin-top: 0; margin-bottom: 10px; border: none; text-decoration: none;"
                 data-i18n="index.services_title">
                 บริการของเรา
             </h1>
-            <p class="details-desc" style="margin-top: 2px; margin-bottom: 40px; line-height: 0.2;"
+            <p class="details-desc" style="margin-top: 0; margin-bottom: 40px; line-height: 1.6;"
                 data-i18n="index.services_sub">
                 บริการบรรจุภัณฑ์และการจัดการลอจิสติกส์แบบครบวงจร ที่ตอบสนองทุกความต้องการของธุรกิจด้วยระบบที่ทันสมัย
             </p>
@@ -402,11 +402,11 @@
         <!-- ส่วนหัวข้อ (Heading) -->
         <div style="margin-bottom: 24px;">
             <div style="text-align: right;">
-                <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none; color: #ffffff; text-align: right;"
+                <h1 class="details-title" style="margin-top: 0; margin-bottom: 10px; border: none; text-decoration: none; color: #ffffff; text-align: right;"
                     data-i18n="index.partners_title">
                     พันธมิตรที่ไว้วางใจเรา
                 </h1>
-                <p class="details-desc" style="margin-top: 5px; margin-bottom: 20px; line-height: 1.8; color: #ffffff; text-align: right;"
+                <p class="details-desc" style="margin-top: 0; margin-bottom: 20px; line-height: 1.6; color: #ffffff; text-align: right;"
                     data-i18n="index.partners_sub">
                     ความไว้วางใจจากบริษัทชั้นนำ เป็นเครื่องยืนยันถึง คุณภาพและมาตรฐานการบริการระดับมืออาชีพของเรา
                 </p>
@@ -444,105 +444,52 @@
         <!-- ส่วนหัวข้อ (Heading) -->
         <div style="margin-bottom: 24px;">
             <div style="text-align: left;">
-                <h1 class="details-title" style="margin-top: 0; border: none; text-decoration: none; color: #ffffff;"
+                <h1 class="details-title" style="margin-top: 0; margin-bottom: 10px; border: none; text-decoration: none; color: #ffffff;"
                     data-i18n="index.products_title">
                     ประเภทรถ
                 </h1>
-                <p class="details-desc" style="margin-top: 2px; margin-bottom: 12px; color: #ffffff; line-height: 1.8;"
+                <p class="details-desc" style="margin-top: 0; margin-bottom: 12px; color: #ffffff; line-height: 1.6;"
                     data-i18n="index.products_sub">
                     บริการรถบรรทุกหลากหลายประเภท เพื่อรองรับทุกความต้องการด้านการขนส่งและโลจิสติกส์ของคุณ
                 </p>
             </div>
         </div>
 
-        <div class="Block_Expanding_Cards">
-            <div class="card_holder_sB">
-                <span class="US_City_sB _active" data-card-index="0">
-                    <h1 class="card_h1 _active">Picup<br>Jumbo</h1>
-                    <div class="card_shade _off"></div>
-                    <div class="card_content _on">
-                        <p class="card_dscrptn">
-                            <a class="card_photo_cred"
-                                href="https://unsplash.com/photos/Nyvq2juw4_o?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
-                                target="_blank"></a>
-                        </p>
-                    </div>
-                    <div class="card_BG _active">
-                        <img class="Img_H100" src="../img/alltruck/picipjumbo/picup1.png" alt="picupJumbo" />
-                    </div>
-                </span>
-                <span class="US_City_sB" data-card-index="1">
-                    <h1 class="card_h1">6 Wheel</h1>
-                    <div class="card_shade"></div>
-                    <div class="card_content">
-                        <p class="card_dscrptn">
-                            <a class="card_photo_cred"
-                                href="https://unsplash.com/photos/Nyvq2juw4_o?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
-                                target="_blank"></a>
-                        </p>
-                    </div>
-                    <div class="card_BG">
-                        <img class="Img_H100" src="../img/alltruck/6 wheel/6wheel1.png" alt="6 wheel" />
-                    </div>
-                </span>
-                <span class="US_City_sB" data-card-index="2">
-                    <h1 class="card_h1">6 Wheel<br>Trailer</h1>
-                    <div class="card_shade"></div>
-                    <div class="card_content">
-                        <p class="card_dscrptn">
-                            <a class="card_photo_cred"
-                                href="https://unsplash.com/photos/cHRDevKFDBw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
-                                target="_blank"></a>
-                        </p>
-                    </div>
-                    <div class="card_BG">
-                        <img class="Img_H100" src="../img/alltruck/6 wheel_trailer/6wheeltrailer_1.png"
-                            alt="6 wheel_trailer" />
-                    </div>
-                </span>
-                <span class="US_City_sB" data-card-index="3">
-                    <h1 class="card_h1">10 Wheel<br>Trailer</h1>
-                    <div class="card_shade"></div>
-                    <div class="card_content">
-                        <p class="card_dscrptn">
-                            <a class="card_photo_cred"
-                                href="https://unsplash.com/photos/tUoA7sCrRto?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
-                                target="_blank"></a>
-                        </p>
-                    </div>
-                    <div class="card_BG">
-                        <img class="Img_H100" src="../img/alltruck/10 wheel_trailer/10wheeltrailer_1.png"
-                            alt="10wheeltrailer" />
-                    </div>
-                </span>
-                <span class="US_City_sB" data-card-index="4">
-                    <h1 class="card_h1">Trailer</h1>
-                    <div class="card_shade"></div>
-                    <div class="card_content">
-                        <p class="card_dscrptn">
-                            <a class="card_photo_cred"
-                                href="https://unsplash.com/photos/KDS5lCrj_ew?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
-                                target="_blank"></a>
-                        </p>
-                    </div>
-                    <div class="card_BG">
-                        <img class="Img_H100" src="../img/alltruck/trailer/trailer3.png" alt="trailer" />
-                    </div>
-                </span>
-                <span class="US_City_sB" data-card-index="5">
-                    <h1 class="card_h1">All Truck</h1>
-                    <div class="card_shade"></div>
-                    <div class="card_content">
-                        <p class="card_dscrptn">
-                            <a class="card_photo_cred"
-                                href="https://unsplash.com/photos/gZXx8lKAb7Y?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
-                                target="_blank"></a>
-                        </p>
-                    </div>
-                    <div class="card_BG">
-                        <img class="Img_H100" src="../img/truckshow/alltruck.png" alt="alltruck" />
-                    </div>
-                </span>
+        <div class="truck-grid">
+            <div class="truck-grid__card">
+                <img src="../img/alltruck/picipjumbo/picup1.png" alt="Pickup Jumbo" class="truck-grid__img">
+                <div class="truck-grid__overlay">
+                    <h3 class="truck-grid__name">Pickup Jumbo</h3>
+                    <p class="truck-grid__desc" data-i18n="index.truck1_desc">รถกระบะจัมโบ้สำหรับขนส่งสินค้าขนาดเล็ก-กลาง</p>
+                </div>
+            </div>
+            <div class="truck-grid__card">
+                <img src="../img/alltruck/6 wheel/6wheel1.png" alt="6 Wheel" class="truck-grid__img">
+                <div class="truck-grid__overlay">
+                    <h3 class="truck-grid__name">6 Wheel</h3>
+                    <p class="truck-grid__desc" data-i18n="index.truck2_desc">รถ 6 ล้อสำหรับขนส่งสินค้าทั่วไป</p>
+                </div>
+            </div>
+            <div class="truck-grid__card">
+                <img src="../img/alltruck/6 wheel_trailer/6wheeltrailer_1.png" alt="6 Wheel Trailer" class="truck-grid__img">
+                <div class="truck-grid__overlay">
+                    <h3 class="truck-grid__name">6 Wheel Trailer</h3>
+                    <p class="truck-grid__desc" data-i18n="index.truck3_desc">รถ 6 ล้อพ่วงสำหรับสินค้าขนาดใหญ่</p>
+                </div>
+            </div>
+            <div class="truck-grid__card">
+                <img src="../img/alltruck/10 wheel_trailer/10wheeltrailer_1.png" alt="10 Wheel Trailer" class="truck-grid__img">
+                <div class="truck-grid__overlay">
+                    <h3 class="truck-grid__name">10 Wheel Trailer</h3>
+                    <p class="truck-grid__desc" data-i18n="index.truck4_desc">รถ 10 ล้อพ่วงรองรับน้ำหนักบรรทุกสูง</p>
+                </div>
+            </div>
+            <div class="truck-grid__card">
+                <img src="../img/alltruck/trailer/trailer3.png" alt="Trailer Head" class="truck-grid__img">
+                <div class="truck-grid__overlay">
+                    <h3 class="truck-grid__name">Trailer Head</h3>
+                    <p class="truck-grid__desc" data-i18n="index.truck5_desc">หัวลากสำหรับขนส่งตู้คอนเทนเนอร์</p>
+                </div>
             </div>
         </div>
     </div>
