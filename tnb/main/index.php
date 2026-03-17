@@ -213,19 +213,19 @@
                 <h1 class="details-title" style="padding-top: 0; margin-bottom: 5px;" data-i18n="index.about_title">
                     เกี่ยวกับเรา</h1>
 
-                <p class="details-desc" style="padding-top: 10px; font-size: 15px; line-height: 1.7;">
-                    <span data-i18n="index.about_p1">TNB Logistics เป็นผู้ให้บริการด้านโลจิสติกส์และการขนส่งครบวงจร
-                        ให้บริการขนส่งสินค้าภายในประเทศ การขนส่งตู้คอนเทนเนอร์ และงานชัตเทิลระหว่างคลังสินค้า (WH to WH)
-                        บริษัทมีสำนักงานและสาขาในพื้นที่ยุทธศาสตร์สำคัญ เช่น บางแสน แหลมฉบัง บางกะดี และลาดกระบัง
-                        เพื่อรองรับความต้องการของลูกค้าในภาคอุตสาหกรรมอย่างมีประสิทธิภาพ</span>
+                <p class="details-desc" style="padding-top: 10px; font-size: 18px; line-height: 1.8;">
+                    <span data-i18n="index.about_p1"><strong>TNB Logistics</strong> เป็นผู้ให้บริการด้าน<strong>โลจิสติกส์และการขนส่งครบวงจร</strong>
+                        ให้บริการ<strong>ขนส่งสินค้าภายในประเทศ</strong> <strong>การขนส่งตู้คอนเทนเนอร์</strong> และ<strong>งานชัตเทิลระหว่างคลังสินค้า</strong> (WH to WH)
+                        บริษัทมีสำนักงานและสาขาใน<strong>พื้นที่ยุทธศาสตร์สำคัญ</strong> เช่น <strong>บางแสน</strong> <strong>แหลมฉบัง</strong> <strong>บางกะดี</strong> และ<strong>ลาดกระบัง</strong>
+                        เพื่อรองรับความต้องการของลูกค้าใน<strong>ภาคอุตสาหกรรม</strong>อย่างมีประสิทธิภาพ</span>
                 </p>
 
                 <!-- ย่อหน้าที่สอง -->
-                <p class="details-desc" style="padding-top: 10px; font-size: 15px; line-height: 1.7;">
-                    <span data-i18n="index.about_p2">TNB มุ่งเน้นมาตรฐานการบริการ ความปลอดภัย
-                        และความตรงต่อเวลาในทุกกระบวนการขนส่ง
-                        พร้อมนำเทคโนโลยีระบบบริหารจัดการการขนส่งมาใช้เพื่อเพิ่มความโปร่งใสและประสิทธิภาพในการทำงาน
-                        บริษัทพร้อมเป็นพันธมิตรด้านโลจิสติกส์ที่ลูกค้าไว้วางใจและเติบโตไปพร้อมกันอย่างยั่งยืน</span>
+                <p class="details-desc" style="padding-top: 20px; font-size: 18px; line-height: 1.8;">
+                    <span data-i18n="index.about_p2">TNB มุ่งเน้น<strong>มาตรฐานการบริการ</strong> <strong>ความปลอดภัย</strong>
+                        และ<strong>ความตรงต่อเวลา</strong>ในทุกกระบวนการขนส่ง
+                        พร้อมนำ<strong>เทคโนโลยีระบบบริหารจัดการการขนส่ง</strong>มาใช้เพื่อเพิ่ม<strong>ความโปร่งใส</strong>และ<strong>ประสิทธิภาพในการทำงาน</strong>
+                        บริษัทพร้อมเป็น<strong>พันธมิตรด้านโลจิสติกส์</strong>ที่ลูกค้าไว้วางใจและเติบโตไปพร้อมกันอย่างยั่งยืน</span>
                 </p>
 
                 <div class="details-action-group">

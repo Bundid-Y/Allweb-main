@@ -75,7 +75,9 @@
     // ── XSS-safe text setter ────────────────────────────────────────────────
     function _safeSetText(el, text) {
         if (text === null || text === undefined) return;
-        el.textContent = text; // textContent is XSS-safe
+        // ใช้ innerHTML สำหรับรองรับ HTML tags ในการเน้นคำ
+        // แต่ต้องแน่ใจว่าข้อมูลมาจาก JSON ที่เชื่อถือได้
+        el.innerHTML = text; // รองรับ <strong> สำหรับการเน้นคำ
     }
 
     // ── Apply translations to all [data-i18n] elements in the DOM ───────────

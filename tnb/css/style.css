@@ -403,10 +403,18 @@ body {
     text-align: center;
 }
 
-/* เพิ่มเพื่อให้รูปไม่ล้น */
+/* เพิ่มเพื่อให้รูปสูงขึ้น */
 .details-image img {
     max-width: 100%;
-    height: auto;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* สีเน้นคำในหน้าแรกเหมือนหน้า partners */
+.content-section .details-desc strong,
+.content-section .details-desc span strong {
+    color: #0D2D6B !important;
+    font-weight: 700 !important;
 }
 
 /* หัวข้อ (Title) */
