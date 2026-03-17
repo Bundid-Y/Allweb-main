@@ -1049,7 +1049,7 @@ section.loop-images-quotation.vertical {
     top: 0;
     margin: 0 auto;
     display: flex;
-    height: 600px;
+    height: 450px;
     left: 0;
     z-index: -1;
     /* จากซ้าย ~65%, เอียงชันกว่า About Us */
@@ -5144,4 +5144,225 @@ html {
     color: #0D2D6B;
     border-radius: 20px;
     font-weight: 500;
+}
+
+/* =========================================
+   Product Carousel — index.php section-products
+   ========================================= */
+.dev-carousel-root {
+    position: relative;
+    width: 100%;
+}
+
+.dev-carousel-viewport {
+    overflow: hidden;
+    width: 100%;
+}
+
+.dev-carousel-track {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: transform;
+}
+
+.dev-carousel-page {
+    flex: 0 0 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 20px;
+}
+
+.dev-carousel-dots {
+    display: none;
+}
+
+.dev-carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.dev-carousel-dot.active {
+    background: #ffffff;
+    width: 26px;
+    border-radius: 4px;
+}
+
+.dev-carousel-dot:hover:not(.active) {
+    background: rgba(255, 255, 255, 0.75);
+}
+
+/* Truck Cards - Adapted from dev-card with TNB styling */
+.dev-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    width: min(1170px, 90vw);
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.dev-card {
+    flex: 1 1 0;
+    min-width: 0;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: flex 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: flex;
+}
+
+/* Card expand effect - grows to 3x width on hover */
+.dev-card:hover {
+    flex: 3;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.dev-card a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.dev-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* Image transforms on hover - zoom in */
+.dev-card:hover img {
+    transform: scale(1.05);
+}
+
+.dev-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: transparent;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.dev-card:hover::after {
+    opacity: 0;
+}
+
+.dev-card-title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 3;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.dev-card-desc {
+    position: absolute;
+    z-index: 3;
+    left: 20px;
+    right: 20px;
+    bottom: -100%;
+    color: #ffffff;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+/* Show title and description on hover */
+.dev-card:hover .dev-card-title {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dev-card:hover .dev-card-desc {
+    transform: translateY(0);
+    opacity: 1;
+    bottom: 20px;
+}
+
+/* Focus styles for accessibility */
+.dev-card a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .dev-cards {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .dev-card {
+        flex: none;
+        width: 100%;
+        height: 250px;
+    }
+
+    .dev-card:hover {
+        flex: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Always show overlay on mobile */
+    .dev-card::after {
+        opacity: 1;
+    }
+
+    /* Always show title and description on mobile */
+    .dev-card-title,
+    .dev-card-desc {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .dev-card-desc {
+        bottom: 20px;
+    }
+
+    .dev-carousel-page {
+        padding: 20px 0 10px;
+    }
+}
+
+@media (max-width: 468px) {
+    .dev-card img {
+        height: 200px;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .dev-card,
+    .dev-card img,
+    .dev-card-title,
+    .dev-card-desc,
+    .dev-card::after,
+    .dev-carousel-track {
+        transition: none;
+    }
 }

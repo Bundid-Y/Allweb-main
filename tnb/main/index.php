@@ -438,43 +438,56 @@
             </div>
         </div>
 
-        <div class="truck-grid">
-            <div class="truck-grid__card">
-                <img src="../img/alltruck/picipjumbo/picup1.png" alt="Pickup Jumbo" class="truck-grid__img">
-                <div class="truck-grid__overlay">
-                    <h3 class="truck-grid__name">Pickup Jumbo</h3>
-                    <p class="truck-grid__desc" data-i18n="index.truck1_desc">รถกระบะจัมโบ้สำหรับขนส่งสินค้าขนาดเล็ก-กลาง</p>
-                </div>
-            </div>
-            <div class="truck-grid__card">
-                <img src="../img/alltruck/6 wheel/6wheel1.png" alt="6 Wheel" class="truck-grid__img">
-                <div class="truck-grid__overlay">
-                    <h3 class="truck-grid__name">6 Wheel</h3>
-                    <p class="truck-grid__desc" data-i18n="index.truck2_desc">รถ 6 ล้อสำหรับขนส่งสินค้าทั่วไป</p>
-                </div>
-            </div>
-            <div class="truck-grid__card">
-                <img src="../img/alltruck/6 wheel_trailer/6wheeltrailer_1.png" alt="6 Wheel Trailer" class="truck-grid__img">
-                <div class="truck-grid__overlay">
-                    <h3 class="truck-grid__name">6 Wheel Trailer</h3>
-                    <p class="truck-grid__desc" data-i18n="index.truck3_desc">รถ 6 ล้อพ่วงสำหรับสินค้าขนาดใหญ่</p>
-                </div>
-            </div>
-            <div class="truck-grid__card">
-                <img src="../img/alltruck/10 wheel_trailer/10wheeltrailer_1.png" alt="10 Wheel Trailer" class="truck-grid__img">
-                <div class="truck-grid__overlay">
-                    <h3 class="truck-grid__name">10 Wheel Trailer</h3>
-                    <p class="truck-grid__desc" data-i18n="index.truck4_desc">รถ 10 ล้อพ่วงรองรับน้ำหนักบรรทุกสูง</p>
-                </div>
-            </div>
-            <div class="truck-grid__card">
-                <img src="../img/alltruck/trailer/trailer3.png" alt="Trailer Head" class="truck-grid__img">
-                <div class="truck-grid__overlay">
-                    <h3 class="truck-grid__name">Trailer Head</h3>
-                    <p class="truck-grid__desc" data-i18n="index.truck5_desc">หัวลากสำหรับขนส่งตู้คอนเทนเนอร์</p>
-                </div>
-            </div>
-        </div>
+        <!-- Product Carousel: 1 page x 5 trucks — auto-slide ทุก 5 วิ -->
+        <div class="dev-carousel-root">
+            <div class="dev-carousel-viewport">
+                <div class="dev-carousel-track">
+
+                    <!-- Page 1: ประเภทรถทั้งหมด -->
+                    <div class="dev-carousel-page">
+                        <div class="dev-cards">
+                            <div class="dev-card">
+                                <a href="../main/trucktypes.php" rel="noopener noreferrer">
+                                    <img src="../img/alltruck/picipjumbo/picup1.png" alt="Pickup Jumbo" loading="lazy">
+                                    <div class="dev-card-title">Pickup Jumbo</div>
+                                    <p class="dev-card-desc" data-i18n="index.truck1_desc">รถกระบะจัมโบ้สำหรับขนส่งสินค้าขนาดเล็ก-กลาง</p>
+                                </a>
+                            </div>
+                            <div class="dev-card">
+                                <a href="../main/trucktypes.php" rel="noopener noreferrer">
+                                    <img src="../img/alltruck/6 wheel/6wheel1.png" alt="6 Wheel" loading="lazy">
+                                    <div class="dev-card-title">6 Wheel</div>
+                                    <p class="dev-card-desc" data-i18n="index.truck2_desc">รถ 6 ล้อสำหรับขนส่งสินค้าทั่วไป</p>
+                                </a>
+                            </div>
+                            <div class="dev-card">
+                                <a href="../main/trucktypes.php" rel="noopener noreferrer">
+                                    <img src="../img/alltruck/6 wheel_trailer/6wheeltrailer_1.png" alt="6 Wheel Trailer" loading="lazy">
+                                    <div class="dev-card-title">6 Wheel Trailer</div>
+                                    <p class="dev-card-desc" data-i18n="index.truck3_desc">รถ 6 ล้อพ่วงสำหรับสินค้าขนาดใหญ่</p>
+                                </a>
+                            </div>
+                            <div class="dev-card">
+                                <a href="../main/trucktypes.php" rel="noopener noreferrer">
+                                    <img src="../img/alltruck/10 wheel_trailer/10wheeltrailer_1.png" alt="10 Wheel Trailer" loading="lazy">
+                                    <div class="dev-card-title">10 Wheel Trailer</div>
+                                    <p class="dev-card-desc" data-i18n="index.truck4_desc">รถ 10 ล้อพ่วงรองรับน้ำหนักบรรทุกสูง</p>
+                                </a>
+                            </div>
+                            <div class="dev-card">
+                                <a href="../main/trucktypes.php" rel="noopener noreferrer">
+                                    <img src="../img/alltruck/trailer/trailer3.png" alt="Trailer Head" loading="lazy">
+                                    <div class="dev-card-title">Trailer Head</div>
+                                    <p class="dev-card-desc" data-i18n="index.truck5_desc">หัวลากสำหรับขนส่งตู้คอนเทนเนอร์</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- end .dev-carousel-track -->
+            </div><!-- end .dev-carousel-viewport -->
+            <div class="dev-carousel-dots" aria-label="Truck carousel navigation"></div>
+        </div><!-- end .dev-carousel-root -->
     </div>
 
     <?php include '../component/footer.php'; ?>
