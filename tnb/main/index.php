@@ -405,7 +405,7 @@
         </div>
 
         <!-- logo ลูกค้าเลื่อน loop slides -->
-        <section class="loop-images-quotation" style="--bg: white; height: auto; min-height: 220px; padding: 20px 0;">
+        <section class="loop-images-quotation" style="--bg: white; height: auto; min-height: 160px; padding: 15px 0;">
             <div class="login-track" style="--time: 60s; --total: 10;">
                 <div class="login-item" style="--i: 1;"><img src="../img/customer_logo/Mazda.png" alt="image"></div>
                 <div class="login-item" style="--i: 2;"><img src="../img/customer_logo/Alliance.png" alt="image"></div>

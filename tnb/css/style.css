@@ -1033,6 +1033,7 @@ section.loop-images-quotation.vertical {
     overflow: hidden;
     min-height: auto !important; /* Override default 760px */
     --deco-y: -100%; /* เริ่มต้นซ่อนอยู่ด้านบน, GSAP จะ animate เป็น 0 */
+    padding-top: 45px; /* ขยับ heading ขึ้นใกล้ด้านบนของกรอบสีน้ำเงิน */
 }
 /* เนื้อหาทั้งหมดอยู่เหนือ ::after */
 .content-section.section-products > * {
