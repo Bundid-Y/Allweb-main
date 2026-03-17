@@ -76,7 +76,7 @@
                                     data-i18n="contact.address_label">
                                     ที่อยู่สำนักงาน</h4>
                                 <p style="margin: 0; color: #444; font-size: 15px; line-height: 1.8;"
-                                    data-i18n-html="contact.address">742/5 หมู่ที่ 1<br>ตำบล หนองไผ่แก้ว<br>อำเภอ บ้านบึง <br>จังหวัด ชลบุรี 20220</p>
+                                    data-i18n-html="contact.address">742/5 หมู่ที่ 1 ตำบลหนองไผ่แก้ว<br>อำเภอบ้านบึง จังหวัดชลบุรี 20220</p>
                             </div>
                         </div>
 

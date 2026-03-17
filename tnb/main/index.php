@@ -254,7 +254,7 @@
                 data-i18n="index.services_title">
                 บริการของเรา
             </h1>
-            <p class="details-desc" style="margin-top: 5px; margin-bottom: 28px; line-height: 1.8;"
+            <p class="details-desc" style="margin-top: 2px; margin-bottom: 40px; line-height: 0.2;"
                 data-i18n="index.services_sub">
                 บริการบรรจุภัณฑ์และการจัดการลอจิสติกส์แบบครบวงจร ที่ตอบสนองทุกความต้องการของธุรกิจด้วยระบบที่ทันสมัย
             </p>
@@ -398,7 +398,7 @@
             }
         }
     </style>
-    <div class="content-section section-partners" style="padding-top: 40px; padding-bottom: 0px;">
+    <div class="content-section section-partners" style="padding-top: 20px; padding-bottom: 0px;">
         <!-- ส่วนหัวข้อ (Heading) (Black text for white background) -->
         <div style="margin-bottom: 16px;">
             <div style="text-align: left;">
@@ -406,7 +406,7 @@
                     data-i18n="index.partners_title">
                     พันธมิตรที่ไว้วางใจเรา
                 </h1>
-                <p class="details-desc" style="margin-top: 5px; margin-bottom: 12px; line-height: 1.8; color: #1c1c1c;"
+                <p class="details-desc" style="margin-top: 2px; margin-bottom: 8px; line-height: 1.8; color: #1c1c1c;"
                     data-i18n="index.partners_sub">
                     ความไว้วางใจจากบริษัทชั้นนำ เป็นเครื่องยืนยันถึง คุณภาพและมาตรฐานการบริการระดับมืออาชีพของเรา
                 </p>
@@ -423,7 +423,7 @@
                         พันธมิตรที่ไว้วางใจเรา
                     </h1>
                     <p class="details-desc"
-                        style="margin-top: 5px; margin-bottom: 12px; line-height: 1.8; color: #ffffff;"
+                        style="margin-top: 2px; margin-bottom: 8px; line-height: 1.8; color: #ffffff;"
                         data-i18n="index.partners_sub">
                         ความไว้วางใจจากบริษัทชั้นนำ เป็นเครื่องยืนยันถึง คุณภาพและมาตรฐานการบริการระดับมืออาชีพของเรา
                     </p>
@@ -467,7 +467,7 @@
                     data-i18n="index.products_title">
                     ประเภทรถ
                 </h1>
-                <p class="details-desc" style="margin-top: 5px; margin-bottom: 20px; color: #ffffff; line-height: 1.8;"
+                <p class="details-desc" style="margin-top: 2px; margin-bottom: 12px; color: #ffffff; line-height: 1.8;"
                     data-i18n="index.products_sub">
                     บริการรถบรรทุกหลากหลายประเภท เพื่อรองรับทุกความต้องการด้านการขนส่งและโลจิสติกส์ของคุณ
                 </p>
