@@ -483,19 +483,9 @@ body {
     z-index: 1;
 }
 
-/* สร้างรูปร่างพื้นหลังเฉียงแบบพรีเมียม (คล้ายกับ section-products และ about) */
+/* สร้างรูปร่างพื้นหลังเฉียงแบบพรีเมียม (คล้ายกับ section-products และ about) - REMOVED */
 .tnb-services-section.content-section::after {
-    content: '';
-    background-color: #0D2D6B;
-    position: absolute;
-    width: 100%;
-    right: 0;
-    top: 150px; /* เริ่มต่ำลงมาให้อยู่หลังบรรทัดหัวข้อพอดี เพื่อไม่แทรกแซงข้อความสีดำ */
-    height: calc(100% - 130px);
-    left: 0;
-    z-index: 0; /* อยู่ด้านหลังเนื้อหาการ์ด */
-    /* ตัดรูปร่างเอียง: ด้านซ้ายเริ่มที่ 8% ถึง 100%, ด้านขวาเต็มขอบ */
-    clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0 100%);
+    display: none;
 }
 
 /* ให้เนื้อหาทั้งหมดอยู่เหนือพื้นหลัง */
@@ -504,16 +494,15 @@ body {
     z-index: 1;
 }
 
-/* Responsive ปรับพื้นหลังเมื่อจอเล็ก (Tablet & Mobile) */
+/* Responsive ปรับพื้นหลังเมื่อจอเล็ก (Tablet & Mobile) - REMOVED */
 @media (max-width: 991px) {
     .tnb-services-section.content-section::after {
-        top: 180px;
-        clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0 100%);
+        display: none;
     }
 }
 @media (max-width: 600px) {
     .tnb-services-section.content-section::after {
-        top: 200px;
+        display: none;
     }
 }
 
@@ -539,8 +528,8 @@ body {
     position: relative;
     height: 20rem;
     overflow: hidden;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    background: transparent;
+    box-shadow: none;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transform: translate3d(0, 0, 0);

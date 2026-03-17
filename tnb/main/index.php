@@ -283,7 +283,7 @@
                     <div class="tnb-news-card__details-wrapper">
                         <p class="tnb-news-card__excerpt" data-i18n="index.svc2_excerpt">
                             บริการรถรับ-ส่งสินค้าระหว่างคลัง (WH to WH) เพื่อการบริหารจัดการที่ไร้รอยต่อ</p>
-                        <a href="../service/supply_management.php" class="tnb-news-card__read-more"
+                        <a href="../service/shuttle.php" class="tnb-news-card__read-more"
                             data-i18n="index.svc2_more">อ่านเพิ่มเติม ›</a>
                     </div>
                 </div>
@@ -301,7 +301,7 @@
                     <div class="tnb-news-card__details-wrapper">
                         <p class="tnb-news-card__excerpt" data-i18n="index.svc3_excerpt">
                             บริการรถหัวลากและขนส่งตู้คอนเทนเนอร์นำเข้า-ส่งออกอย่างมืออาชีพ</p>
-                        <a href="../service/warehouse.php" class="tnb-news-card__read-more"
+                        <a href="../service/import-export.php" class="tnb-news-card__read-more"
                             data-i18n="index.svc3_more">อ่านเพิ่มเติม ›</a>
                     </div>
                 </div>
@@ -319,7 +319,7 @@
                     <div class="tnb-news-card__details-wrapper">
                         <p class="tnb-news-card__excerpt" data-i18n="index.svc4_excerpt">
                             บริหารจัดการตู้คอนเทนเนอร์และพื้นที่ลานตู้สินค้าอย่างเป็นระบบ</p>
-                        <a href="../service/transportation.php" class="tnb-news-card__read-more"
+                        <a href="../service/container.php" class="tnb-news-card__read-more"
                             data-i18n="index.svc4_more">อ่านเพิ่มเติม ›</a>
                     </div>
                 </div>
@@ -335,7 +335,7 @@
                     <div class="tnb-news-card__details-wrapper">
                         <p class="tnb-news-card__excerpt" data-i18n="index.svc5_excerpt">
                             บริการกระจายสินค้าครอบคลุมทุกพื้นที่ทั่วประเทศ ส่งตรงถึงปลายทางอย่างแม่นยำ</p>
-                        <a href="../service/domestic.php" class="tnb-news-card__read-more"
+                        <a href="../service/nationwide.php" class="tnb-news-card__read-more"
                             data-i18n="index.svc5_more">อ่านเพิ่มเติม ›</a>
                     </div>
                 </div>
@@ -353,7 +353,7 @@
                     <div class="tnb-news-card__details-wrapper">
                         <p class="tnb-news-card__excerpt" data-i18n="index.svc6_excerpt">
                             ให้บริการพื้นที่จุดจอดรถบรรทุกที่ปลอดภัย พร้อมสิ่งอำนวยความสะดวกครบครัน</p>
-                        <a href="../service/container.php" class="tnb-news-card__read-more"
+                        <a href="../service/parking.php" class="tnb-news-card__read-more"
                             data-i18n="index.svc6_more">อ่านเพิ่มเติม ›</a>
                     </div>
                 </div>
