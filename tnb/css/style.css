@@ -4565,20 +4565,7 @@ html {
   justify-content: center;
 }
 
-.codepen-truck-wrapper::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  max-width: 1000px;
-  height: 100px;
-  background: var(--primary-color, #0D2D6B);
-  border-radius: 4px; /* Less rounded since using clip-path */
-  clip-path: polygon(100% 0, 0 20%, 0 80%, 100% 100%);
-  z-index: 0;
-}
+/* ลบพื้นหลังสีน้ำเงินของ TruckLoader ข้างบน */
 
 /* Pull Services section up closer to Truck */
 .tnb-services-section.layout_padding {
@@ -4592,8 +4579,7 @@ html {
   height: 40px;
   background: #ffffff;
   border: 2px solid var(--primary-color, #0D2D6B);
-  border-right: none; /* Combine seamlessly with cab */
-  border-bottom: none; /* Let the circles act as the bottom */
+  /* ลบการตัด border ออกเพื่อให้เส้นครบทุกด้าน */
   box-sizing: border-box;
   animation: put-put 2s infinite, move-truck 10s infinite;
   background-size: 100% auto;
@@ -4625,8 +4611,7 @@ html {
   height: 25px;
   background: #ffffff;
   border: 2px solid var(--primary-color, #0D2D6B);
-  border-right: none;
-  border-bottom: none;
+  /* ลบการตัด border ออกเพื่อให้เส้นครบทุกด้าน */
   box-sizing: border-box;
   border-radius: 40% 0 4px 4px;
   -webkit-box-reflect: below 15px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.1, transparent), to(rgba(255, 255, 255, 0.3)));
@@ -4641,11 +4626,10 @@ html {
   width: 20px;
   height: 15px;
   top: -15px;
-  right: -2px; /* Pull right to hide connecting border */
+  right: -2px;
   border-radius: 100% 0 0 0;
   border: 2px solid var(--primary-color, #0D2D6B);
-  border-right: none;
-  border-bottom: none;
+  /* ลบการตัด border ออกเพื่อให้เส้นครบทุกด้าน */
   box-sizing: border-box;
 }
 .codepen-truck-wrapper .TruckLoader-cab:after {
@@ -4767,21 +4751,7 @@ html {
   z-index: 10;
 }
 
-.codepen-truck-wrapper-partner::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  max-width: 1000px;
-  height: 100px;
-  background: var(--primary-color, #0D2D6B);
-  border-radius: 4px; /* Less rounded since using clip-path */
-  /* Reversed clip-path for LTR direction or keep the same to match the other angle */
-  clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
-  z-index: 0;
-}
+/* ลบพื้นหลังสีน้ำเงินของ TruckLoader ข้างล่าง */
 
 /* Pull Products section up closer to Truck */
 .content-section.section-products {
@@ -4795,8 +4765,7 @@ html {
   height: 40px;
   background: #ffffff;
   border: 2px solid var(--primary-color, #0D2D6B);
-  border-right: none; /* Combine seamlessly with cab */
-  border-bottom: none;
+  /* ลบการตัด border ออกเพื่อให้เส้นครบทุกด้าน */
   box-sizing: border-box;
   animation: put-put 2s infinite, move-truck-ltr 10s infinite;
   background-size: 100% auto;
@@ -4829,8 +4798,7 @@ html {
   height: 25px;
   background: #ffffff;
   border: 2px solid var(--primary-color, #0D2D6B);
-  border-right: none;
-  border-bottom: none;
+  /* ลบการตัด border ออกเพื่อให้เส้นครบทุกด้านเหมือนข้างบน */
   box-sizing: border-box;
   border-radius: 40% 0 4px 4px;
   -webkit-box-reflect: below 15px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.1, transparent), to(rgba(255, 255, 255, 0.3)));
@@ -4845,11 +4813,10 @@ html {
   width: 20px;
   height: 15px;
   top: -15px;
-  right: -2px; /* Pull right to hide connecting border */
+  right: -2px;
   border-radius: 100% 0 0 0;
   border: 2px solid var(--primary-color, #0D2D6B);
-  border-right: none;
-  border-bottom: none;
+  /* ลบการตัด border ออกเพื่อให้เส้นครบทุกด้านเหมือนข้างบน */
   box-sizing: border-box;
 }
 .codepen-truck-wrapper-partner .TruckLoader-cab:after {
