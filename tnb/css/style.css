@@ -3505,7 +3505,7 @@ body.page-company {
     line-height: 1.8;
     color: #444;
     margin-bottom: 20px;
-    text-indent: 40px;
+    text-indent: 0;
 }
 
 .page-company .company-text-container strong {
@@ -3571,7 +3571,7 @@ body.page-company {
 @media (max-width: 768px) {
     .page-company .company-text-container p {
         font-size: 1rem;
-        text-indent: 20px;
+        text-indent: 0;
     }
 
     .page-company .company-image-wrap::before {
