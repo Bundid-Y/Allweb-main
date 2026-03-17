@@ -62,7 +62,7 @@
                 <div class="tnb-panel__content-col">
                     <div class="tnb-panel__content">
                         <div class="tnb-panel__text">
-                            <h1 class="tnb-panel__title">TNB logistics</h1>
+                            <h1 class="tnb-panel__title">TNB Logistics</h1>
                             <p class="tnb-panel__addr"><span></span><span
                                     data-i18n="slide.s0">บริการขนส่งและโลจิสติกส์ครบวงจร</span>
                             </p>

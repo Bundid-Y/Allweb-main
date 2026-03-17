@@ -59,19 +59,24 @@ body {
 }
 
 .tnb-home-slider h1.tnb-panel__title {
-    font-family: "Playfair Display", serif;
+    font-family: "Inter", "Sarabun", sans-serif;
     font-size: 96px;
+    font-weight: 700;
     color: #ffffff;
     margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .tnb-home-slider .tnb-panel__addr {
-    font-family: "Lato", sans-serif;
+    font-family: "Inter", "Sarabun", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
     color: #ffffff;
     position: relative;
     display: flex;
     margin: 16px 0 0;
     justify-content: flex-start;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* Base Panel */
@@ -103,8 +108,12 @@ body {
     position: absolute;
     top: 26%;
     left: 0;
-    z-index: 2;
+    z-index: 1;
     width: 100%;
+    background: rgba(13, 45, 107, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
 }
 
 .tnb-home-slider .tnb-panel__text {
