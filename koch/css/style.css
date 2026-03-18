@@ -4951,8 +4951,10 @@ html:not([lang="th"]) .page-vision .vision-desc strong {
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 800;
     color: #1a1a1a;
+    margin-top: 60px;
+    margin-bottom: 20px;
     line-height: 1.15;
-    margin: 0 0 12px 0;
+    margin: 60px 0 12px 0;
     font-family: 'Sarabun', sans-serif;
     letter-spacing: -0.5px;
 }
@@ -5020,8 +5022,8 @@ html:not([lang="th"]) .page-vision .vision-desc strong {
 .partners-lead {
     font-size: 1.05rem;
     color: #444;
-    line-height: 1.85;
-    margin-bottom: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
     font-family: 'Sarabun', sans-serif;
     text-align: left;
 }
