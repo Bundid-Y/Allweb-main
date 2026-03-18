@@ -40,7 +40,6 @@
         <div class="branches-grid">
 
             <div class="branch-card">
-                <img class="branch-card__img" src="../img/other/branches/bangsaen.jpg" alt="สาขาบางแสน">
                 <div class="branch-card__body">
                     <h3 class="branch-card__name" data-i18n="branches.bangsaen_name">สาขาบางแสน (สำนักงานใหญ่)</h3>
                     <p class="branch-card__desc" data-i18n="branches.bangsaen_desc">ศูนย์กลางการบริหารจัดการการขนส่งภายในประเทศ เป็นสำนักงานใหญ่ที่รวมศูนย์บัญชาการและประสานงานทุกสาขา</p>
@@ -53,7 +52,6 @@
             </div>
 
             <div class="branch-card">
-                <img class="branch-card__img" src="../img/other/branches/laemchabang.jpg" alt="สาขาแหลมฉบัง">
                 <div class="branch-card__body">
                     <h3 class="branch-card__name" data-i18n="branches.laemchabang_name">สาขาแหลมฉบัง</h3>
                     <p class="branch-card__desc" data-i18n="branches.laemchabang_desc">ให้บริการจัดจองตู้คอนเทนเนอร์และพื้นที่ฝากวางตู้ (Container Drop Yard) เชื่อมต่อท่าเรือแหลมฉบังโดยตรง</p>
@@ -66,7 +64,6 @@
             </div>
 
             <div class="branch-card">
-                <img class="branch-card__img" src="../img/other/branches/bangkapi.jpg" alt="สาขาบางกะดี">
                 <div class="branch-card__body">
                     <h3 class="branch-card__name" data-i18n="branches.bangkadi_name">สาขาบางกะดี</h3>
                     <p class="branch-card__desc" data-i18n="branches.bangkadi_desc">เชี่ยวชาญการให้บริการรถ Shuttle รับ-ส่งสินค้าระหว่างคลังสินค้าและการจัดการตู้คอนเทนเนอร์</p>
@@ -79,7 +76,6 @@
             </div>
 
             <div class="branch-card">
-                <img class="branch-card__img" src="../img/other/branches/latkrabang.jpg" alt="สาขาลาดกระบัง">
                 <div class="branch-card__body">
                     <h3 class="branch-card__name" data-i18n="branches.latkrabang_name">สาขาลาดกระบัง</h3>
                     <p class="branch-card__desc" data-i18n="branches.latkrabang_desc">ศูนย์กระจายสินค้าและลานจอดรถขนาด 9,000 ตร.ม. ตั้งอยู่ใกล้กับ ICD เพื่อความรวดเร็วในการขนส่ง</p>

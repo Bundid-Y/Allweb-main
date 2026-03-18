@@ -5145,8 +5145,8 @@ html {
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-    background: #fff;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    background: linear-gradient(180deg, #f5f8ff 0%, #4a7bc7 100%);
+    box-shadow: 0 2px 12px rgba(74, 123, 199, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
