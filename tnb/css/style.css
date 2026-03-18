@@ -628,175 +628,83 @@ body {
 
 @media (max-width: 768px) {
 
+    .tnb-home-slider {
+        height: auto;                    /* ปรับความสูงให้พอดีกับเนื้อหา */
+        min-height: unset;               /* ลบค่า min-height เดิม */
+        padding-top: 20px;               /* ลด padding บน */
+        padding-bottom: 20px;            /* ลด padding ล่าง */
+    }
 
+    .tnb-home-slider .tnb-panel-container {
+        height: auto;                    /* ปรับความสูง container ให้พอดี */
+        min-height: 400px;               /* ความสูงขั้นต่ำเพียงพอ */
+    }
+
+    .tnb-home-slider .tnb-slide {
+        height: auto;                    /* ปรับความสูง slide ให้พอดี */
+        min-height: 400px;               /* ความสูงขั้นต่ำ */
+    }
 
     .tnb-home-slider h1.tnb-panel__title {
-
-
-
-        font-size: 48px;
-
-
-
+        font-size: 36px;                 /* ลดขนาด font ให้พอดีหน้าจอ */
+        line-height: 1.2;
     }
-
-
 
     .tnb-home-slider .tnb-panel__content-col {
-
-
-
-        flex-basis: 50%;       /* mobile: ข้อความกินครึ่งหน้าจอ */
-
-
-
+        flex-basis: 50%;                 /* mobile: ข้อความกินครึ่งหน้าจอ */
         flex-shrink: 0;
-
-
-
     }
-
-
 
     .tnb-home-slider .tnb-panel__img-col {
-
-
-
-        flex-basis: 100%;      /* mobile: รูปทับเต็มพื้นที่เป็น bg */
-
-
-
+        flex-basis: 100%;                 /* mobile: รูปทับเต็มพื้นที่เป็น bg */
         position: absolute;
-
-
-
         width: 100%;
-
-
-
         height: 100%;
-
-
-
         z-index: 1;
-
-
-
         opacity: 0.8;
-
-
-
         background-color: #07183d;
-
-
-
     }
-
-
 
     .tnb-home-slider .tnb-panel__content {
-
-
-
         z-index: 2;
-
-
-
+        top: 10%;                        /* ย้ายข้อความขึ้นไปด้านบน */
+        left: 0;
+        transform: translateY(0);        /* รีเซ็ต transform */
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);   /* overlay บางๆ ให้อ่านง่าย */
+        padding: 15px 20px;              /* ลด padding ให้กระชับ */
+        text-align: center;               /* จัดข้อความกึ่งกลาง */
+        backdrop-filter: blur(2px);      /* เพิ่มความคมชัด */
     }
-
-
-
-    .tnb-home-slider .tnb-panel__addr {
-
-
-
-        justify-content: flex-start;
-
-
-
-        text-align: left;
-
-
-
-    }
-
-
-
-    .tnb-home-slider .tnb-panel__addr span:first-child {
-
-
-
-        display: none;
-
-
-
-    }
-
-
 
     .tnb-home-slider .tnb-panel__text {
-
-
-
-        text-align: left;
-
-
-
-        background: rgba(13, 45, 107, 0.85);
-
-
-
-        padding: 20px;
-
-
-
+        text-align: center;               /* จัดข้อความกึ่งกลาง */
+        line-height: 1.4;                 /* ปรับ line-height ให้อ่านง่าย */
     }
 
+    .tnb-home-slider .tnb-panel__addr {
+        justify-content: center;
+        text-align: center;
+        line-height: 1.4;
+    }
 
+    .tnb-home-slider .tnb-panel__addr span:first-child {
+        display: none;
+    }
 
     .tnb-home-slider .tnb-panel__line {
-
-
-
-        margin: 24px 0 0 0;
-
-
-
-        width: 100%;
-
-
-
+        display: none;
     }
 
-
-
-    /* Mobile: สี่เหลี่ยมเต็มความกว้างไม่ใช้ clip-path เพราะ img ทับอยู่แล้ว */
-
-
-
+    /* Mobile: ลดความสูงของพื้นหลังสีน้ำเงินให้พอดีกับ section */
     .tnb-home-slider::before {
-
-
-
         width: 100%;
-
-
-
+        height: 100%;                    /* ให้พอดีกับ section */
         clip-path: none;
-
-
-
         opacity: 0.6;
-
-
-
         box-shadow: none;
-
-
-
+        top: 0;
     }
-
-
 
 }
 
