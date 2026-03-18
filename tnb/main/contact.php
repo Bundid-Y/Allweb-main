@@ -44,12 +44,12 @@
                     style="width: 100%; max-width: 900px; padding: 0 15px; box-sizing: border-box; text-align: center; margin-bottom: 60px;">
 
                     <h1 class="tech_subtitle"
-                        style="font-size: 40px; color: #1c1c1c; font-weight: bold; margin-bottom: 5px; position: relative; display: inline-block;">
+                        style="font-size: 40px; color: #0D2D6B; font-weight: bold; margin-bottom: 5px; position: relative; display: inline-block;">
                         <span data-i18n="contact.title">ติดต่อเรา</span>
                     </h1>
 
                     <p class="tech_text"
-                        style="font-size: 16px; color: #1c1c1c; line-height: 1.6; padding-top: 0px; margin-bottom: 40px;"
+                        style="font-size: 18px; color: #555; line-height: 1.6; padding-top: 0px; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;"
                         data-i18n="contact.intro">
                         เราพร้อมให้คำปรึกษาและบริการด้านโลจิสติกส์แบบครบวงจร ทันสมัย และตอบโจทย์ทุกความต้องการทางธุรกิจ
                         ติดต่อสอบถามข้อมูลเพิ่มเติมได้ผ่านช่องทางด้านล่าง
@@ -70,7 +70,7 @@
                                 </svg>
                             </div>
                             <div class="contact-text-group">
-                                <h4 style="margin: 0 0 5px 0; font-size: 18px; color: #1c1c1c; font-weight: 700;"
+                                <h4 style="margin: 0 0 5px 0; font-size: 18px; color: #0D2D6B; font-weight: 700;"
                                     data-i18n="contact.address_label">
                                     ที่อยู่สำนักงาน</h4>
                                 <p style="margin: 0; color: #444; font-size: 15px; line-height: 1.5;"
@@ -93,7 +93,7 @@
                                 </svg>
                             </div>
                             <div class="contact-text-group">
-                                <h4 style="margin: 0 0 5px 0; font-size: 18px; color: #1c1c1c; font-weight: 700;"
+                                <h4 style="margin: 0 0 5px 0; font-size: 18px; color: #0D2D6B; font-weight: 700;"
                                     data-i18n="contact.phone_label">
                                     ติดต่อฝ่ายขาย</h4>
                                 <p style="margin: 0; color: #444; font-size: 15px; line-height: 1.5;">
@@ -116,7 +116,7 @@
                                 </svg>
                             </div>
                             <div class="contact-text-group">
-                                <h4 style="margin: 0 0 5px 0; font-size: 18px; color: #1c1c1c; font-weight: 700;"
+                                <h4 style="margin: 0 0 5px 0; font-size: 18px; color: #0D2D6B; font-weight: 700;"
                                     data-i18n="contact.email_label">อีเมล
                                 </h4>
                                 <p
