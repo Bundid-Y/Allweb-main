@@ -872,8 +872,10 @@ section.loop-images-quotation {
 	object-fit: contain;
 	display: block;
 	pointer-events: none;
-	padding: 1rem;
+	padding: 0;
 	box-sizing: border-box;
+	background: white;
+	border-radius: 0;
 }
 
 @keyframes scroll-left {
@@ -2800,11 +2802,10 @@ a {
 }
 
 .partners-page-wrapper .login-track .login-item img {
-    padding: 15px;
+    padding: 0;
     background: white;
     object-fit: contain;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0;
 }
 
 
