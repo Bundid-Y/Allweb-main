@@ -831,20 +831,19 @@ section.loop-images-quotation {
 	position: relative;
 	height: 60vh;
 	width: 100%;
-	background-color: #fff;
-	overflow: hidden;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-direction: column;
-	perspective: 1000px;
+	overflow: hidden;
+	background: var(--bg);
+	contain: layout style;
 }
 
 .login-track {
 	--left: -150rem;
-	min-width: calc(2.5rem * var(--total));
+	min-width: calc(1.0rem * var(--total));
 	height: 10rem;
-	transform-style: preserve-3d;
+	/* transform-style: preserve-3d removed — 2D is smoother */
 }
 
 .login-track .login-item {
@@ -855,22 +854,16 @@ section.loop-images-quotation {
 	translate: 100vw 0;
 	animation: scroll-left var(--time) linear infinite;
 	animation-delay: calc(var(--time) / var(--total) * (var(--i) - 1) - var(--time));
-	will-change: translate, rotate;
+	will-change: translate;
 	cursor: pointer;
-	
-	rotate: y -30deg;
-	transition: rotate 0.5s ease-in-out;
-	
 	overflow: hidden;
-	transform-style: preserve-3d;
-	backface-visibility: hidden;
-	border-radius: 0;
-	background: #ffffff;
+	contain: layout style;
 }
 
 .login-track .login-item:hover {
-	rotate: y 0deg !important;
 	z-index: 10;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+	filter: brightness(1.05);
 }
 
 .login-track .login-item img {
