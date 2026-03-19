@@ -99,7 +99,7 @@
             <div class="modal-ui-body">
                 <div class="modal-ui-two-col">
                     <div class="modal-ui-col-img">
-                        <img src="../img/other/technology/tms.jpeg" alt="TMS" loading="lazy">
+                        <img src="../img/other/technology/tms1.png" alt="TMS" loading="lazy">
                     </div>
                     <div class="modal-ui-col-text">
                         <h2 class="modal-ui-title" data-i18n="technology.tab_tms">TMS</h2>
@@ -124,7 +124,7 @@
             <div class="modal-ui-body">
                 <div class="modal-ui-two-col">
                     <div class="modal-ui-col-img">
-                        <img src="../img/other/technology/truckmonitoring.jpeg" alt="Truck Monitoring" loading="lazy">
+                        <img src="../img/other/technology/wms.jpeg" alt="Truck Monitoring" loading="lazy">
                     </div>
                     <div class="modal-ui-col-text">
                         <h2 class="modal-ui-title" data-i18n="technology.tab_wms">Truck Monitoring</h2>
@@ -191,21 +191,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const btns = document.querySelectorAll('.tech-tab-btn');
-        const contents = document.querySelectorAll('.tech-tab-content');
-        btns.forEach(function(btn) {
-            btn.addEventListener('click', function() {
-                btns.forEach(function(b) { b.classList.remove('active'); });
-                contents.forEach(function(c) { c.classList.remove('active'); });
-                btn.classList.add('active');
-                document.getElementById(btn.getAttribute('data-tab')).classList.add('active');
-            });
-        });
-    });
-    </script>
 
     <?php include '../component/footer.php'; ?>
 </body>

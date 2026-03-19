@@ -28,12 +28,12 @@
     <script src="../js/script.js" defer></script>
 </head>
 
-<body>
+<body class="page-branches">
     <?php include '../component/menubar.php'; ?>
 
     <div class="branches-page">
-        <div class="trucktypes-page__heading">
-            <h1 style="color: #0D2D6B;" data-i18n="branches.title">สาขาของเรา</h1>
+        <div class="branches-heading">
+            <h1 data-i18n="branches.title">สาขาของเรา</h1>
             <p data-i18n="branches.subtitle">เครือข่ายจุดบริการยุทธศาสตร์ครอบคลุมพื้นที่สำคัญทางอุตสาหกรรมเพื่อรองรับความต้องการของลูกค้าอย่างมีประสิทธิภาพ</p>
         </div>
 
@@ -42,10 +42,10 @@
             <!-- Sticky Image Section -->
             <div class="branches-image-section">
                 <div class="branches-image-wrapper">
-                    <img src="../img/other/branches/branches_main.jpg" alt="TNB Logistics Branches Network">
+                    <img src="../img/other/index/about/homepage.webp" alt="TNB Logistics Branches Network">
                     <div class="branches-image-overlay">
-                        <h3>เครือข่ายสาขาทั่วประเทศ</h3>
-                        <p>ครอบคลุมพื้นที่สำคัญทางอุตสาหกรรมและโลจิสติกส์</p>
+                        <h3 data-i18n="branches.overlay_title">เครือข่ายสาขาทั่วประเทศ</h3>
+                        <p data-i18n="branches.overlay_desc">ครอบคลุมพื้นที่สำคัญทางอุตสาหกรรมและโลจิสติกส์</p>
                     </div>
                 </div>
             </div>
