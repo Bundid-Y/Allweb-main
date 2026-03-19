@@ -61,7 +61,7 @@
                         <div class="contact-item"
                             style="display: flex; align-items: flex-start; flex: 1; min-width: 260px; max-width: 320px;">
                             <div class="contact-icon"
-                                style="background: #325662; color: #fff; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-right: 15px;">
+                                style="background: #0D2D6B; color: #fff; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-right: 15px;">
                                 <!-- SVG Map Pin -->
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -83,7 +83,7 @@
                         <div class="contact-item"
                             style="display: flex; align-items: flex-start; flex: 1; min-width: 200px; max-width: 250px;">
                             <div class="contact-icon"
-                                style="background: #325662; color: #fff; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-right: 15px;">
+                                style="background: #0D2D6B; color: #fff; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-right: 15px;">
                                 <!-- SVG Phone -->
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -105,7 +105,7 @@
                         <div class="contact-item"
                             style="display: flex; align-items: flex-start; flex: 1; min-width: 280px; max-width: 350px;">
                             <div class="contact-icon"
-                                style="background: #325662; color: #fff; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-right: 15px;">
+                                style="background: #0D2D6B; color: #fff; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-right: 15px;">
                                 <!-- SVG Mail -->
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

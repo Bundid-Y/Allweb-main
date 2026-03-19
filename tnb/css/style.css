@@ -5718,31 +5718,27 @@ section.loop-images-quotation.vertical {
 
 
 
+/* ลดระยะห่างระหว่าง section เกี่ยวกับเรา และ บริการของเรา */
+.content-section.layout_padding + .tnb-services-section.content-section {
+    margin-top: -60px; /* ดึง section บริการของเราขึ้นมา */
+}
 
+/* ลด padding ล่างของ section เกี่ยวกับเรา */
+.content-section.layout_padding:not(.tnb-services-section) {
+    padding-bottom: 20px; /* ลดจาก 45px เป็น 20px */
+}
 
-
+/* ลด padding บนของ section บริการของเรา */
+.tnb-services-section.content-section.layout_padding {
+    padding-top: 40px; /* ลดจาก 100px + 60px = 160px เป็น 40px */
+}
 
 /* --- Branches Layout --- */
 
-
-
 .layout_padding {
-
-
-
-    padding-bottom: 45px;
-
-
-
+    padding-bottom: 20px;
     padding-top: 100px; /* Prevent overlap with menubar */
-
-
-
 }
-
-
-
-
 
 
 
