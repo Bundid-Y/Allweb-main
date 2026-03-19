@@ -19261,14 +19261,13 @@ html {
    ========================================= */
 
 .feat-cards {
-    padding-top: 20px;
-    background: #fbfbfb;
+    padding-top: 10px;
 }
 
 .feat-cards__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -19284,13 +19283,31 @@ html {
     position: relative;
     display: flex;
     flex-direction: column;
-    border: 2px solid transparent;
+    border: 2px solid #e5e7eb;
 }
 
 .feat-cards__item:hover {
     transform: translateY(-8px);
     box-shadow: 0 16px 40px rgba(13, 45, 107, 0.15);
     border-color: #0D2D6B;
+}
+
+/* Blue background for 3rd card */
+.feat-cards__item:nth-child(3) {
+    background: #0D2D6B;
+    border: 2px solid #0D2D6B;
+}
+
+.feat-cards__item:nth-child(3) .feat-cards__title {
+    color: #ffffff;
+}
+
+.feat-cards__item:nth-child(3) .feat-cards__desc {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.feat-cards__item:nth-child(3) .feat-cards__title::after {
+    background: #ffffff;
 }
 
 .feat-cards__img {
@@ -19404,7 +19421,7 @@ html {
 @media (max-width: 992px) {
     .feat-cards__grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
+        gap: 1.2rem;
     }
 }
 
@@ -19412,7 +19429,7 @@ html {
 @media (max-width: 600px) {
     .feat-cards__grid {
         grid-template-columns: 1fr;
-        gap: 1.25rem;
+        gap: 1rem;
         padding: 0 15px;
     }
 
