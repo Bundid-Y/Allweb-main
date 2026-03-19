@@ -101,7 +101,7 @@
   </div>
 
   <!-- Back to Services Button -->
-  <div class="back-to-services">
+  <div class="back-to-services" style="text-align: center; padding: 40px 40px; margin-top: -340px;">
     <a href="../main/index.php#services" class="back-to-services-btn">
       <span class="back-icon">←</span>
       กลับไปหน้าหลัก บริการของเรา
