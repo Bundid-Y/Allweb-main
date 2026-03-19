@@ -58,63 +58,50 @@
     </div>
   </div>
 
-  <!-- Features Section -->
-  <div class="content-section layout_padding svc-features">
-    <div class="svc-features__inner">
+  <!-- Features Section — Horizontal 3-Card Layout -->
+  <div class="content-section layout_padding feat-cards">
+    <div class="feat-cards__grid">
 
-      <section class="svc-feature">
-        <div class="svc-feature__row">
-          <div class="svc-feature__text">
-            <h3 data-i18n="service.nationwide_sec1_title">First Mile Delivery</h3>
-            <p data-i18n="service.nationwide_sec1_desc">
-              บริการรับสินค้าจากต้นทาง เช่น โรงงานหรือคลังสินค้าหลัก เพื่อนำเข้าสู่ศูนย์กระจายสินค้าหรือจุดพักสินค้า
-              ดำเนินการอย่างเป็นระบบ ทำให้การไหลเวียนของสินค้าในห่วงโซ่อุปทานเริ่มต้นได้อย่างราบรื่น</p>
-          </div>
-          <div class="svc-feature__img">
-            <div class="svc-feature__img-wrap">
-              <div class="svc-shape svc-shape--feat-right"></div>
-              <img src="../img/other/service/nationwide/firstmiledelivery.png" alt="First Mile Delivery">
-            </div>
-          </div>
+      <!-- Card 1 -->
+      <div class="feat-cards__item fc-hidden">
+        <div class="feat-cards__img">
+          <img src="../img/other/service/nationwide/firstmiledelivery.png" alt="First Mile Delivery">
         </div>
-      </section>
+        <div class="feat-cards__body">
+          <h3 class="feat-cards__title" data-i18n="service.nationwide_sec1_title">First Mile Delivery</h3>
+          <p class="feat-cards__desc" data-i18n="service.nationwide_sec1_desc">
+            บริการรับสินค้าจากต้นทาง เช่น โรงงานหรือคลังสินค้าหลัก เพื่อนำเข้าสู่ศูนย์กระจายสินค้าหรือจุดพักสินค้า
+            ดำเนินการอย่างเป็นระบบ ทำให้การไหลเวียนของสินค้าในห่วงโซ่อุปทานเริ่มต้นได้อย่างราบรื่น</p>
+        </div>
+      </div>
 
-      <section class="svc-feature">
-        <div class="svc-feature__row svc-feature__row--reverse">
-          <div class="svc-feature__text">
-            <h3 data-i18n="service.nationwide_sec2_title">Middle Mile Distribution</h3>
-            <p data-i18n="service.nationwide_sec2_desc">
-              การขนส่งสินค้าระหว่างศูนย์กระจายสินค้า, คลังสินค้าท้องถิ่น, หรือจุดพักสินค้าอย่างมีประสิทธิภาพ
-              มีการวางแผนเส้นทางอย่างละเอียด ไม่ให้เกิดความล่าช้าหรือส่งผิดปลายทาง
-              สร้างความมั่นใจให้กับลูกค้าในทุกไมล์ของการขนส่ง
-            </p>
-          </div>
-          <div class="svc-feature__img">
-            <div class="svc-feature__img-wrap">
-              <div class="svc-shape svc-shape--feat-left"></div>
-              <img src="../img/other/service/nationwide/middlemiledistribution.png" alt="Middle Mile Distribution">
-            </div>
-          </div>
+      <!-- Card 2 -->
+      <div class="feat-cards__item fc-hidden">
+        <div class="feat-cards__img">
+          <img src="../img/other/service/nationwide/middlemiledistribution.png" alt="Middle Mile Distribution">
         </div>
-      </section>
+        <div class="feat-cards__body">
+          <h3 class="feat-cards__title" data-i18n="service.nationwide_sec2_title">Middle Mile Distribution</h3>
+          <p class="feat-cards__desc" data-i18n="service.nationwide_sec2_desc">
+            การขนส่งสินค้าระหว่างศูนย์กระจายสินค้า, คลังสินค้าท้องถิ่น, หรือจุดพักสินค้าอย่างมีประสิทธิภาพ
+            มีการวางแผนเส้นทางอย่างละเอียด ไม่ให้เกิดความล่าช้าหรือส่งผิดปลายทาง
+            สร้างความมั่นใจให้กับลูกค้าในทุกไมล์ของการขนส่ง</p>
+        </div>
+      </div>
 
-      <section class="svc-feature">
-        <div class="svc-feature__row">
-          <div class="svc-feature__text">
-            <h3 data-i18n="service.nationwide_sec3_title">Last Mile Delivery</h3>
-            <p data-i18n="service.nationwide_sec3_desc">
-              ส่งมอบสินค้าถึงลูกค้าหรือปลายทางสุดท้ายอย่างแม่นยำ ครอบคลุมทุกจังหวัดในประเทศไทย
-              ดำเนินการด้วยฟลีตรถบรรทุสวนตัวและระบบติดตามสถานะแบบเรียลไทม์
-              เพื่อลูกค้ามั่นใจในการรับสินค้าทุกครั้ง</p>
-          </div>
-          <div class="svc-feature__img">
-            <div class="svc-feature__img-wrap">
-              <div class="svc-shape svc-shape--feat-right"></div>
-              <img src="../img/other/service/nationwide/lastmiledelivery.png" alt="Last Mile Delivery">
-            </div>
-          </div>
+      <!-- Card 3 -->
+      <div class="feat-cards__item fc-hidden">
+        <div class="feat-cards__img">
+          <img src="../img/other/service/nationwide/lastmiledelivery.png" alt="Last Mile Delivery">
         </div>
-      </section>
+        <div class="feat-cards__body">
+          <h3 class="feat-cards__title" data-i18n="service.nationwide_sec3_title">Last Mile Delivery</h3>
+          <p class="feat-cards__desc" data-i18n="service.nationwide_sec3_desc">
+            ส่งมอบสินค้าถึงลูกค้าหรือปลายทางสุดท้ายอย่างแม่นยำ ครอบคลุมทุกจังหวัดในประเทศไทย
+            ดำเนินการด้วยฟลีตรถบรรทุสวนตัวและระบบติดตามสถานะแบบเรียลไทม์
+            เพื่อลูกค้ามั่นใจในการรับสินค้าทุกครั้ง</p>
+        </div>
+      </div>
 
     </div>
   </div>

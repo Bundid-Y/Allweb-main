@@ -58,64 +58,51 @@
     </div>
   </div>
 
-  <!-- Features Section -->
-  <div class="content-section layout_padding svc-features">
-    <div class="svc-features__inner">
+  <!-- Features Section — Horizontal 3-Card Layout -->
+  <div class="content-section layout_padding feat-cards">
+    <div class="feat-cards__grid">
 
-      <section class="svc-feature">
-        <div class="svc-feature__row">
-          <div class="svc-feature__text">
-            <h3 data-i18n="service.domestic_sec1_title">Inbound Logistics</h3>
-            <p data-i18n="service.domestic_sec1_desc">
-              บริการรับสินค้าจากซัพพลายเออร์หรือโรงงาน และขนส่งเข้าสู่ศูนย์กระจายสินค้าหรือคลังสินค้า
-              ด้วยการวางแผนรอบการรับสินค้าอย่างเป็นระบบ ช่วยให้กระบวนการโลจิสติกส์ขาเข้าเป็นไปอย่างราบรื่น
-              ตรงเวลา และมีประสิทธิภาพสูงสุด</p>
-          </div>
-          <div class="svc-feature__img">
-            <div class="svc-feature__img-wrap">
-              <div class="svc-shape svc-shape--feat-right"></div>
-              <img src="../img/other/service/domestic/Inboundlogistics.png" alt="Inbound Logistics">
-            </div>
-          </div>
+      <!-- Card 1 -->
+      <div class="feat-cards__item fc-hidden">
+        <div class="feat-cards__img">
+          <img src="../img/other/service/domestic/Inboundlogistics.png" alt="Inbound Logistics">
         </div>
-      </section>
+        <div class="feat-cards__body">
+          <h3 class="feat-cards__title" data-i18n="service.domestic_sec1_title">Inbound Logistics</h3>
+          <p class="feat-cards__desc" data-i18n="service.domestic_sec1_desc">
+            บริการรับสินค้าจากซัพพลายเออร์หรือโรงงาน และขนส่งเข้าสู่ศูนย์กระจายสินค้าหรือคลังสินค้า
+            ด้วยการวางแผนรอบการรับสินค้าอย่างเป็นระบบ ช่วยให้กระบวนการโลจิสติกส์ขาเข้าเป็นไปอย่างราบรื่น
+            ตรงเวลา และมีประสิทธิภาพสูงสุด</p>
+        </div>
+      </div>
 
-      <section class="svc-feature">
-        <div class="svc-feature__row svc-feature__row--reverse">
-          <div class="svc-feature__text">
-            <h3 data-i18n="service.domestic_sec2_title">Distribution Center / Warehouse</h3>
-            <p data-i18n="service.domestic_sec2_desc">
-              บริหารจัดการศูนย์กระจายสินค้าและคลังสินค้าอย่างเป็นระบบ ตั้งแต่การรับเข้า จัดเก็บ
-              สุ่มตรวจ และเตรียมสินค้าพร้อมส่ง ช่วยให้กระบวนการผลิตและการจัดส่งของลูกค้าดำเนินไปได้
-              อย่างต่อเนื่องและไม่สะดุด
-            </p>
-          </div>
-          <div class="svc-feature__img">
-            <div class="svc-feature__img-wrap">
-              <div class="svc-shape svc-shape--feat-left"></div>
-              <img src="../img/other/service/domestic/distributioncenter.png" alt="Distribution Center">
-            </div>
-          </div>
+      <!-- Card 2 -->
+      <div class="feat-cards__item fc-hidden">
+        <div class="feat-cards__img">
+          <img src="../img/other/service/domestic/distributioncenter.png" alt="Distribution Center">
         </div>
-      </section>
+        <div class="feat-cards__body">
+          <h3 class="feat-cards__title" data-i18n="service.domestic_sec2_title">Distribution Center / Warehouse</h3>
+          <p class="feat-cards__desc" data-i18n="service.domestic_sec2_desc">
+            บริหารจัดการศูนย์กระจายสินค้าและคลังสินค้าอย่างเป็นระบบ ตั้งแต่การรับเข้า จัดเก็บ
+            สุ่มตรวจ และเตรียมสินค้าพร้อมส่ง ช่วยให้กระบวนการผลิตและการจัดส่งของลูกค้าดำเนินไปได้
+            อย่างต่อเนื่องและไม่สะดุด</p>
+        </div>
+      </div>
 
-      <section class="svc-feature">
-        <div class="svc-feature__row">
-          <div class="svc-feature__text">
-            <h3 data-i18n="service.domestic_sec3_title">Outbound Logistics</h3>
-            <p data-i18n="service.domestic_sec3_desc">
-              บริการจัดส่งสินค้าจากคลังสินค้าหรือศูนย์กระจายสินค้าไปยังจุดหมายปลายทางทั่วประเทศ
-              ด้วยการวางแผนเส้นทางที่มีประสิทธิภาพ ควบคุมตารางเวลาการส่งมอบสินค้าอย่างแม่นยำ
-              และรองรับการขนส่งทั้งสินค้าอุตสาหกรรมและสินค้าทั่วไปในทุกขนาด</p>
-          </div>
-          <div class="svc-feature__img">
-            <div class="svc-feature__img-wrap">
-              <div class="svc-shape svc-shape--feat-right"></div>
-              <img src="../img/other/service/domestic/outboundlogistics.png" alt="Outbound Logistics">
-            </div>
-          </div>
+      <!-- Card 3 -->
+      <div class="feat-cards__item fc-hidden">
+        <div class="feat-cards__img">
+          <img src="../img/other/service/domestic/outboundlogistics.png" alt="Outbound Logistics">
         </div>
-      </section>
+        <div class="feat-cards__body">
+          <h3 class="feat-cards__title" data-i18n="service.domestic_sec3_title">Outbound Logistics</h3>
+          <p class="feat-cards__desc" data-i18n="service.domestic_sec3_desc">
+            บริการจัดส่งสินค้าจากคลังสินค้าหรือศูนย์กระจายสินค้าไปยังจุดหมายปลายทางทั่วประเทศ
+            ด้วยการวางแผนเส้นทางที่มีประสิทธิภาพ ควบคุมตารางเวลาการส่งมอบสินค้าอย่างแม่นยำ
+            และรองรับการขนส่งทั้งสินค้าอุตสาหกรรมและสินค้าทั่วไปในทุกขนาด</p>
+        </div>
+      </div>
 
     </div>
   </div>

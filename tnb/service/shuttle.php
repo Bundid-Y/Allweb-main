@@ -57,63 +57,50 @@
     </div>
   </div>
 
-  <!-- Features Section -->
-  <div class="content-section layout_padding svc-features">
-    <div class="svc-features__inner">
+  <!-- Features Section — Horizontal 3-Card Layout -->
+  <div class="content-section layout_padding feat-cards">
+    <div class="feat-cards__grid">
 
-      <section class="svc-feature">
-        <div class="svc-feature__row">
-          <div class="svc-feature__text">
-            <h3 data-i18n="service.shuttle_sec1_title">Suppliers &amp; Factories</h3>
-            <p data-i18n="service.shuttle_sec1_desc">
-              รับสินค้าจากซัพพลายเออร์และโรงงานผู้ผลิต ดำเนินการตามรอบเวลาที่กำหนด
-              เพื่อให้กระบวนการผลิตและการส่งมอบของลูกค้าเป็นไปอย่างต่อเนื่องและไม่หยุดชะงัก</p>
-          </div>
-          <div class="svc-feature__img">
-            <div class="svc-feature__img-wrap">
-              <div class="svc-shape svc-shape--feat-right"></div>
-              <img src="../img/other/service/shuttle/suppliersfactories.jpeg" alt="Suppliers and Factories">
-            </div>
-          </div>
+      <!-- Card 1 -->
+      <div class="feat-cards__item fc-hidden">
+        <div class="feat-cards__img">
+          <img src="../img/other/service/shuttle/suppliersfactories.jpeg" alt="Suppliers and Factories">
         </div>
-      </section>
+        <div class="feat-cards__body">
+          <h3 class="feat-cards__title" data-i18n="service.shuttle_sec1_title">Suppliers &amp; Factories</h3>
+          <p class="feat-cards__desc" data-i18n="service.shuttle_sec1_desc">
+            รับสินค้าจากซัพพลายเออร์และโรงงานผู้ผลิต ดำเนินการตามรอบเวลาที่กำหนด
+            เพื่อให้กระบวนการผลิตและการส่งมอบของลูกค้าเป็นไปอย่างต่อเนื่องและไม่หยุดชะงัก</p>
+        </div>
+      </div>
 
-      <section class="svc-feature">
-        <div class="svc-feature__row svc-feature__row--reverse">
-          <div class="svc-feature__text">
-            <h3 data-i18n="service.shuttle_sec2_title">Shuttle Truck Service (WH to WH)</h3>
-            <p data-i18n="service.shuttle_sec2_desc">
-              บริการรถรับ–ส่งสินค้าระหว่างคลังสินค้าอย่างสม่ำเสมอ มีการควบคุมตารางการเดินรถ
-              เพื่อให้การขนส่งเป็นไปอย่างตรงต่อเวลา ช่วยเสริมความมั่นคงของกระบวนการโลจิสติกส์
-              ภายในองค์กรลูกค้า และรองรับปริมาณงานสูงในแต่ละวัน
-            </p>
-          </div>
-          <div class="svc-feature__img">
-            <div class="svc-feature__img-wrap">
-              <div class="svc-shape svc-shape--feat-left"></div>
-              <img src="../img/other/service/shuttle/shuttletruckservice.jpeg" alt="Shuttle Truck Service">
-            </div>
-          </div>
+      <!-- Card 2 -->
+      <div class="feat-cards__item fc-hidden">
+        <div class="feat-cards__img">
+          <img src="../img/other/service/shuttle/shuttletruckservice.jpeg" alt="Shuttle Truck Service">
         </div>
-      </section>
+        <div class="feat-cards__body">
+          <h3 class="feat-cards__title" data-i18n="service.shuttle_sec2_title">Shuttle Truck Service (WH to WH)</h3>
+          <p class="feat-cards__desc" data-i18n="service.shuttle_sec2_desc">
+            บริการรถรับ–ส่งสินค้าระหว่างคลังสินค้าอย่างสม่ำเสมอ มีการควบคุมตารางการเดินรถ
+            เพื่อให้การขนส่งเป็นไปอย่างตรงต่อเวลา ช่วยเสริมความมั่นคงของกระบวนการโลจิสติกส์
+            ภายในองค์กรลูกค้า และรองรับปริมาณงานสูงในแต่ละวัน</p>
+        </div>
+      </div>
 
-      <section class="svc-feature">
-        <div class="svc-feature__row">
-          <div class="svc-feature__text">
-            <h3 data-i18n="service.shuttle_sec3_title">Destinations / Customers</h3>
-            <p data-i18n="service.shuttle_sec3_desc">
-              ส่งมอบสินค้าถึงจุดหมายปลายทางและลูกค้าตามที่กำหนด ด้วยความรวดเร็วและตรงต่อเวลา
-              มีการติดตามและรายงานสถานะการขนส่งให้ลูกค้าทราบในทุกขั้นตอน
-              เพื่อสร้างความมั่นใจและความไว้วางใจในระยะยาว</p>
-          </div>
-          <div class="svc-feature__img">
-            <div class="svc-feature__img-wrap">
-              <div class="svc-shape svc-shape--feat-right"></div>
-              <img src="../img/other/service/shuttle/destinationscustomers.jpeg" alt="Destinations and Customers">
-            </div>
-          </div>
+      <!-- Card 3 -->
+      <div class="feat-cards__item fc-hidden">
+        <div class="feat-cards__img">
+          <img src="../img/other/service/shuttle/destinationscustomers.jpeg" alt="Destinations and Customers">
         </div>
-      </section>
+        <div class="feat-cards__body">
+          <h3 class="feat-cards__title" data-i18n="service.shuttle_sec3_title">Destinations / Customers</h3>
+          <p class="feat-cards__desc" data-i18n="service.shuttle_sec3_desc">
+            ส่งมอบสินค้าถึงจุดหมายปลายทางและลูกค้าตามที่กำหนด ด้วยความรวดเร็วและตรงต่อเวลา
+            มีการติดตามและรายงานสถานะการขนส่งให้ลูกค้าทราบในทุกขั้นตอน
+            เพื่อสร้างความมั่นใจและความไว้วางใจในระยะยาว</p>
+        </div>
+      </div>
 
     </div>
   </div>

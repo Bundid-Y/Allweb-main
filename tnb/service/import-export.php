@@ -58,64 +58,51 @@
     </div>
   </div>
 
-  <!-- Features Section -->
-  <div class="content-section layout_padding svc-features">
-    <div class="svc-features__inner">
+  <!-- Features Section — Horizontal 3-Card Layout -->
+  <div class="content-section layout_padding feat-cards">
+    <div class="feat-cards__grid">
 
-      <section class="svc-feature">
-        <div class="svc-feature__row">
-          <div class="svc-feature__text">
-            <h3 data-i18n="service.import_export_sec1_title">Port &amp; Terminal</h3>
-            <p data-i18n="service.import_export_sec1_desc">
-              บริการรับและส่งตู้คอนเทนเนอร์ที่ท่าเรือและลานจอดตู้สินค้า (Terminal) ดำเนินการได้อย่างรวดเร็ว
-              ถูกต้อง และสอดคล้องกับกระบวนการนำเข้า-ส่งออก ครอบคลุมท่าเรือหลักในประเทศ
-              เช่น ท่าเรือแหลมฉบัง และท่าเรืออื่นๆ ในพื้นที่ยุทธศาสตร์</p>
-          </div>
-          <div class="svc-feature__img">
-            <div class="svc-feature__img-wrap">
-              <div class="svc-shape svc-shape--feat-right"></div>
-              <img src="../img/other/service/import-export/portterminal.png" alt="Port and Terminal">
-            </div>
-          </div>
+      <!-- Card 1 -->
+      <div class="feat-cards__item fc-hidden">
+        <div class="feat-cards__img">
+          <img src="../img/other/service/import-export/portterminal.png" alt="Port and Terminal">
         </div>
-      </section>
+        <div class="feat-cards__body">
+          <h3 class="feat-cards__title" data-i18n="service.import_export_sec1_title">Port &amp; Terminal</h3>
+          <p class="feat-cards__desc" data-i18n="service.import_export_sec1_desc">
+            บริการรับและส่งตู้คอนเทนเนอร์ที่ท่าเรือและลานจอดตู้สินค้า (Terminal) ดำเนินการได้อย่างรวดเร็ว
+            ถูกต้อง และสอดคล้องกับกระบวนการนำเข้า-ส่งออก ครอบคลุมท่าเรือหลักในประเทศ
+            เช่น ท่าเรือแหลมฉบัง และท่าเรืออื่นๆ ในพื้นที่ยุทธศาสตร์</p>
+        </div>
+      </div>
 
-      <section class="svc-feature">
-        <div class="svc-feature__row svc-feature__row--reverse">
-          <div class="svc-feature__text">
-            <h3 data-i18n="service.import_export_sec2_title">Container Transportation</h3>
-            <p data-i18n="service.import_export_sec2_desc">
-              ขนส่งตู้คอนเทนเนอร์ทั้งขาเข้าและขาออกระหว่างท่าเรือ ลานตู้สินค้า โรงงาน และคลังสินค้า
-              ด้วยรถหัวลากที่ได้รับมาตรฐานและมีการบริหารจัดการเอกสารอย่างเป็นระบบ
-              ช่วยลดความเสี่ยงด้านความล่าช้าและสร้างความมั่นใจในทุกขั้นตอนการขนส่ง
-            </p>
-          </div>
-          <div class="svc-feature__img">
-            <div class="svc-feature__img-wrap">
-              <div class="svc-shape svc-shape--feat-left"></div>
-              <img src="../img/other/service/import-export/containertransportation.png" alt="Container Transportation">
-            </div>
-          </div>
+      <!-- Card 2 -->
+      <div class="feat-cards__item fc-hidden">
+        <div class="feat-cards__img">
+          <img src="../img/other/service/import-export/containertransportation.png" alt="Container Transportation">
         </div>
-      </section>
+        <div class="feat-cards__body">
+          <h3 class="feat-cards__title" data-i18n="service.import_export_sec2_title">Container Transportation</h3>
+          <p class="feat-cards__desc" data-i18n="service.import_export_sec2_desc">
+            ขนส่งตู้คอนเทนเนอร์ทั้งขาเข้าและขาออกระหว่างท่าเรือ ลานตู้สินค้า โรงงาน และคลังสินค้า
+            ด้วยรถหัวลากที่ได้รับมาตรฐานและมีการบริหารจัดการเอกสารอย่างเป็นระบบ
+            ช่วยลดความเสี่ยงด้านความล่าช้าและสร้างความมั่นใจในทุกขั้นตอนการขนส่ง</p>
+        </div>
+      </div>
 
-      <section class="svc-feature">
-        <div class="svc-feature__row">
-          <div class="svc-feature__text">
-            <h3 data-i18n="service.import_export_sec3_title">Factory &amp; Warehouse</h3>
-            <p data-i18n="service.import_export_sec3_desc">
-              ขนส่งตู้คอนเทนเนอร์ถึงโรงงานและคลังสินค้าของลูกค้าโดยตรง ด้วยการวางแผนเส้นทางที่มีประสิทธิภาพ
-              และระบบติดตามสถานะแบบเรียลไทม์ เพื่อให้กระบวนการนำเข้า-ส่งออก
-              ดำเนินไปได้อย่างราบรื่นและตรงตามกำหนดเวลา</p>
-          </div>
-          <div class="svc-feature__img">
-            <div class="svc-feature__img-wrap">
-              <div class="svc-shape svc-shape--feat-right"></div>
-              <img src="../img/other/service/import-export/factorywarehouse.png" alt="Factory and Warehouse">
-            </div>
-          </div>
+      <!-- Card 3 -->
+      <div class="feat-cards__item fc-hidden">
+        <div class="feat-cards__img">
+          <img src="../img/other/service/import-export/factorywarehouse.png" alt="Factory and Warehouse">
         </div>
-      </section>
+        <div class="feat-cards__body">
+          <h3 class="feat-cards__title" data-i18n="service.import_export_sec3_title">Factory &amp; Warehouse</h3>
+          <p class="feat-cards__desc" data-i18n="service.import_export_sec3_desc">
+            ขนส่งตู้คอนเทนเนอร์ถึงโรงงานและคลังสินค้าของลูกค้าโดยตรง ด้วยการวางแผนเส้นทางที่มีประสิทธิภาพ
+            และระบบติดตามสถานะแบบเรียลไทม์ เพื่อให้กระบวนการนำเข้า-ส่งออก
+            ดำเนินไปได้อย่างราบรื่นและตรงตามกำหนดเวลา</p>
+        </div>
+      </div>
 
     </div>
   </div>

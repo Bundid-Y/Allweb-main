@@ -33,85 +33,161 @@
 <body class="page-technology">
     <?php include '../component/menubar.php'; ?>
 
-    <div class="content-section layout_padding" style="margin-top: 60px; padding-top: 40px; max-width: 1200px; margin-left: auto; margin-right: auto;">
-        <div class="trucktypes-page__heading" style="margin-bottom: 32px;">
-            <h1 style="color: #0D2D6B;" data-i18n="technology.title">เทคโนโลยีของเรา</h1>
-            <p data-i18n="technology.subtitle">นวัตกรรมและระบบอัจฉริยะที่ช่วยยกระดับประสิทธิภาพการจัดการซัพพลายเชนของคุณ</p>
+    <!-- หัวข้อหลัก -->
+    <div class="card-ui-header layout_padding">
+        <div class="container">
+            <h1 class="card-ui-main-title" data-i18n="technology.title">เทคโนโลยีของเรา</h1>
+            <p class="card-ui-main-desc" data-i18n="technology.subtitle">นวัตกรรมและระบบอัจฉริยะที่ช่วยยกระดับประสิทธิภาพการจัดการซัพพลายเชนของคุณ</p>
         </div>
+    </div>
 
-        <!-- Tab Buttons -->
-        <div class="tech-tabs">
-            <button class="tech-tab-btn active" data-tab="tab-tms" data-i18n="technology.tab_tms">TMS</button>
-            <button class="tech-tab-btn" data-tab="tab-wms" data-i18n="technology.tab_wms">Truck Monitoring</button>
-            <button class="tech-tab-btn" data-tab="tab-geo" data-i18n="technology.tab_geo">Geofencing</button>
-            <button class="tech-tab-btn" data-tab="tab-cam" data-i18n="technology.tab_cam">Camera Control</button>
-        </div>
+    <!-- Card Grid Section -->
+    <section class="card-ui-section">
+        <div class="container">
+            <div class="card-ui-grid">
 
-        <!-- Tab 1: TMS -->
-        <div class="tech-tab-content active" id="tab-tms">
-            <div class="tech-tab-content__img">
-                <img src="../img/other/technology/tms1.png" alt="TMS">
-            </div>
-            <div class="tech-tab-content__text">
-                <h3 data-i18n="technology.tms_title">Transportation Management System (TMS)</h3>
-                <p data-i18n="technology.tms_desc">ระบบบริหารจัดการงานขนส่งแบบครบวงจรของ TNB ถูกออกแบบมาเพื่อรองรับการทำงานตั้งแต่ต้นทางจนจบกระบวนการขนส่ง</p>
-                <ul class="tech_list">
-                    <li><strong>Order Management:</strong> ใช้สำหรับรับคำสั่งงานจากลูกค้า ตรวจสอบรายละเอียดงาน เช่น ประเภทตู้สินค้า เส้นทาง และระยะเวลาในการจัดส่ง</li>
-                    <li><strong>Resource Integration:</strong> ระบบสามารถเชื่อมโยงข้อมูลรถขนส่ง พนักงานขับรถ และตารางงานเข้าด้วยกันอย่างเป็นระบบ</li>
-                    <li><strong>Real-time Tracking:</strong> ใช้ในการติดตามสถานะงานแต่ละ Job แบบเรียลไทม์ ลดความผิดพลาดจากการทำงานด้วยเอกสาร</li>
-                    <li><strong>Cost &amp; Time Control:</strong> เพิ่มความแม่นยำในการควบคุมต้นทุนและระยะเวลาการขนส่ง</li>
-                </ul>
-            </div>
-        </div>
+                <!-- Card 1: TMS System -->
+                <div class="card-ui-item" data-modal="modal-tms">
+                    <div class="card-ui-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3 class="card-ui-title" data-i18n="technology.tab_tms">TMS</h3>
+                    <p class="card-ui-desc" data-i18n="technology.tms_card_desc">ระบบบริหารจัดการงานขนส่งแบบครบวงจร ติดตามสถานะแบบเรียลไทม์ผ่าน GPS</p>
+                    <span class="card-ui-more" data-i18n="technology.cardMore">คลิกเพื่อดูรายละเอียด →</span>
+                </div>
 
-        <!-- Tab 2: WMS -->
-        <div class="tech-tab-content" id="tab-wms">
-            <div class="tech-tab-content__img">
-                <img src="../img/other/technology/wms.jpeg" alt="WMS">
-            </div>
-            <div class="tech-tab-content__text">
-                <h3 data-i18n="technology.wms_title">Truck Monitoring &amp; Dashboard System</h3>
-                <p data-i18n="technology.wms_desc">ระบบติดตามและแสดงผลการทำงานของรถขนส่งของ TNB ทำงานผ่าน Dashboard กลางที่สามารถมองเห็นภาพรวมการปฏิบัติงานได้อย่างชัดเจน</p>
-                <ul class="tech_list">
-                    <li><strong>Comprehensive Monitoring:</strong> ทั้งสถานะของรถแต่ละคัน สถานะงานแต่ละ Job และปริมาณการใช้งานในแต่ละช่วงเวลา</li>
-                    <li><strong>Detailed Reporting:</strong> ตรวจสอบข้อมูลแบบรายวัน รายเดือน และวิเคราะห์แนวโน้มการใช้งานรถได้จากกราฟและรายงาน</li>
-                    <li><strong>Efficiency Improvement:</strong> ช่วยให้การบริหารจัดการฟลีทรถมีประสิทธิภาพมากขึ้น ลดเวลาการตรวจสอบหน้างาน</li>
-                    <li><strong>Decision Support:</strong> สนับสนุนการตัดสินใจเชิงบริหารได้อย่างรวดเร็วและแม่นยำ</li>
-                </ul>
-            </div>
-        </div>
+                <!-- Card 2: Truck Monitoring -->
+                <div class="card-ui-item" data-modal="modal-wms">
+                    <div class="card-ui-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                    </div>
+                    <h3 class="card-ui-title" data-i18n="technology.tab_wms">Truck Monitoring</h3>
+                    <p class="card-ui-desc" data-i18n="technology.wms_card_desc">ระบบติดตามและแสดงผลการทำงานของรถขนส่งผ่าน Dashboard กลาง</p>
+                    <span class="card-ui-more" data-i18n="technology.cardMore">คลิกเพื่อดูรายละเอียด →</span>
+                </div>
 
-        <!-- Tab 3: Geofencing -->
-        <div class="tech-tab-content" id="tab-geo">
-            <div class="tech-tab-content__img">
-                <img src="../img/other/technology/geofencing.jpeg" alt="Geofencing">
-            </div>
-            <div class="tech-tab-content__text">
-                <h3 data-i18n="technology.geo_title">Geofencing &amp; Line Auto Alert System</h3>
-                <p data-i18n="technology.geo_desc">TNB ใช้เทคโนโลยี Geofencing เพื่อกำหนดขอบเขตพื้นที่สำคัญ เช่น ท่าเรือ คลังสินค้า หรือโรงงานลูกค้า</p>
-                <ul class="tech_list">
-                    <li><strong>Automatic Boundary Detection:</strong> เมื่อรถขนส่งผ่านเข้า–ออกพื้นที่ที่กำหนด ระบบจะบันทึกข้อมูลเวลาและสถานะโดยอัตโนมัติ</li>
-                    <li><strong>Real-time Notifications:</strong> เชื่อมต่อกับระบบแจ้งเตือนผ่าน Line Auto Alert เพื่อแจ้งข้อมูลแบบเรียลไทม์</li>
-                    <li><strong>Time Control:</strong> ช่วยควบคุมเวลาในการขนส่ง ลดความเสี่ยงจากความล่าช้า</li>
-                    <li><strong>Transparency &amp; Tracking:</strong> เพิ่มความโปร่งใสในการติดตามตู้สินค้าตลอดเวลา</li>
-                </ul>
+                <!-- Card 3: Geofencing -->
+                <div class="card-ui-item" data-modal="modal-geo">
+                    <div class="card-ui-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+                    </div>
+                    <h3 class="card-ui-title" data-i18n="technology.tab_geo">Geofencing</h3>
+                    <p class="card-ui-desc" data-i18n="technology.geo_card_desc">ระบบกำหนดพื้นที่ปลอดภัย ติดตามการเคลื่อนที่ของรถในเขตที่กำหนด</p>
+                    <span class="card-ui-more" data-i18n="technology.cardMore">คลิกเพื่อดูรายละเอียด →</span>
+                </div>
+
+                <!-- Card 4: Camera Control -->
+                <div class="card-ui-item" data-modal="modal-cam">
+                    <div class="card-ui-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                    </div>
+                    <h3 class="card-ui-title" data-i18n="technology.tab_cam">Camera Control</h3>
+                    <p class="card-ui-desc" data-i18n="technology.cam_card_desc">ระบบควบคุมกล้องวงจรปิดรถบรรทุก เพิ่มความปลอดภัยในการขนส่ง</p>
+                    <span class="card-ui-more" data-i18n="technology.cardMore">คลิกเพื่อดูรายละเอียด →</span>
+                </div>
+
             </div>
         </div>
+    </section>
 
-        <!-- Tab 4: Camera Control -->
-        <div class="tech-tab-content" id="tab-cam">
-            <div class="tech-tab-content__img">
-                <img src="../img/other/technology/cameracontrol.jpeg" alt="Camera Control">
+    <!-- ==================== MODALS ==================== -->
+
+    <!-- Modal 1: TMS System -->
+    <div class="modal-ui-overlay" id="modal-tms">
+        <div class="modal-ui-container">
+            <button class="modal-ui-close" aria-label="ปิด">&times;</button>
+            <div class="modal-ui-body">
+                <div class="modal-ui-two-col">
+                    <div class="modal-ui-col-img">
+                        <img src="../img/other/technology/tms.jpeg" alt="TMS" loading="lazy">
+                    </div>
+                    <div class="modal-ui-col-text">
+                        <h2 class="modal-ui-title" data-i18n="technology.tab_tms">TMS</h2>
+                        <p class="modal-ui-subtitle">Transportation Management System</p>
+                        <p class="modal-ui-desc" data-i18n="technology.tms_desc">ระบบบริหารจัดการงานขนส่งแบบครบวงจร ติดตามสถานะแบบเรียลไทม์ผ่าน GPS</p>
+                        <ul class="modal-ui-list">
+                            <li><strong>Route Optimization:</strong> ระบบคำนวณเส้นทางที่เหมาะสมที่สุดเพื่อลดระยะทางและเวลาในการขนส่ง</li>
+                            <li><strong>Real-time Tracking:</strong> ติดตามสถานะการขนส่งแบบเรียลไทม์ผ่าน GPS</li>
+                            <li><strong>Automated Reporting:</strong> ระบบสร้างรายงานการขนส่งอัตโนมัติ</li>
+                            <li><strong>Integration with Other Systems:</strong> สามารถเชื่อมต่อกับระบบอื่นๆ ของบริษัทได้อย่างง่ายดาย</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="tech-tab-content__text">
-                <h3 data-i18n="technology.cam_title">Camera Control &amp; Driver Behavior Monitoring</h3>
-                <p data-i18n="technology.cam_desc">ระบบกล้องตรวจสอบของ TNB ถูกติดตั้งทั้งบริเวณด้านหน้ารถ ภายในตู้สินค้า และจุดตรวจสอบพฤติกรรมพนักงานขับรถ</p>
-                <ul class="tech_list">
-                    <li><strong>Live Monitoring:</strong> สามารถดูภาพสดแบบออนไลน์ บันทึกข้อมูล และเรียกดูภาพย้อนหลังได้</li>
-                    <li><strong>Safety Enhancement:</strong> ช่วยเพิ่มความปลอดภัยในการขนส่งสินค้า ป้องกันความเสียหายและลดความเสี่ยงจากอุบัติเหตุ</li>
-                    <li><strong>Driver Behavior Analysis:</strong> ใช้เป็นเครื่องมือในการควบคุมมาตรฐานการขับขี่ วิเคราะห์พฤติกรรมการทำงานของพนักงาน</li>
-                    <li><strong>Service Quality Control:</strong> ยกระดับคุณภาพการให้บริการให้เป็นไปตามมาตรฐานของบริษัท</li>
-                </ul>
+        </div>
+    </div>
+
+    <!-- Modal 2: Truck Monitoring -->
+    <div class="modal-ui-overlay" id="modal-wms">
+        <div class="modal-ui-container">
+            <button class="modal-ui-close" aria-label="ปิด">&times;</button>
+            <div class="modal-ui-body">
+                <div class="modal-ui-two-col">
+                    <div class="modal-ui-col-img">
+                        <img src="../img/other/technology/truckmonitoring.jpeg" alt="Truck Monitoring" loading="lazy">
+                    </div>
+                    <div class="modal-ui-col-text">
+                        <h2 class="modal-ui-title" data-i18n="technology.tab_wms">Truck Monitoring</h2>
+                        <p class="modal-ui-subtitle">Truck Monitoring System</p>
+                        <p class="modal-ui-desc" data-i18n="technology.wms_desc">ระบบติดตามและแสดงผลการทำงานของรถขนส่งผ่าน Dashboard กลาง</p>
+                        <ul class="modal-ui-list">
+                            <li><strong>Real-time Tracking:</strong> ติดตามสถานะการขนส่งแบบเรียลไทม์ผ่าน GPS</li>
+                            <li><strong>Automated Reporting:</strong> ระบบสร้างรายงานการขนส่งอัตโนมัติ</li>
+                            <li><strong>Alert System:</strong> ระบบแจ้งเตือนเมื่อมีการเปลี่ยนแปลงสถานะการขนส่ง</li>
+                            <li><strong>Integration with Other Systems:</strong> สามารถเชื่อมต่อกับระบบอื่นๆ ของบริษัทได้อย่างง่ายดาย</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Geofencing -->
+    <div class="modal-ui-overlay" id="modal-geo">
+        <div class="modal-ui-container">
+            <button class="modal-ui-close" aria-label="ปิด">&times;</button>
+            <div class="modal-ui-body">
+                <div class="modal-ui-two-col">
+                    <div class="modal-ui-col-img">
+                        <img src="../img/other/technology/geofencing.jpeg" alt="Geofencing" loading="lazy">
+                    </div>
+                    <div class="modal-ui-col-text">
+                        <h2 class="modal-ui-title" data-i18n="technology.tab_geo">Geofencing</h2>
+                        <p class="modal-ui-subtitle">Geofencing & Line Auto Alert System</p>
+                        <p class="modal-ui-desc" data-i18n="technology.geo_desc">TNB ใช้เทคโนโลยี Geofencing เพื่อกำหนดขอบเขตพื้นที่สำคัญ เช่น ท่าเรือ คลังสินค้า หรือโรงงานลูกค้า</p>
+                        <ul class="modal-ui-list">
+                            <li><strong>Automatic Boundary Detection:</strong> เมื่อรถขนส่งผ่านเข้า–ออกพื้นที่ที่กำหนด ระบบจะบันทึกข้อมูลเวลาและสถานะโดยอัตโนมัติ</li>
+                            <li><strong>Real-time Notifications:</strong> เชื่อมต่อกับระบบแจ้งเตือนผ่าน Line Auto Alert เพื่อแจ้งข้อมูลแบบเรียลไทม์</li>
+                            <li><strong>Time Control:</strong> ช่วยควบคุมเวลาในการขนส่ง ลดความเสี่ยงจากความล่าช้า</li>
+                            <li><strong>Transparency & Tracking:</strong> เพิ่มความโปร่งใสในการติดตามตู้สินค้าตลอดเวลา</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Camera Control -->
+    <div class="modal-ui-overlay" id="modal-cam">
+        <div class="modal-ui-container">
+            <button class="modal-ui-close" aria-label="ปิด">&times;</button>
+            <div class="modal-ui-body">
+                <div class="modal-ui-two-col">
+                    <div class="modal-ui-col-img">
+                        <img src="../img/other/technology/cameracontrol.jpeg" alt="Camera Control" loading="lazy">
+                    </div>
+                    <div class="modal-ui-col-text">
+                        <h2 class="modal-ui-title" data-i18n="technology.tab_cam">Camera Control</h2>
+                        <p class="modal-ui-subtitle">Camera Control & Driver Behavior Monitoring</p>
+                        <p class="modal-ui-desc" data-i18n="technology.cam_desc">ระบบกล้องตรวจสอบของ TNB ถูกติดตั้งทั้งบริเวณด้านหน้ารถ ภายในตู้สินค้า และจุดตรวจสอบพฤติกรรมพนักงานขับรถ</p>
+                        <ul class="modal-ui-list">
+                            <li><strong>Live Monitoring:</strong> สามารถดูภาพสดแบบออนไลน์ บันทึกข้อมูล และเรียกดูภาพย้อนหลังได้</li>
+                            <li><strong>Safety Enhancement:</strong> ช่วยเพิ่มความปลอดภัยในการขนส่งสินค้า ป้องกันความเสียหายและลดความเสี่ยงจากอุบัติเหตุ</li>
+                            <li><strong>Driver Behavior Analysis:</strong> ใช้เป็นเครื่องมือในการควบคุมมาตรฐานการขับขี่ วิเคราะห์พฤติกรรมการทำงานของพนักงาน</li>
+                            <li><strong>Service Quality Control:</strong> ยกระดับคุณภาพการให้บริการให้เป็นไปตามมาตรฐานของบริษัท</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -495,3 +495,104 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// =========================================
+// Scroll-triggered animations for feature cards
+// =========================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Feature Cards Animation
+    const featureCards = document.querySelectorAll('.feat-cards__item.fc-hidden');
+    
+    if (featureCards.length > 0) {
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const cardObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.remove('fc-hidden');
+                    entry.target.classList.add('fc-visible');
+                }
+            });
+        }, observerOptions);
+        
+        featureCards.forEach(card => {
+            cardObserver.observe(card);
+        });
+    }
+
+    // Modal System for Technology Page
+    const modalItems = document.querySelectorAll('.card-ui-item');
+    const modalOverlays = document.querySelectorAll('.modal-ui-overlay');
+    const modalCloseButtons = document.querySelectorAll('.modal-ui-close');
+
+    // Open modal
+    modalItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const modalId = this.getAttribute('data-modal');
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    });
+
+    // Close modal
+    function closeModal(modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    // Close on X button
+    modalCloseButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const modal = this.closest('.modal-ui-overlay');
+            closeModal(modal);
+        });
+    });
+
+    // Close on overlay click
+    modalOverlays.forEach(overlay => {
+        overlay.addEventListener('click', function(e) {
+            if (e.target === overlay) {
+                closeModal(overlay);
+            }
+        });
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            const activeModal = document.querySelector('.modal-ui-overlay.active');
+            if (activeModal) {
+                closeModal(activeModal);
+            }
+        }
+    });
+
+    // Branch Cards Animation
+    const branchCards = document.querySelectorAll('.branch-card');
+    
+    if (branchCards.length > 0) {
+        const branchObserverOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const branchObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, branchObserverOptions);
+        
+        branchCards.forEach(card => {
+            branchObserver.observe(card);
+        });
+    }
+});

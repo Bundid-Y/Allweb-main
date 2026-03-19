@@ -57,58 +57,45 @@
     </div>
   </div>
 
-  <!-- Features Section -->
-  <div class="content-section layout_padding svc-features">
-    <div class="svc-features__inner">
+  <!-- Features Section — Horizontal 3-Card Layout -->
+  <div class="content-section layout_padding feat-cards">
+    <div class="feat-cards__grid">
 
-      <section class="svc-feature">
-        <div class="svc-feature__row">
-          <div class="svc-feature__text">
-            <h3 data-i18n="service.parking_sec1_title">Truck Parking</h3>
-            <p data-i18n="service.parking_sec1_desc">
-              พื้นที่จอดรถบรรทุกได้มาตรฐาน ปลอดภัย เป็นระเบียบ รองรับการจอดรถบรรทุกและรถพ่วงทั้งระยะสั้นและระยะยาว</p>
-          </div>
-          <div class="svc-feature__img">
-            <div class="svc-feature__img-wrap">
-              <div class="svc-shape svc-shape--feat-right"></div>
-              <img src="../img/other/service/parking/truckparking.jpeg" alt="Truck Parking">
-            </div>
-          </div>
+      <!-- Card 1 -->
+      <div class="feat-cards__item fc-hidden">
+        <div class="feat-cards__img">
+          <img src="../img/other/service/parking/truckparking.jpeg" alt="Truck Parking">
         </div>
-      </section>
+        <div class="feat-cards__body">
+          <h3 class="feat-cards__title" data-i18n="service.parking_sec1_title">Truck Parking</h3>
+          <p class="feat-cards__desc" data-i18n="service.parking_sec1_desc">
+            พื้นที่จอดรถบรรทุกได้มาตรฐาน ปลอดภัย เป็นระเบียบ รองรับการจอดรถบรรทุกและรถพ่วงทั้งระยะสั้นและระยะยาว</p>
+        </div>
+      </div>
 
-      <section class="svc-feature">
-        <div class="svc-feature__row svc-feature__row--reverse">
-          <div class="svc-feature__text">
-            <h3 data-i18n="service.parking_sec2_title">Fleet Management</h3>
-            <p data-i18n="service.parking_sec2_desc">
-              บริหารจัดการกองรถ ควบคุมและติดตามอย่างมีระบบ ช่วยสนับสนุนการบริหารจัดการฟลีทรถให้เป็นไปอย่างมีประสิทธิภาพ
-            </p>
-          </div>
-          <div class="svc-feature__img">
-            <div class="svc-feature__img-wrap">
-              <div class="svc-shape svc-shape--feat-left"></div>
-              <img src="../img/other/service/parking/fleetmanagement.png" alt="Fleet Management">
-            </div>
-          </div>
+      <!-- Card 2 -->
+      <div class="feat-cards__item fc-hidden">
+        <div class="feat-cards__img">
+          <img src="../img/other/service/parking/fleetmanagement.png" alt="Fleet Management">
         </div>
-      </section>
+        <div class="feat-cards__body">
+          <h3 class="feat-cards__title" data-i18n="service.parking_sec2_title">Fleet Management</h3>
+          <p class="feat-cards__desc" data-i18n="service.parking_sec2_desc">
+            บริหารจัดการกองรถ ควบคุมและติดตามอย่างมีระบบ ช่วยสนับสนุนการบริหารจัดการฟลีทรถให้เป็นไปอย่างมีประสิทธิภาพ</p>
+        </div>
+      </div>
 
-      <section class="svc-feature">
-        <div class="svc-feature__row">
-          <div class="svc-feature__text">
-            <h3 data-i18n="service.parking_sec3_title">Support Services</h3>
-            <p data-i18n="service.parking_sec3_desc">
-              บริการสนับสนุนการดำเนินงาน ด้านโลจิสติกส์อย่างต่อเนื่อง เหมาะสำหรับธุรกิจโลจิสติกส์และอุตสาหกรรมขนส่ง</p>
-          </div>
-          <div class="svc-feature__img">
-            <div class="svc-feature__img-wrap">
-              <div class="svc-shape svc-shape--feat-right"></div>
-              <img src="../img/other/service/parking/support_services.jpeg" alt="Support Services">
-            </div>
-          </div>
+      <!-- Card 3 -->
+      <div class="feat-cards__item fc-hidden">
+        <div class="feat-cards__img">
+          <img src="../img/other/service/parking/support_services.jpeg" alt="Support Services">
         </div>
-      </section>
+        <div class="feat-cards__body">
+          <h3 class="feat-cards__title" data-i18n="service.parking_sec3_title">Support Services</h3>
+          <p class="feat-cards__desc" data-i18n="service.parking_sec3_desc">
+            บริการสนับสนุนการดำเนินงาน ด้านโลจิสติกส์อย่างต่อเนื่อง เหมาะสำหรับธุรกิจโลจิสติกส์และอุตสาหกรรมขนส่ง</p>
+        </div>
+      </div>
 
     </div>
   </div>

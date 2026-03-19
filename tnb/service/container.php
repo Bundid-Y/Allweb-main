@@ -57,64 +57,51 @@
     </div>
   </div>
 
-  <!-- Features Section -->
-  <div class="content-section layout_padding svc-features">
-    <div class="svc-features__inner">
+  <!-- Features Section — Horizontal 3-Card Layout -->
+  <div class="content-section layout_padding feat-cards">
+    <div class="feat-cards__grid">
 
-      <section class="svc-feature">
-        <div class="svc-feature__row">
-          <div class="svc-feature__text">
-            <h3 data-i18n="service.container_sec1_title">Container Receiving</h3>
-            <p data-i18n="service.container_sec1_desc">
-              บริการรับตู้คอนเทนเนอร์จากท่าเรือหรือจุดรับตู้ นำเข้าสู่ลานตู้สินค้าอย่างเป็นระเบียบ
-              ตรวจสอบสภาพตู้และบันทึกข้อมูลอย่างครบถ้วน เพื่อให้การบริหารจัดการตู้สินค้า
-              เริ่มต้นได้อย่างถูกต้องและมีประสิทธิภาพ</p>
-          </div>
-          <div class="svc-feature__img">
-            <div class="svc-feature__img-wrap">
-              <div class="svc-shape svc-shape--feat-right"></div>
-              <img src="../img/other/service/container/containerreceiving.png" alt="Container Receiving">
-            </div>
-          </div>
+      <!-- Card 1 -->
+      <div class="feat-cards__item fc-hidden">
+        <div class="feat-cards__img">
+          <img src="../img/other/service/container/containerreceiving.png" alt="Container Receiving">
         </div>
-      </section>
+        <div class="feat-cards__body">
+          <h3 class="feat-cards__title" data-i18n="service.container_sec1_title">Container Receiving</h3>
+          <p class="feat-cards__desc" data-i18n="service.container_sec1_desc">
+            บริการรับตู้คอนเทนเนอร์จากท่าเรือหรือจุดรับตู้ นำเข้าสู่ลานตู้สินค้าอย่างเป็นระเบียบ
+            ตรวจสอบสภาพตู้และบันทึกข้อมูลอย่างครบถ้วน เพื่อให้การบริหารจัดการตู้สินค้า
+            เริ่มต้นได้อย่างถูกต้องและมีประสิทธิภาพ</p>
+        </div>
+      </div>
 
-      <section class="svc-feature">
-        <div class="svc-feature__row svc-feature__row--reverse">
-          <div class="svc-feature__text">
-            <h3 data-i18n="service.container_sec2_title">Container Yard</h3>
-            <p data-i18n="service.container_sec2_desc">
-              จัดเรียงและวางตู้คอนเทนเนอร์ในลานตู้สินค้าอย่างเป็นระเบียบ ช่วยเพิ่มประสิทธิภาพในการใช้พื้นที่
-              ลดความแออัด และรองรับการดำเนินงานด้านโลจิสติกส์ของลูกค้าได้อย่างต่อเนื่อง
-              โดยมีระบบติดตามและบันทึกสถานะตู้สินค้าอย่างชัดเจน
-            </p>
-          </div>
-          <div class="svc-feature__img">
-            <div class="svc-feature__img-wrap">
-              <div class="svc-shape svc-shape--feat-left"></div>
-              <img src="../img/other/service/container/containeryard.png" alt="Container Yard">
-            </div>
-          </div>
+      <!-- Card 2 -->
+      <div class="feat-cards__item fc-hidden">
+        <div class="feat-cards__img">
+          <img src="../img/other/service/container/containeryard.png" alt="Container Yard">
         </div>
-      </section>
+        <div class="feat-cards__body">
+          <h3 class="feat-cards__title" data-i18n="service.container_sec2_title">Container Yard</h3>
+          <p class="feat-cards__desc" data-i18n="service.container_sec2_desc">
+            จัดเรียงและวางตู้คอนเทนเนอร์ในลานตู้สินค้าอย่างเป็นระเบียบ ช่วยเพิ่มประสิทธิภาพในการใช้พื้นที่
+            ลดความแออัด และรองรับการดำเนินงานด้านโลจิสติกส์ของลูกค้าได้อย่างต่อเนื่อง
+            โดยมีระบบติดตามและบันทึกสถานะตู้สินค้าอย่างชัดเจน</p>
+        </div>
+      </div>
 
-      <section class="svc-feature">
-        <div class="svc-feature__row">
-          <div class="svc-feature__text">
-            <h3 data-i18n="service.container_sec3_title">Container Dispatch</h3>
-            <p data-i18n="service.container_sec3_desc">
-              จัดส่งตู้คอนเทนเนอร์ออกจากลานตู้ไปยังปลายทางที่กำหนด ด้วยการวางแผนการนำออกตู้อย่างเป็นระบบ
-              ลดระยะเวลาในการเคลื่อนย้ายตู้ เพิ่มความเป็นระเบียบในการทำงาน
-              และช่วยลดต้นทุนด้านโลจิสติกส์ให้กับลูกค้า</p>
-          </div>
-          <div class="svc-feature__img">
-            <div class="svc-feature__img-wrap">
-              <div class="svc-shape svc-shape--feat-right"></div>
-              <img src="../img/other/service/container/containerdispatch.png" alt="Container Dispatch">
-            </div>
-          </div>
+      <!-- Card 3 -->
+      <div class="feat-cards__item fc-hidden">
+        <div class="feat-cards__img">
+          <img src="../img/other/service/container/containerdispatch.png" alt="Container Dispatch">
         </div>
-      </section>
+        <div class="feat-cards__body">
+          <h3 class="feat-cards__title" data-i18n="service.container_sec3_title">Container Dispatch</h3>
+          <p class="feat-cards__desc" data-i18n="service.container_sec3_desc">
+            จัดส่งตู้คอนเทนเนอร์ออกจากลานตู้ไปยังปลายทางที่กำหนด ด้วยการวางแผนการนำออกตู้อย่างเป็นระบบ
+            ลดระยะเวลาในการเคลื่อนย้ายตู้ เพิ่มความเป็นระเบียบในการทำงาน
+            และช่วยลดต้นทุนด้านโลจิสติกส์ให้กับลูกค้า</p>
+        </div>
+      </div>
 
     </div>
   </div>

@@ -31,16 +31,29 @@
 <body>
     <?php include '../component/menubar.php'; ?>
 
-    <div class="trucktypes-page">
+    <div class="branches-page">
         <div class="trucktypes-page__heading">
             <h1 style="color: #0D2D6B;" data-i18n="branches.title">สาขาของเรา</h1>
             <p data-i18n="branches.subtitle">เครือข่ายจุดบริการยุทธศาสตร์ครอบคลุมพื้นที่สำคัญทางอุตสาหกรรมเพื่อรองรับความต้องการของลูกค้าอย่างมีประสิทธิภาพ</p>
         </div>
 
-        <div class="branches-grid">
+        <div class="branches-layout">
 
-            <div class="branch-card">
-                <div class="branch-card__body">
+            <!-- Sticky Image Section -->
+            <div class="branches-image-section">
+                <div class="branches-image-wrapper">
+                    <img src="../img/other/branches/branches_main.jpg" alt="TNB Logistics Branches Network">
+                    <div class="branches-image-overlay">
+                        <h3>เครือข่ายสาขาทั่วประเทศ</h3>
+                        <p>ครอบคลุมพื้นที่สำคัญทางอุตสาหกรรมและโลจิสติกส์</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Branch Cards Section -->
+            <div class="branches-cards-section">
+
+                <div class="branch-card">
                     <h3 class="branch-card__name" data-i18n="branches.bangsaen_name">สาขาบางแสน (สำนักงานใหญ่)</h3>
                     <p class="branch-card__desc" data-i18n="branches.bangsaen_desc">ศูนย์กลางการบริหารจัดการการขนส่งภายในประเทศ เป็นสำนักงานใหญ่ที่รวมศูนย์บัญชาการและประสานงานทุกสาขา</p>
                     <ul class="branch-card__services">
@@ -49,10 +62,8 @@
                         <li>HQ Operations</li>
                     </ul>
                 </div>
-            </div>
 
-            <div class="branch-card">
-                <div class="branch-card__body">
+                <div class="branch-card">
                     <h3 class="branch-card__name" data-i18n="branches.laemchabang_name">สาขาแหลมฉบัง</h3>
                     <p class="branch-card__desc" data-i18n="branches.laemchabang_desc">ให้บริการจัดจองตู้คอนเทนเนอร์และพื้นที่ฝากวางตู้ (Container Drop Yard) เชื่อมต่อท่าเรือแหลมฉบังโดยตรง</p>
                     <ul class="branch-card__services">
@@ -61,10 +72,8 @@
                         <li>Port Linkage</li>
                     </ul>
                 </div>
-            </div>
 
-            <div class="branch-card">
-                <div class="branch-card__body">
+                <div class="branch-card">
                     <h3 class="branch-card__name" data-i18n="branches.bangkadi_name">สาขาบางกะดี</h3>
                     <p class="branch-card__desc" data-i18n="branches.bangkadi_desc">เชี่ยวชาญการให้บริการรถ Shuttle รับ-ส่งสินค้าระหว่างคลังสินค้าและการจัดการตู้คอนเทนเนอร์</p>
                     <ul class="branch-card__services">
@@ -73,10 +82,8 @@
                         <li>Container Mgmt</li>
                     </ul>
                 </div>
-            </div>
 
-            <div class="branch-card">
-                <div class="branch-card__body">
+                <div class="branch-card">
                     <h3 class="branch-card__name" data-i18n="branches.latkrabang_name">สาขาลาดกระบัง</h3>
                     <p class="branch-card__desc" data-i18n="branches.latkrabang_desc">ศูนย์กระจายสินค้าและลานจอดรถขนาด 9,000 ตร.ม. ตั้งอยู่ใกล้กับ ICD เพื่อความรวดเร็วในการขนส่ง</p>
                     <ul class="branch-card__services">
@@ -85,8 +92,8 @@
                         <li>Near ICD</li>
                     </ul>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 
