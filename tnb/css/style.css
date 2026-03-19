@@ -19269,13 +19269,13 @@ html {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 10px;
 }
 
 .feat-cards__item {
-    background: #ffffff;
+    background: #0D2D6B;
     border-radius: 14px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(13, 45, 107, 0.08);
@@ -19284,30 +19284,26 @@ html {
     position: relative;
     display: flex;
     flex-direction: column;
-    border: 2px solid #e5e7eb;
-}
-
-.feat-cards__item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 16px 40px rgba(13, 45, 107, 0.15);
-    border-color: #0D2D6B;
-}
-
-/* Blue background for 3rd card */
-.feat-cards__item:nth-child(3) {
-    background: #0D2D6B;
     border: 2px solid #0D2D6B;
 }
 
-.feat-cards__item:nth-child(3) .feat-cards__title {
+.feat-cards__item:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 16px 40px rgba(13, 45, 107, 0.25);
+    border-color: #0D2D6B;
+    z-index: 10;
+}
+
+/* All cards have blue background */
+.feat-cards__item .feat-cards__title {
     color: #ffffff;
 }
 
-.feat-cards__item:nth-child(3) .feat-cards__desc {
+.feat-cards__item .feat-cards__desc {
     color: rgba(255, 255, 255, 0.9);
 }
 
-.feat-cards__item:nth-child(3) .feat-cards__title::after {
+.feat-cards__item .feat-cards__title::after {
     background: #ffffff;
 }
 
@@ -19423,6 +19419,7 @@ html {
     .feat-cards__grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.2rem;
+        padding: 0 10px;
     }
 }
 
@@ -19435,7 +19432,7 @@ html {
     .feat-cards__grid {
         grid-template-columns: 1fr;
         gap: 1rem;
-        padding: 0 15px;
+        padding: 0 10px;
     }
 
     .feat-cards__img {
