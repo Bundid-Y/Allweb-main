@@ -59,7 +59,7 @@
   </div>
 
   <!-- Features Section — Horizontal 3-Card Layout -->
-  <div class="content-section layout_padding feat-cards">
+  <div class="content-section feat-cards">
     <div class="feat-cards__grid">
 
       <!-- Card 1 -->

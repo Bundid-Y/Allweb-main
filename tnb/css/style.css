@@ -18463,7 +18463,7 @@ html {
 
 
 
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 
 
 
@@ -19261,7 +19261,8 @@ html {
    ========================================= */
 
 .feat-cards {
-    padding-top: 10px;
+    padding-top: 0px;
+    margin-top: -80px;
 }
 
 .feat-cards__grid {
@@ -19427,6 +19428,10 @@ html {
 
 /* Mobile: 1 card per row */
 @media (max-width: 600px) {
+    .feat-cards {
+        margin-top: -50px;
+    }
+    
     .feat-cards__grid {
         grid-template-columns: 1fr;
         gap: 1rem;
