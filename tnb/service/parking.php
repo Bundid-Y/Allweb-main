@@ -100,6 +100,14 @@
     </div>
   </div>
 
+  <!-- Back to Services Button -->
+  <div class="back-to-services">
+    <a href="../main/index.php#services" class="back-to-services-btn">
+      <span class="back-icon">←</span>
+      กลับไปหน้าหลัก บริการของเรา
+    </a>
+  </div>
+
   <?php include '../component/footer.php'; ?>
 
 </body>
