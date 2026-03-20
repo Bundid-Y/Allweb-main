@@ -23,19 +23,26 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../img/company_logo/tnb_logo.webp" />
     <!-- Custom CSS & JS -->
+    <!-- CSS ของหน้านี้อยู่ใน: css/style.css หัวข้อ "Truck Types Page" -->
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/script.js" defer></script>
 </head>
 
-<body>
+<!-- page-trucktypes: ใช้ scope CSS ให้เฉพาะหน้านี้ ป้องกันไม่ให้กระทบหน้าอื่น -->
+
+<body class="page-trucktypes">
     <?php include '../component/menubar.php'; ?>
 
-    <div class="trucktypes-interactive">
-        <div class="trucktypes-interactive__heading">
-            <h1 data-i18n="trucktypes.title">ประเภทรถบรรทุก</h1>
-            <p data-i18n="trucktypes.subtitle">รถบรรทุกหลากหลายประเภทของ TNB Logistics พร้อมรองรับทุกความต้องการด้านการขนส่ง</p>
+    <!-- หัวข้อหลัก — Blue gradient header เหมือน technology.php -->
+    <div class="card-ui-header layout_padding">
+        <div class="container">
+            <h1 class="card-ui-main-title" data-i18n="trucktypes.title">ประเภทรถบรรทุก</h1>
+            <p class="card-ui-main-desc" data-i18n="trucktypes.subtitle">รถบรรทุกหลากหลายประเภทของ TNB Logistics พร้อมรองรับทุกความต้องการด้านการขนส่ง</p>
         </div>
+    </div>
 
+    <!-- Truck Cards Grid Section -->
+    <section class="trucktypes-cards-section">
         <div class="trucktypes-interactive__grid">
 
             <div class="truck-card">
@@ -109,7 +116,8 @@
             </div>
 
         </div>
-    </div>
+    </section>
+
     <?php include '../component/footer.php'; ?>
 </body>
 

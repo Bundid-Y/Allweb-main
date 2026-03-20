@@ -24,22 +24,29 @@
     <link rel="icon" type="image/png" href="../img/company_logo/tnb_logo.webp" />
 
     <!-- Custom CSS & JS -->
+    <!-- CSS ของหน้านี้อยู่ใน: css/style.css หัวข้อ "Branches Page" -->
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/script.js" defer></script>
 </head>
 
+<!-- page-branches: ใช้ scope CSS ให้เฉพาะหน้านี้ ป้องกันไม่ให้กระทบหน้าอื่น -->
+
 <body class="page-branches">
     <?php include '../component/menubar.php'; ?>
 
-    <div class="branches-page">
-        <div class="branches-heading">
-            <h1 data-i18n="branches.title">สาขาของเรา</h1>
-            <p data-i18n="branches.subtitle">เครือข่ายจุดบริการยุทธศาสตร์ครอบคลุมพื้นที่สำคัญทางอุตสาหกรรมเพื่อรองรับความต้องการของลูกค้าอย่างมีประสิทธิภาพ</p>
+    <!-- หัวข้อหลัก — Blue gradient header เหมือน technology.php -->
+    <div class="card-ui-header layout_padding">
+        <div class="container">
+            <h1 class="card-ui-main-title" data-i18n="branches.title">สาขาของเรา</h1>
+            <p class="card-ui-main-desc" data-i18n="branches.subtitle">เครือข่ายจุดบริการยุทธศาสตร์ครอบคลุมพื้นที่สำคัญทางอุตสาหกรรมเพื่อรองรับความต้องการของลูกค้าอย่างมีประสิทธิภาพ</p>
         </div>
+    </div>
 
+    <!-- เนื้อหาหลัก -->
+    <div class="branches-page">
         <div class="branches-layout">
 
-            <!-- Sticky Image Section -->
+            <!-- ส่วนรูปภาพ (Sticky) -->
             <div class="branches-image-section">
                 <div class="branches-image-wrapper">
                     <img src="../img/other/index/about/homepage.webp" alt="TNB Logistics Branches Network">
@@ -50,7 +57,7 @@
                 </div>
             </div>
 
-            <!-- Branch Cards Section -->
+            <!-- ส่วนการ์ดสาขา -->
             <div class="branches-cards-section">
 
                 <div class="branch-card">
