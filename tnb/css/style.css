@@ -1,4 +1,4 @@
-﻿/* TNB Style CSS */
+/* TNB Style CSS */
 
 
 
@@ -19486,8 +19486,8 @@ html {
     height: 360px;
 }
 
-/* Individual truck cards */
-.truck-card {
+/* Individual truck cards - scoped to trucktypes page */
+body.page-trucktypes .truck-card {
     flex: 1;
     background: #ffffff;
     border-radius: 16px;
@@ -19496,12 +19496,12 @@ html {
     position: relative;
     overflow: visible;
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    border: 3px solid transparent;
+    border: 3px solid #0D2D6B !important;
 }
 
-.truck-card:hover {
+body.page-trucktypes .truck-card:hover {
     flex: 2;
-    border-color: #0D2D6B;
+    border-color: #0D2D6B !important;
     transform: translateY(-10px);
     box-shadow: 0 20px 60px rgba(13, 45, 107, 0.2);
     z-index: 10;
@@ -19512,8 +19512,8 @@ html {
     transform: scale(1);
 }
 
-/* Truck image container */
-.truck-card__img-container {
+/* Truck image container - scoped to trucktypes page */
+body.page-trucktypes .truck-card__img-container {
     position: relative;
     height: 200px;
     overflow: visible;
@@ -19521,7 +19521,7 @@ html {
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, #f1f3f5 0%, #e9ecef 100%);
-    border-radius: 12px 12px 0 0;
+    border-radius: 13px 13px 0 0 !important;
 }
 
 .truck-card__img {
@@ -19538,14 +19538,15 @@ html {
     filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.15));
 }
 
-/* Card body */
-.truck-card__body {
-    padding: 20px;
+/* Card body - scoped to trucktypes page */
+body.page-trucktypes .truck-card__body {
+    padding: 10px 15px;
     background: #ffffff;
-    border-radius: 0 0 12px 12px;
+    border-radius: 0 0 13px 13px !important;
+    overflow: hidden;
 }
 
-.truck-card__name {
+.page-trucktypes .truck-card__name {
     font-size: 18px;
     font-weight: 700;
     color: #0D2D6B;
@@ -19553,7 +19554,7 @@ html {
     line-height: 1.3;
 }
 
-.truck-card__desc {
+.page-trucktypes .truck-card__desc {
     font-size: 14px;
     color: #666;
     line-height: 1.5;
@@ -19565,13 +19566,13 @@ html {
     overflow: hidden;
 }
 
-.truck-card:hover .truck-card__desc {
+.page-trucktypes .truck-card:hover .truck-card__desc {
     -webkit-line-clamp: unset;
     line-clamp: unset;
     display: block;
 }
 
-.truck-card__specs {
+.page-trucktypes .truck-card__specs {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -19579,50 +19580,52 @@ html {
     color: #555;
 }
 
-.truck-card__specs li {
+.page-trucktypes .truck-card__specs li {
     margin-bottom: 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.truck-card__specs li strong {
+.page-trucktypes .truck-card__specs li strong {
     color: #0D2D6B;
 }
 
 /* Hover state for specs */
-.truck-card:hover .truck-card__specs {
+.page-trucktypes .truck-card:hover .truck-card__specs {
     font-size: 14px;
 }
 
 /* Mobile responsive */
 @media (max-width: 768px) {
-    .trucktypes-interactive__grid {
+    body.page-trucktypes .trucktypes-interactive__grid {
         flex-direction: column;
         height: auto;
         gap: 1.5rem;
     }
     
-    .truck-card {
+    body.page-trucktypes .truck-card {
         flex: 1;
         height: auto;
+        border: 3px solid #0D2D6B !important;
     }
     
-    .truck-card:hover {
+    body.page-trucktypes .truck-card:hover {
         transform: translateY(-5px);
         flex: 1;
+        border: 3px solid #0D2D6B !important;
     }
     
-    .truck-card:not(:hover) {
+    body.page-trucktypes .truck-card:not(:hover) {
         opacity: 1;
         transform: none;
     }
     
-    .trucktypes-interactive__heading h1 {
+    body.page-trucktypes .trucktypes-interactive__heading h1 {
         font-size: 32px;
     }
     
-    .truck-card__img-container {
+    body.page-trucktypes .truck-card__img-container {
         height: 150px;
     }
     
@@ -19633,19 +19636,23 @@ html {
 
 /* Tablet responsive */
 @media (max-width: 1024px) and (min-width: 769px) {
-    .trucktypes-interactive__grid {
+    body.page-trucktypes .trucktypes-interactive__grid {
         gap: 0.5rem;
     }
     
-    .truck-card__name {
+    body.page-trucktypes .truck-card {
+        border: 3px solid #0D2D6B !important;
+    }
+    
+    body.page-trucktypes .truck-card__name {
         font-size: 16px;
     }
     
-    .truck-card__desc {
+    body.page-trucktypes .truck-card__desc {
         font-size: 12px;
     }
     
-    .truck-card__specs {
+    body.page-trucktypes .truck-card__specs {
         font-size: 11px;
     }
 }
@@ -20011,316 +20018,7 @@ html {
 
 /* =========================================
    Branches Page — Scoped Sticky Image + Cards
-   Prefix: .page-branches
-   ========================================= */
 
-.page-branches .branches-heading {
-    text-align: center;
-    padding: 90px 20px 40px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.page-branches .branches-heading h1 {
-    font-size: 40px;
-    font-weight: 800;
-    color: #0D2D6B;
-    margin-bottom: 12px;
-    letter-spacing: -0.02em;
-    line-height: 1.2;
-}
-
-.page-branches .branches-heading p {
-    font-size: 18px;
-    color: #64748b;
-    line-height: 1.6;
-}
-
-.page-branches .branches-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 20px;
-    min-height: 600px;
-    align-items: start;
-}
-
-.page-branches .branches-image-section {
-    flex: 1;
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
-}
-
-.page-branches .branches-image-wrapper {
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 16px 48px rgba(13, 45, 107, 0.12), 0 4px 12px rgba(0,0,0,0.06);
-    background: linear-gradient(135deg, #f1f3f5 0%, #e9ecef 100%);
-    height: 735px;
-}
-
-.page-branches .branches-image-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.page-branches .branches-image-wrapper:hover img {
-    transform: scale(1.04);
-}
-
-.page-branches .branches-image-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to top, rgba(10, 30, 74, 0.85) 0%, rgba(10, 30, 74, 0.2) 60%, transparent 100%);
-    padding: 2rem;
-    color: white;
-}
-
-.page-branches .branches-image-overlay h3 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 0.4rem;
-    letter-spacing: -0.01em;
-}
-
-.page-branches .branches-image-overlay p {
-    font-size: 15px;
-    opacity: 0.85;
-}
-
-.page-branches .branches-cards-section {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-}
-
-.page-branches .branch-card {
-    background: white;
-    border-radius: 14px;
-    padding: 1.75rem;
-    box-shadow: 0 2px 16px rgba(13, 45, 107, 0.06), 0 1px 3px rgba(0,0,0,0.04);
-    transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.35s ease, border-color 0.35s ease;
-    border: 2px solid transparent;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-
-.page-branches .branch-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, #0D2D6B 0%, #3b82f6 100%);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.4s ease;
-}
-
-.page-branches .branch-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 14px 44px rgba(13, 45, 107, 0.13), 0 4px 12px rgba(0,0,0,0.05);
-    border-color: rgba(13, 45, 107, 0.12);
-}
-
-.page-branches .branch-card:hover::before {
-    transform: scaleX(1);
-}
-
-.page-branches .branch-card__name {
-    font-size: 20px;
-    font-weight: 700;
-    color: #0D2D6B;
-    margin-bottom: 0.75rem;
-    line-height: 1.3;
-    position: relative;
-    padding-bottom: 0.75rem;
-}
-
-.page-branches .branch-card__name::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 36px;
-    height: 3px;
-    background: linear-gradient(90deg, #0D2D6B, #3b82f6);
-    border-radius: 2px;
-    transition: width 0.3s ease;
-}
-
-.page-branches .branch-card:hover .branch-card__name::after {
-    width: 70px;
-}
-
-.page-branches .branch-card__desc {
-    font-size: 15px;
-    color: #64748b;
-    line-height: 1.6;
-    margin-bottom: 1.25rem;
-}
-
-.page-branches .branch-card__services {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-}
-
-.page-branches .branch-card__services li {
-    background: #f1f5f9;
-    color: #0D2D6B;
-    padding: 0.4rem 0.9rem;
-    border-radius: 20px;
-    font-size: 13px;
-    font-weight: 500;
-    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-
-.page-branches .branch-card:hover .branch-card__services li {
-    background: linear-gradient(135deg, #0D2D6B 0%, #1e3a8a 100%);
-    color: white;
-    transform: translateY(-2px);
-}
-
-/* Animation on scroll โ€” scoped */
-.page-branches .branch-card {
-    opacity: 0;
-    transform: translateY(24px);
-    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.5s ease, box-shadow 0.35s ease, border-color 0.35s ease;
-}
-
-.page-branches .branch-card.animate-in {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.page-branches .branch-card:nth-child(1) { transition-delay: 0.05s; }
-.page-branches .branch-card:nth-child(2) { transition-delay: 0.12s; }
-.page-branches .branch-card:nth-child(3) { transition-delay: 0.19s; }
-.page-branches .branch-card:nth-child(4) { transition-delay: 0.26s; }
-
-/* Responsive for Branches Page โ€” Scoped */
-@media (max-width: 1024px) {
-    .page-branches .branches-layout {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-        align-items: center;
-    }
-    
-    .page-branches .branches-image-section {
-        position: relative;
-        top: auto;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-    
-    .page-branches .branches-cards-section {
-        max-width: 600px;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 768px) {
-    .page-branches .branches-heading h1 {
-        font-size: 32px;
-    }
-    
-    .page-branches .branches-heading p {
-        font-size: 16px;
-    }
-    
-    .page-branches .branches-layout {
-        padding: 0 15px;
-        gap: 2rem;
-    }
-    
-    .page-branches .branches-image-wrapper {
-        border-radius: 16px;
-    }
-    
-    .page-branches .branches-image-overlay {
-        padding: 1.5rem;
-    }
-    
-    .page-branches .branches-image-overlay h3 {
-        font-size: 20px;
-    }
-    
-    .page-branches .branches-image-overlay p {
-        font-size: 14px;
-    }
-    
-    .page-branches .branch-card {
-        padding: 1.5rem;
-    }
-    
-    .page-branches .branch-card__name {
-        font-size: 18px;
-    }
-    
-    .page-branches .branch-card__desc {
-        font-size: 14px;
-    }
-    
-    .page-branches .branch-card__services li {
-        font-size: 12px;
-        padding: 0.4rem 0.8rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .page-branches .branches-heading h1 {
-        font-size: 26px;
-    }
-    
-    .page-branches .branches-heading p {
-        font-size: 15px;
-    }
-    
-    .page-branches .branches-image-overlay {
-        padding: 1rem;
-    }
-    
-    .page-branches .branches-image-overlay h3 {
-        font-size: 17px;
-    }
-    
-    .page-branches .branch-card {
-        padding: 1.2rem;
-    }
-    
-    .page-branches .branch-card__name {
-        font-size: 17px;
-    }
-    
-    .page-branches .branch-card__desc {
-        font-size: 13px;
-    }
-    
-    .page-branches .branch-card__services {
-        gap: 0.3rem;
-    }
-    
-    .page-branches .branch-card__services li {
-        font-size: 11px;
-        padding: 0.3rem 0.6rem;
-    }
-}
-
-
-/* [Removed: old trucktypes-page, tech-tabs, branch-card grid CSS] */
 
 
 /* =========================================
@@ -21531,25 +21229,68 @@ html {
 }
 
 /* =========================================
-   Branches Card Layout
-   Compact card height to reduce scrolling
+   Branches Page — Scoped Sticky Image + Cards
+   Prefix: .page-branches
    ========================================= */
 
-/* Branches page layout - two columns (image + cards) */
-.page-branches .branches-layout {
-    display: flex;
-    gap: 40px;
-    max-width: 1300px;
+.page-branches .branches-heading {
+    text-align: center;
+    padding: 90px 20px 40px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 50px 30px 60px;
 }
 
+.page-branches .branches-heading h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #0D2D6B;
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.page-branches .branches-heading p {
+    font-size: 18px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.page-branches .branches-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    min-height: 600px;
+    align-items: start;
+}
+
+.page-branches .branches-image-section {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-branches .branches-image-wrapper {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 16px 48px rgba(13, 45, 107, 0.12), 0 4px 12px rgba(0,0,0,0.06);
+    background: linear-gradient(135deg, #f1f3f5 0%, #e9ecef 100%);
+    height: 735px;
+}
 
 .page-branches .branches-image-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.page-branches .branches-image-wrapper:hover img {
+    transform: scale(1.04);
 }
 
 .page-branches .branches-image-overlay {
@@ -21557,124 +21298,246 @@ html {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 20px 24px;
-    background: linear-gradient(to top, rgba(13, 45, 107, 0.85), transparent);
+    background: linear-gradient(to top, rgba(10, 30, 74, 0.85) 0%, rgba(10, 30, 74, 0.2) 60%, transparent 100%);
+    padding: 2rem;
     color: white;
 }
 
 .page-branches .branches-image-overlay h3 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
-    margin: 0 0 4px;
+    margin-bottom: 0.4rem;
+    letter-spacing: -0.01em;
 }
 
 .page-branches .branches-image-overlay p {
-    font-size: 14px;
-    margin: 0;
+    font-size: 15px;
     opacity: 0.85;
 }
 
-/* Branch cards - compact height */
 .page-branches .branches-cards-section {
-    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .page-branches .branch-card {
-    background: linear-gradient(135deg, #0a1e4a 0%, #0D2D6B 40%, #1e3a8a 100%);
+    background: white;
     border-radius: 14px;
-    padding: 22px 26px;
-    border-left: 4px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 2px 16px rgba(13, 45, 107, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1.75rem;
+    box-shadow: 0 2px 16px rgba(13, 45, 107, 0.06), 0 1px 3px rgba(0,0,0,0.04);
+    transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.35s ease, border-color 0.35s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-branches .branch-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #0D2D6B 0%, #3b82f6 100%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
 }
 
 .page-branches .branch-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 28px rgba(13, 45, 107, 0.12);
+    transform: translateY(-6px);
+    box-shadow: 0 14px 44px rgba(13, 45, 107, 0.13), 0 4px 12px rgba(0,0,0,0.05);
+    border-color: rgba(13, 45, 107, 0.12);
 }
 
-.page-branches .branch-card:hover .branch-card__services li {
-    background: white;
-    color: #0D2D6B;
-    border: 1px solid rgba(13, 45, 107, 0.2);
+.page-branches .branch-card:hover::before {
+    transform: scaleX(1);
 }
 
 .page-branches .branch-card__name {
     font-size: 20px;
     font-weight: 700;
-    color: white;
-    margin: 0 0 8px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    color: #0D2D6B;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+.page-branches .branch-card__name::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 36px;
+    height: 3px;
+    background: linear-gradient(90deg, #0D2D6B, #3b82f6);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.page-branches .branch-card:hover .branch-card__name::after {
+    width: 70px;
 }
 
 .page-branches .branch-card__desc {
     font-size: 15px;
-    color: rgba(255, 255, 255, 0.85);
+    color: #64748b;
     line-height: 1.6;
-    margin: 0 0 10px;
+    margin-bottom: 1.25rem;
 }
 
 .page-branches .branch-card__services {
     list-style: none;
     padding: 0;
-    margin: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 0.4rem;
 }
 
 .page-branches .branch-card__services li {
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    padding: 4px 14px;
+    background: #f1f5f9;
+    color: #0D2D6B;
+    padding: 0.4rem 0.9rem;
     border-radius: 20px;
     font-size: 13px;
     font-weight: 500;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
-/* Branches responsive */
-@media (max-width: 992px) {
-    .page-branches .branches-layout {
-        flex-direction: column;
-        padding: 40px 20px 50px;
-        gap: 30px;
-    }
+.page-branches .branch-card:hover .branch-card__services li {
+    background: linear-gradient(135deg, #0D2D6B 0%, #1e3a8a 100%);
+    color: white;
+    transform: translateY(-2px);
+}
 
+/* Animation on scroll โ€” scoped */
+.page-branches .branch-card {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.5s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.page-branches .branch-card.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.page-branches .branch-card:nth-child(1) { transition-delay: 0.05s; }
+.page-branches .branch-card:nth-child(2) { transition-delay: 0.12s; }
+.page-branches .branch-card:nth-child(3) { transition-delay: 0.19s; }
+.page-branches .branch-card:nth-child(4) { transition-delay: 0.26s; }
+
+/* Responsive for Branches Page โ€” Scoped */
+@media (max-width: 1024px) {
+    .page-branches .branches-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        align-items: center;
+    }
+    
     .page-branches .branches-image-section {
-        flex: none;
         position: relative;
         top: auto;
-        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
     }
-
-    .page-branches .branches-image-wrapper {
-        max-height: 300px;
+    
+    .page-branches .branches-cards-section {
+        max-width: 600px;
+        margin: 0 auto;
     }
 }
 
 @media (max-width: 768px) {
-    .page-branches .branch-card {
-        padding: 18px 20px;
+    .page-branches .branches-heading h1 {
+        font-size: 32px;
     }
-
+    
+    .page-branches .branches-heading p {
+        font-size: 16px;
+    }
+    
+    .page-branches .branches-layout {
+        padding: 0 15px;
+        gap: 2rem;
+    }
+    
+    .page-branches .branches-image-wrapper {
+        border-radius: 16px;
+    }
+    
+    .page-branches .branches-image-overlay {
+        padding: 1.5rem;
+    }
+    
+    .page-branches .branches-image-overlay h3 {
+        font-size: 20px;
+    }
+    
+    .page-branches .branches-image-overlay p {
+        font-size: 14px;
+    }
+    
+    .page-branches .branch-card {
+        padding: 1.5rem;
+    }
+    
     .page-branches .branch-card__name {
         font-size: 18px;
     }
-
+    
     .page-branches .branch-card__desc {
         font-size: 14px;
     }
-
+    
     .page-branches .branch-card__services li {
         font-size: 12px;
-        padding: 3px 10px;
+        padding: 0.4rem 0.8rem;
     }
 }
+
+@media (max-width: 480px) {
+    .page-branches .branches-heading h1 {
+        font-size: 26px;
+    }
+    
+    .page-branches .branches-heading p {
+        font-size: 15px;
+    }
+    
+    .page-branches .branches-image-overlay {
+        padding: 1rem;
+    }
+    
+    .page-branches .branches-image-overlay h3 {
+        font-size: 17px;
+    }
+    
+    .page-branches .branch-card {
+        padding: 1.2rem;
+    }
+    
+    .page-branches .branch-card__name {
+        font-size: 17px;
+    }
+    
+    .page-branches .branch-card__desc {
+        font-size: 13px;
+    }
+    
+    .page-branches .branch-card__services {
+        gap: 0.3rem;
+    }
+    
+    .page-branches .branch-card__services li {
+        font-size: 11px;
+        padding: 0.3rem 0.6rem;
+    }
+}
+
 
 /* =========================================
    Partners Page - Text Line Accent

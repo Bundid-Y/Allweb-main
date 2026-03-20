@@ -23,13 +23,19 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="../img/company_logo/tnb_logo.webp" />
   <!-- Custom CSS & JS -->
-  <link rel="stylesheet" href="../css/style.css">
+  
+    <!-- Google Fonts: Inter (EN) + Sarabun (TH) + Noto Sans SC (ZH) + Noto Sans JP (JP) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sarabun:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <!-- Include jQuery -->
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="../css/style.css?v=<?php echo time(); ?>">
+    <script src="../js/i18n.js" defer></script>
+    <script src="../js/script.js?v=<?php echo time(); ?>" defer></script>
+<!-- Include jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="../js/script.js" defer></script>
-
-</head>
+  </head>
 
 <body>
   <?php include '../component/menubar.php'; ?>

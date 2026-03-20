@@ -1,32 +1,4 @@
-<!doctype html>
-<html lang="th">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TNB Logistics | บริการขนส่งและโลจิสติกส์ครบวงจร</title>
-    <meta name="description"
-        content="Smart, Fast, and Sustainable Solutions สำหรับธุรกิจโลจิสติกส์ในประเทศไทย - บริการขนส่งและคลังสินค้าครบวงจร" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../img/company_logo/tnb_logo.webp">
-
-    <!-- Google Fonts: Inter (EN) + Sarabun (TH) + Noto Sans SC (ZH) + Noto Sans JP (JP) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sarabun:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Custom CSS & JS -->
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/i18n.js" defer></script>
-    <script src="../js/script.js" defer></script>
-</head>
-
-<body>
-
-    <header class="header" id="header">
+<header class="header" id="header">
         <nav class="nav">
             <!-- Logo -->
             <a href="../main/index.php" class="logo">
@@ -152,10 +124,6 @@
             </div>
         </nav>
     </header>
-
-</body>
-
-</html>
 
 <!-- CSS ของ menubar อยู่ใน: css/style.css หัวข้อ "Menubar Component (component/menubar.php)" -->
 <!-- JS ของ menubar อยู่ใน: js/script.js หัวข้อ "Menubar Component (component/menubar.php)" -->
