@@ -97,7 +97,27 @@
         "tms_desc": "TNBの包括的な輸送管理システムは、出発地から目的地までの全工程をサポートするよう設計されています。",
         "wms_desc": "TNBのトラック監視システムは、明確な運行可視性を提供する集中ダッシュボードを通じて運用されます。",
         "geo_desc": "TNBはジオフェンシング技術を使用して、港湾、倉庫、顧客工場などの重要なエリアの境界を定義します。",
-        "cam_desc": "TNBのカメラ監視システムは、トラックの前方、貨物コンテナ内部、および運転手の行動チェックポイントに設置されています。"
+        "cam_desc": "TNBのカメラ監視システムは、トラックの前方、貨物コンテナ内部、および運転手の行動チェックポイントに設置されています。",
+        "tms_subtitle": "Transportation Management System",
+        "tms_li1": "<strong>Route Optimization:</strong> 輸送距離と時間を短縮するための最適なルート計算システム。",
+        "tms_li2": "<strong>Real-time Tracking:</strong> GPSを介して輸送状況をリアルタイムで追跡。",
+        "tms_li3": "<strong>Automated Reporting:</strong> 自動化された輸送報告書作成システム。",
+        "tms_li4": "<strong>Integration with Other Systems:</strong> 他の企業システムと簡単に接続可能。",
+        "wms_subtitle": "Truck Monitoring System",
+        "wms_li1": "<strong>Real-time Tracking:</strong> GPSを介して輸送状況をリアルタイムで追跡。",
+        "wms_li2": "<strong>Automated Reporting:</strong> 自動化された輸送報告書作成システム。",
+        "wms_li3": "<strong>Alert System:</strong> 輸送状況が変更されたときの通知システム。",
+        "wms_li4": "<strong>Integration with Other Systems:</strong> 他の企業システムと簡単に接続可能。",
+        "geo_subtitle": "Geofencing & Line Auto Alert System",
+        "geo_li1": "<strong>Automatic Boundary Detection:</strong> 輸送車両が指定されたエリアに出入りすると、システムが自動的に時間とステータスを記録します。",
+        "geo_li2": "<strong>Real-time Notifications:</strong> Line Auto Alert を通じて通知システムと接続し、リアルタイムの情報を提供します。",
+        "geo_li3": "<strong>Time Control:</strong> 輸送時間を制御し、遅延のリスクを減らします。",
+        "geo_li4": "<strong>Transparency & Tracking:</strong> 常にコンテナを追跡する透明性を高めます。",
+        "cam_subtitle": "Camera Control & Driver Behavior Monitoring",
+        "cam_li1": "<strong>Live Monitoring:</strong> オンラインでライブ画像を表示し、データを記録し、過去の映像を確認できます。",
+        "cam_li2": "<strong>Safety Enhancement:</strong> 商品輸送の安全性を高め、損傷を防ぎ、事故のリスクを減らします。",
+        "cam_li3": "<strong>Driver Behavior Analysis:</strong> 運転基準を管理し、従業員の作業行動を分析するためのツールとして使用されます。",
+        "cam_li4": "<strong>Service Quality Control:</strong> 会社基準を満たすためにサービス品質を向上させます。"
     },
     "branches": {
         "title": "私たちの支店",
@@ -339,7 +359,8 @@
         "parking_card2": "短期・長期駐車対応",
         "parking_card3": "体系的フリート管理",
         "parking_card4": "大型トラック駐車場",
-        "parking_card5": "物流サポート一式"
+        "parking_card5": "物流サポート一式",
+        "back_to_services": "<span class=\"back-icon\">←</span> サービスに戻る"
     },
     "login": {
         "titleIn": "ログイン",

@@ -97,7 +97,27 @@
         "tms_desc": "TNB's end-to-end transportation management system is designed to support operations from origin to destination.",
         "wms_desc": "TNB's truck monitoring system operates through a centralized dashboard providing clear operational visibility.",
         "geo_desc": "TNB uses Geofencing technology to define boundaries around key areas such as ports, warehouses, and customer factories.",
-        "cam_desc": "TNB's camera monitoring system is installed at the front of trucks, inside cargo containers, and at driver behavior checkpoints."
+        "cam_desc": "TNB's camera monitoring system is installed at the front of trucks, inside cargo containers, and at driver behavior checkpoints.",
+        "tms_subtitle": "Transportation Management System",
+        "tms_li1": "<strong>Route Optimization:</strong> The most suitable route calculation system to reduce transport distance and time.",
+        "tms_li2": "<strong>Real-time Tracking:</strong> Track transportation status in real-time via GPS.",
+        "tms_li3": "<strong>Automated Reporting:</strong> Automated transportation report generation system.",
+        "tms_li4": "<strong>Integration with Other Systems:</strong> Can easily connect with other company systems.",
+        "wms_subtitle": "Truck Monitoring System",
+        "wms_li1": "<strong>Real-time Tracking:</strong> Track transportation status in real-time via GPS.",
+        "wms_li2": "<strong>Automated Reporting:</strong> Automated transportation report generation system.",
+        "wms_li3": "<strong>Alert System:</strong> Notification system when transportation status changes.",
+        "wms_li4": "<strong>Integration with Other Systems:</strong> Can easily connect with other company systems.",
+        "geo_subtitle": "Geofencing & Line Auto Alert System",
+        "geo_li1": "<strong>Automatic Boundary Detection:</strong> When transport vehicles pass in or out of specified areas, the system automatically records time and status.",
+        "geo_li2": "<strong>Real-time Notifications:</strong> Connects with notification systems via Line Auto Alert to provide real-time information.",
+        "geo_li3": "<strong>Time Control:</strong> Helps control transport time, reducing the risk of delays.",
+        "geo_li4": "<strong>Transparency & Tracking:</strong> Increases transparency in tracking containers at all times.",
+        "cam_subtitle": "Camera Control & Driver Behavior Monitoring",
+        "cam_li1": "<strong>Live Monitoring:</strong> Can view live images online, record data, and review past footages.",
+        "cam_li2": "<strong>Safety Enhancement:</strong> Enhances safety in transporting goods, prevents damage, and reduces accident risks.",
+        "cam_li3": "<strong>Driver Behavior Analysis:</strong> Used as a tool to control driving standards and analyze employee work behavior.",
+        "cam_li4": "<strong>Service Quality Control:</strong> Elevates service quality to meet company standards."
     },
     "branches": {
         "title": "Our Branches",
@@ -339,7 +359,8 @@
         "parking_card2": "Short & Long-term Parking",
         "parking_card3": "Systematic Fleet Management",
         "parking_card4": "Large Truck Parking Lot",
-        "parking_card5": "Comprehensive Logistics Support"
+        "parking_card5": "Comprehensive Logistics Support",
+        "back_to_services": "<span class=\"back-icon\">←</span> Back to Services"
     },
     "login": {
         "titleIn": "Sign In",

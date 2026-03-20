@@ -111,13 +111,13 @@
                     </div>
                     <div class="modal-ui-col-text">
                         <h2 class="modal-ui-title" data-i18n="technology.tab_tms">TMS</h2>
-                        <p class="modal-ui-subtitle">Transportation Management System</p>
+                        <p class="modal-ui-subtitle" data-i18n="technology.tms_subtitle">Transportation Management System</p>
                         <p class="modal-ui-desc" data-i18n="technology.tms_desc">ระบบบริหารจัดการงานขนส่งแบบครบวงจร ติดตามสถานะแบบเรียลไทม์ผ่าน GPS</p>
                         <ul class="modal-ui-list">
-                            <li><strong>Route Optimization:</strong> ระบบคำนวณเส้นทางที่เหมาะสมที่สุดเพื่อลดระยะทางและเวลาในการขนส่ง</li>
-                            <li><strong>Real-time Tracking:</strong> ติดตามสถานะการขนส่งแบบเรียลไทม์ผ่าน GPS</li>
-                            <li><strong>Automated Reporting:</strong> ระบบสร้างรายงานการขนส่งอัตโนมัติ</li>
-                            <li><strong>Integration with Other Systems:</strong> สามารถเชื่อมต่อกับระบบอื่นๆ ของบริษัทได้อย่างง่ายดาย</li>
+                            <li data-i18n="technology.tms_li1"><strong>Route Optimization:</strong> ระบบคำนวณเส้นทางที่เหมาะสมที่สุดเพื่อลดระยะทางและเวลาในการขนส่ง</li>
+                            <li data-i18n="technology.tms_li2"><strong>Real-time Tracking:</strong> ติดตามสถานะการขนส่งแบบเรียลไทม์ผ่าน GPS</li>
+                            <li data-i18n="technology.tms_li3"><strong>Automated Reporting:</strong> ระบบสร้างรายงานการขนส่งอัตโนมัติ</li>
+                            <li data-i18n="technology.tms_li4"><strong>Integration with Other Systems:</strong> สามารถเชื่อมต่อกับระบบอื่นๆ ของบริษัทได้อย่างง่ายดาย</li>
                         </ul>
                     </div>
                 </div>
@@ -136,13 +136,13 @@
                     </div>
                     <div class="modal-ui-col-text">
                         <h2 class="modal-ui-title" data-i18n="technology.tab_wms">Truck Monitoring</h2>
-                        <p class="modal-ui-subtitle">Truck Monitoring System</p>
+                        <p class="modal-ui-subtitle" data-i18n="technology.wms_subtitle">Truck Monitoring System</p>
                         <p class="modal-ui-desc" data-i18n="technology.wms_desc">ระบบติดตามและแสดงผลการทำงานของรถขนส่งผ่าน Dashboard กลาง</p>
                         <ul class="modal-ui-list">
-                            <li><strong>Real-time Tracking:</strong> ติดตามสถานะการขนส่งแบบเรียลไทม์ผ่าน GPS</li>
-                            <li><strong>Automated Reporting:</strong> ระบบสร้างรายงานการขนส่งอัตโนมัติ</li>
-                            <li><strong>Alert System:</strong> ระบบแจ้งเตือนเมื่อมีการเปลี่ยนแปลงสถานะการขนส่ง</li>
-                            <li><strong>Integration with Other Systems:</strong> สามารถเชื่อมต่อกับระบบอื่นๆ ของบริษัทได้อย่างง่ายดาย</li>
+                            <li data-i18n="technology.wms_li1"><strong>Real-time Tracking:</strong> ติดตามสถานะการขนส่งแบบเรียลไทม์ผ่าน GPS</li>
+                            <li data-i18n="technology.wms_li2"><strong>Automated Reporting:</strong> ระบบสร้างรายงานการขนส่งอัตโนมัติ</li>
+                            <li data-i18n="technology.wms_li3"><strong>Alert System:</strong> ระบบแจ้งเตือนเมื่อมีการเปลี่ยนแปลงสถานะการขนส่ง</li>
+                            <li data-i18n="technology.wms_li4"><strong>Integration with Other Systems:</strong> สามารถเชื่อมต่อกับระบบอื่นๆ ของบริษัทได้อย่างง่ายดาย</li>
                         </ul>
                     </div>
                 </div>
@@ -161,13 +161,13 @@
                     </div>
                     <div class="modal-ui-col-text">
                         <h2 class="modal-ui-title" data-i18n="technology.tab_geo">Geofencing</h2>
-                        <p class="modal-ui-subtitle">Geofencing & Line Auto Alert System</p>
+                        <p class="modal-ui-subtitle" data-i18n="technology.geo_subtitle">Geofencing & Line Auto Alert System</p>
                         <p class="modal-ui-desc" data-i18n="technology.geo_desc">TNB ใช้เทคโนโลยี Geofencing เพื่อกำหนดขอบเขตพื้นที่สำคัญ เช่น ท่าเรือ คลังสินค้า หรือโรงงานลูกค้า</p>
                         <ul class="modal-ui-list">
-                            <li><strong>Automatic Boundary Detection:</strong> เมื่อรถขนส่งผ่านเข้า–ออกพื้นที่ที่กำหนด ระบบจะบันทึกข้อมูลเวลาและสถานะโดยอัตโนมัติ</li>
-                            <li><strong>Real-time Notifications:</strong> เชื่อมต่อกับระบบแจ้งเตือนผ่าน Line Auto Alert เพื่อแจ้งข้อมูลแบบเรียลไทม์</li>
-                            <li><strong>Time Control:</strong> ช่วยควบคุมเวลาในการขนส่ง ลดความเสี่ยงจากความล่าช้า</li>
-                            <li><strong>Transparency & Tracking:</strong> เพิ่มความโปร่งใสในการติดตามตู้สินค้าตลอดเวลา</li>
+                            <li data-i18n="technology.geo_li1"><strong>Automatic Boundary Detection:</strong> เมื่อรถขนส่งผ่านเข้า–ออกพื้นที่ที่กำหนด ระบบจะบันทึกข้อมูลเวลาและสถานะโดยอัตโนมัติ</li>
+                            <li data-i18n="technology.geo_li2"><strong>Real-time Notifications:</strong> เชื่อมต่อกับระบบแจ้งเตือนผ่าน Line Auto Alert เพื่อแจ้งข้อมูลแบบเรียลไทม์</li>
+                            <li data-i18n="technology.geo_li3"><strong>Time Control:</strong> ช่วยควบคุมเวลาในการขนส่ง ลดความเสี่ยงจากความล่าช้า</li>
+                            <li data-i18n="technology.geo_li4"><strong>Transparency & Tracking:</strong> เพิ่มความโปร่งใสในการติดตามตู้สินค้าตลอดเวลา</li>
                         </ul>
                     </div>
                 </div>
@@ -186,13 +186,13 @@
                     </div>
                     <div class="modal-ui-col-text">
                         <h2 class="modal-ui-title" data-i18n="technology.tab_cam">Camera Control</h2>
-                        <p class="modal-ui-subtitle">Camera Control & Driver Behavior Monitoring</p>
+                        <p class="modal-ui-subtitle" data-i18n="technology.cam_subtitle">Camera Control & Driver Behavior Monitoring</p>
                         <p class="modal-ui-desc" data-i18n="technology.cam_desc">ระบบกล้องตรวจสอบของ TNB ถูกติดตั้งทั้งบริเวณด้านหน้ารถ ภายในตู้สินค้า และจุดตรวจสอบพฤติกรรมพนักงานขับรถ</p>
                         <ul class="modal-ui-list">
-                            <li><strong>Live Monitoring:</strong> สามารถดูภาพสดแบบออนไลน์ บันทึกข้อมูล และเรียกดูภาพย้อนหลังได้</li>
-                            <li><strong>Safety Enhancement:</strong> ช่วยเพิ่มความปลอดภัยในการขนส่งสินค้า ป้องกันความเสียหายและลดความเสี่ยงจากอุบัติเหตุ</li>
-                            <li><strong>Driver Behavior Analysis:</strong> ใช้เป็นเครื่องมือในการควบคุมมาตรฐานการขับขี่ วิเคราะห์พฤติกรรมการทำงานของพนักงาน</li>
-                            <li><strong>Service Quality Control:</strong> ยกระดับคุณภาพการให้บริการให้เป็นไปตามมาตรฐานของบริษัท</li>
+                            <li data-i18n="technology.cam_li1"><strong>Live Monitoring:</strong> สามารถดูภาพสดแบบออนไลน์ บันทึกข้อมูล และเรียกดูภาพย้อนหลังได้</li>
+                            <li data-i18n="technology.cam_li2"><strong>Safety Enhancement:</strong> ช่วยเพิ่มความปลอดภัยในการขนส่งสินค้า ป้องกันความเสียหายและลดความเสี่ยงจากอุบัติเหตุ</li>
+                            <li data-i18n="technology.cam_li3"><strong>Driver Behavior Analysis:</strong> ใช้เป็นเครื่องมือในการควบคุมมาตรฐานการขับขี่ วิเคราะห์พฤติกรรมการทำงานของพนักงาน</li>
+                            <li data-i18n="technology.cam_li4"><strong>Service Quality Control:</strong> ยกระดับคุณภาพการให้บริการให้เป็นไปตามมาตรฐานของบริษัท</li>
                         </ul>
                     </div>
                 </div>

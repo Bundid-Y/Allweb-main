@@ -97,7 +97,27 @@
         "tms_desc": "ระบบบริหารจัดการงานขนส่งแบบครบวงจรของ TNB ถูกออกแบบมาเพื่อรองรับการทำงานตั้งแต่ต้นทางจนจบกระบวนการขนส่ง",
         "wms_desc": "ระบบติดตามและแสดงผลการทำงานของรถขนส่งของ TNB ทำงานผ่าน Dashboard กลางที่สามารถมองเห็นภาพรวมการปฏิบัติงานได้อย่างชัดเจน",
         "geo_desc": "TNB ใช้เทคโนโลยี Geofencing เพื่อกำหนดขอบเขตพื้นที่สำคัญ เช่น ท่าเรือ คลังสินค้า หรือโรงงานลูกค้า",
-        "cam_desc": "ระบบกล้องตรวจสอบของ TNB ถูกติดตั้งทั้งบริเวณด้านหน้ารถ ภายในตู้สินค้า และจุดตรวจสอบพฤติกรรมพนักงานขับรถ"
+        "cam_desc": "ระบบกล้องตรวจสอบของ TNB ถูกติดตั้งทั้งบริเวณด้านหน้ารถ ภายในตู้สินค้า และจุดตรวจสอบพฤติกรรมพนักงานขับรถ",
+        "tms_subtitle": "Transportation Management System",
+        "tms_li1": "<strong>Route Optimization:</strong> ระบบคำนวณเส้นทางที่เหมาะสมที่สุดเพื่อลดระยะทางและเวลาในการขนส่ง",
+        "tms_li2": "<strong>Real-time Tracking:</strong> ติดตามสถานะการขนส่งแบบเรียลไทม์ผ่าน GPS",
+        "tms_li3": "<strong>Automated Reporting:</strong> ระบบสร้างรายงานการขนส่งอัตโนมัติ",
+        "tms_li4": "<strong>Integration with Other Systems:</strong> สามารถเชื่อมต่อกับระบบอื่นๆ ของบริษัทได้อย่างง่ายดาย",
+        "wms_subtitle": "Truck Monitoring System",
+        "wms_li1": "<strong>Real-time Tracking:</strong> ติดตามสถานะการขนส่งแบบเรียลไทม์ผ่าน GPS",
+        "wms_li2": "<strong>Automated Reporting:</strong> ระบบสร้างรายงานการขนส่งอัตโนมัติ",
+        "wms_li3": "<strong>Alert System:</strong> ระบบแจ้งเตือนเมื่อมีการเปลี่ยนแปลงสถานะการขนส่ง",
+        "wms_li4": "<strong>Integration with Other Systems:</strong> สามารถเชื่อมต่อกับระบบอื่นๆ ของบริษัทได้อย่างง่ายดาย",
+        "geo_subtitle": "Geofencing & Line Auto Alert System",
+        "geo_li1": "<strong>Automatic Boundary Detection:</strong> เมื่อรถขนส่งผ่านเข้า–ออกพื้นที่ที่กำหนด ระบบจะบันทึกข้อมูลเวลาและสถานะโดยอัตโนมัติ",
+        "geo_li2": "<strong>Real-time Notifications:</strong> เชื่อมต่อกับระบบแจ้งเตือนผ่าน Line Auto Alert เพื่อแจ้งข้อมูลแบบเรียลไทม์",
+        "geo_li3": "<strong>Time Control:</strong> ช่วยควบคุมเวลาในการขนส่ง ลดความเสี่ยงจากความล่าช้า",
+        "geo_li4": "<strong>Transparency & Tracking:</strong> เพิ่มความโปร่งใสในการติดตามตู้สินค้าตลอดเวลา",
+        "cam_subtitle": "Camera Control & Driver Behavior Monitoring",
+        "cam_li1": "<strong>Live Monitoring:</strong> สามารถดูภาพสดแบบออนไลน์ บันทึกข้อมูล และเรียกดูภาพย้อนหลังได้",
+        "cam_li2": "<strong>Safety Enhancement:</strong> ช่วยเพิ่มความปลอดภัยในการขนส่งสินค้า ป้องกันความเสียหายและลดความเสี่ยงจากอุบัติเหตุ",
+        "cam_li3": "<strong>Driver Behavior Analysis:</strong> ใช้เป็นเครื่องมือในการควบคุมมาตรฐานการขับขี่ วิเคราะห์พฤติกรรมการทำงานของพนักงาน",
+        "cam_li4": "<strong>Service Quality Control:</strong> ยกระดับคุณภาพการให้บริการให้เป็นไปตามมาตรฐานของบริษัท"
     },
     "branches": {
         "title": "สาขาของเรา",
@@ -304,7 +324,8 @@
         "parking_sec2_title": "Fleet Management",
         "parking_sec2_desc": "บริหารจัดการกองรถ ควบคุมและติดตามอย่างมีระบบ ช่วยสนับสนุนการบริหารจัดการฟลีทรถให้เป็นไปอย่างมีประสิทธิภาพ",
         "parking_sec3_title": "Support Services",
-        "parking_sec3_desc": "บริการสนับสนุนการดำเนินงาน ด้านโลจิสติกส์อย่างต่อเนื่อง เหมาะสำหรับธุรกิจโลจิสติกส์และอุตสาหกรรมขนส่ง"
+        "parking_sec3_desc": "บริการสนับสนุนการดำเนินงาน ด้านโลจิสติกส์อย่างต่อเนื่อง เหมาะสำหรับธุรกิจโลจิสติกส์และอุตสาหกรรมขนส่ง",
+        "back_to_services": "<span class=\"back-icon\">←</span> กลับไปหน้าหลัก บริการของเรา"
     },
     "login": {
         "titleIn": "เข้าสู่ระบบ",

@@ -114,7 +114,7 @@
 
   <!-- Back to Services Button -->
   <div class="back-to-services" >
-    <a href="../main/index.php#services" class="back-to-services-btn">
+    <a href="../main/index.php#services" class="back-to-services-btn" data-i18n="service.back_to_services">
       <span class="back-icon">←</span>
       กลับไปหน้าหลัก บริการของเรา
     </a>

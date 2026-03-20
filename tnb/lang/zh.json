@@ -97,7 +97,27 @@
         "tms_desc": "TNB的端到端运输管理系统旨在支持从起点到终点的全流程运营。",
         "wms_desc": "TNB的卡车监控系统通过集中仪表盘运行，提供清晰的运营可视性。",
         "geo_desc": "TNB使用地理围栏技术在港口、仓库和客户工厂等关键区域周围定义边界。",
-        "cam_desc": "TNB的摄像监控系统安装在卡车前方、货柜内部和驾驶员行为检查点。"
+        "cam_desc": "TNB的摄像监控系统安装在卡车前方、货柜内部和驾驶员行为检查点。",
+        "tms_subtitle": "Transportation Management System",
+        "tms_li1": "<strong>Route Optimization:</strong> 最合适的路线计算系统，可缩短运输距离和时间。",
+        "tms_li2": "<strong>Real-time Tracking:</strong> 通过GPS实时跟踪运输状态。",
+        "tms_li3": "<strong>Automated Reporting:</strong> 自动化的运输报告生成系统。",
+        "tms_li4": "<strong>Integration with Other Systems:</strong> 可轻松与其他公司系统连接。",
+        "wms_subtitle": "Truck Monitoring System",
+        "wms_li1": "<strong>Real-time Tracking:</strong> 通过GPS实时跟踪运输状态。",
+        "wms_li2": "<strong>Automated Reporting:</strong> 自动化的运输报告生成系统。",
+        "wms_li3": "<strong>Alert System:</strong> 运输状态改变时的警报系统。",
+        "wms_li4": "<strong>Integration with Other Systems:</strong> 可轻松与其他公司系统连接。",
+        "geo_subtitle": "Geofencing & Line Auto Alert System",
+        "geo_li1": "<strong>Automatic Boundary Detection:</strong> 当运输车辆进出指定区域时，系统会自动记录时间和状态。",
+        "geo_li2": "<strong>Real-time Notifications:</strong> 通过 Line Auto Alert 连接警报系统以提供实时信息。",
+        "geo_li3": "<strong>Time Control:</strong> 帮助控制运输时间，降低延迟风险。",
+        "geo_li4": "<strong>Transparency & Tracking:</strong> 提高始终跟踪集装箱的透明度。",
+        "cam_subtitle": "Camera Control & Driver Behavior Monitoring",
+        "cam_li1": "<strong>Live Monitoring:</strong> 可以在线查看实时图像，记录数据并查看过去的录像。",
+        "cam_li2": "<strong>Safety Enhancement:</strong> 提高货物运输的安全性，防止损坏并降低事故风险。",
+        "cam_li3": "<strong>Driver Behavior Analysis:</strong> 用作控制驾驶标准和分析员工工作行为的工具。",
+        "cam_li4": "<strong>Service Quality Control:</strong> 将服务质量提升至公司标准。"
     },
     "branches": {
         "title": "我们的分支机构",
@@ -133,7 +153,7 @@
         "desc_p2": "特别是<strong class=\"partners-highlight\">汽车</strong>、<strong class=\"partners-highlight\">电子</strong>、<strong class=\"partners-highlight\">化工</strong>和<strong class=\"partners-highlight\">工业产品</strong>行业，包括原始设备制造商（OEM）以及<strong class=\"partners-highlight\">一级和二级供应商</strong>",
         "desc_p3": "TNB提供以<strong class=\"partners-highlight\">质量</strong>、<strong class=\"partners-highlight\">安全</strong>和<strong class=\"partners-highlight\">准时</strong>为核心标准的运输服务，准备与客户发展密切的工作关系",
         "desc_p4": "以支持可持续的业务增长，并建立长期关系，成为<strong class=\"partners-highlight\">值得信赖的物流合作伙伴</strong>"
-            },
+    },
     "quotation": {
         "title": "请求报价",
         "firstName": "名字",
@@ -304,7 +324,8 @@
         "parking_sec2_title": "车队管理",
         "parking_sec2_desc": "通过系统化控制和监控的车辆群管理，支持高效的车队运营。",
         "parking_sec3_title": "支持服务",
-        "parking_sec3_desc": "为物流业务和司机提供持续的支持服务。适合物流企业和运输行业。"
+        "parking_sec3_desc": "为物流业务和司机提供持续的支持服务。适合物流企业和运输行业。",
+        "back_to_services": "<span class=\"back-icon\">←</span> 返回服务"
     },
     "login": {
         "titleIn": "登录",
