@@ -21677,8 +21677,8 @@ html {
 }
 
 /* =========================================
-   Partners Page - Subtle Blue Background
-   Behind the text area for visual depth
+   Partners Page - Text Line Accent
+   Line accent at the beginning of text
    ========================================= */
 
 .partners-page-wrapper .col-md-6:first-child {
@@ -21686,45 +21686,23 @@ html {
     z-index: 1;
 }
 
-/* Subtle blue gradient background behind text column */
+/* Line accent at the beginning of text */
 .partners-page-wrapper .col-md-6:first-child::before {
     content: '';
     position: absolute;
-    top: -30px;
-    left: -20px;
-    right: 20px;
-    bottom: -30px;
-    background: linear-gradient(135deg, rgba(13, 45, 107, 0.04) 0%, rgba(30, 58, 138, 0.08) 50%, rgba(13, 45, 107, 0.03) 100%);
-    border-radius: 20px;
-    z-index: -1;
-    border: 1px solid rgba(13, 45, 107, 0.06);
-}
-
-/* Accent bar on left side of text area */
-.partners-page-wrapper .col-md-6:first-child::after {
-    content: '';
-    position: absolute;
-    top: 10px;
+    top: 0;
     left: -20px;
     width: 4px;
-    height: 60%;
-    background: linear-gradient(to bottom, #0D2D6B, #1e3a8a, transparent);
+    height: 100%;
+    background: linear-gradient(to bottom, #0D2D6B, #1e3a8a);
     border-radius: 2px;
     z-index: 1;
 }
 
-/* Partners responsive - remove pseudo-elements on mobile */
+/* Partners responsive - adjust line accent on mobile */
 @media (max-width: 768px) {
     .partners-page-wrapper .col-md-6:first-child::before {
         left: -10px;
-        right: -10px;
-        top: -15px;
-        bottom: -15px;
-    }
-
-    .partners-page-wrapper .col-md-6:first-child::after {
-        left: -10px;
-        height: 50%;
     }
 }
 
