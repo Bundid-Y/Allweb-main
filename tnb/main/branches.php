@@ -49,7 +49,7 @@
             <!-- ส่วนรูปภาพ (Sticky) -->
             <div class="branches-image-section">
                 <div class="branches-image-wrapper">
-                    <img src="../img/other/index/about/homepage.webp" alt="TNB Logistics Branches Network">
+                    <img src="../img/other/service/nationwide/middlemiledistribution.png" alt="TNB Logistics Branches Network">
                     <div class="branches-image-overlay">
                         <h3 data-i18n="branches.overlay_title">เครือข่ายสาขาทั่วประเทศ</h3>
                         <p data-i18n="branches.overlay_desc">ครอบคลุมพื้นที่สำคัญทางอุตสาหกรรมและโลจิสติกส์</p>
