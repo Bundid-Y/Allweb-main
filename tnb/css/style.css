@@ -21672,6 +21672,12 @@ html {
     box-shadow: 0 8px 28px rgba(13, 45, 107, 0.12);
 }
 
+.page-branches .branch-card:hover .branch-card__services li {
+    background: white;
+    color: #0D2D6B;
+    border: 1px solid rgba(13, 45, 107, 0.2);
+}
+
 .page-branches .branch-card__name {
     font-size: 20px;
     font-weight: 700;
