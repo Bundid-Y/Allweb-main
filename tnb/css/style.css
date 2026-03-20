@@ -9199,8 +9199,38 @@ body.page-trucktypes .truck-card__body {
   box-shadow: 0 15px 40px rgba(13, 45, 107, 0.15);
 }
 
-/* Responsive — Contact */
-@media (max-width: 768px) {
+/* iPad Pro and iPad Air - force vertical layout like iPad Mini */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .page-contact .contact-info-row {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 15px !important;
+    margin-bottom: 40px !important;
+    max-width: 100% !important;
+  }
+
+  .page-contact .contact-item {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
+  }
+
+  .page-contact .contact-text-group h4 {
+    font-size: 18px !important;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .page-contact .contact-text-group p {
+    font-size: 16px !important;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+/* Mobile (max 767px) */
+@media (max-width: 767px) {
   .page-contact .contact-section {
     padding: 40px 10px 60px;
     overflow-x: hidden;
