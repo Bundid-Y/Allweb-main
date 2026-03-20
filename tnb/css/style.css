@@ -7596,6 +7596,34 @@ html {
   }
 }
 
+/* iPad Pro override - force 3 cards centered */
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .feat-cards {
+    max-width: 900px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .feat-cards__grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.2rem !important;
+    padding: 0 20px !important;
+    justify-content: center !important;
+  }
+  
+  .feat-cards__item {
+    max-width: 280px !important;
+    margin: 0 auto !important;
+  }
+  
+  .back-to-services {
+    max-width: 600px !important;
+    margin: 20px auto !important;
+    padding: 20px !important;
+  }
+}
+
 /* iPad Air/Mini specific fixes */
 @media (max-width: 820px) and (min-width: 768px) {
   .feat-cards {
@@ -7616,6 +7644,72 @@ html {
   .back-to-services {
     margin-top: 30px !important;
     padding: 20px 15px !important;
+  }
+}
+
+/* iPad Pro specific fixes */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .feat-cards {
+    margin-top: -40px !important;
+    margin-bottom: 15px !important;
+    max-width: 900px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  .feat-cards__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem !important;
+    padding: 0 20px !important;
+    justify-content: center;
+  }
+  
+  .feat-cards__item {
+    margin-bottom: 0;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .back-to-services {
+    margin-top: 20px !important;
+    padding: 20px 20px !important;
+    max-width: 600px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* iPad Pro landscape */
+@media (max-width: 1366px) and (min-width: 1025px) {
+  .feat-cards {
+    margin-top: -40px !important;
+    margin-bottom: 15px !important;
+    max-width: 1000px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  .feat-cards__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem !important;
+    padding: 0 25px !important;
+    justify-content: center;
+  }
+  
+  .feat-cards__item {
+    margin-bottom: 0;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .back-to-services {
+    margin-top: 20px !important;
+    padding: 20px 25px !important;
+    max-width: 600px;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 
@@ -7702,6 +7796,68 @@ html {
   }
 }
 
+/* iPad Pro specific service fixes */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .svc-hero {
+    padding: 25px 20px 0;
+  }
+  
+  .svc-hero .svc-row,
+  .svc-hero .svc-row--reverse {
+    gap: 25px;
+  }
+  
+  .svc-text-col h1 {
+    margin-bottom: 20px;
+  }
+  
+  .svc-text-col .details-desc {
+    margin-bottom: 20px;
+  }
+  
+  .feat-cards {
+    margin-top: -30px !important;
+    margin-bottom: 35px !important;
+  }
+  
+  .back-to-services {
+    margin-top: 45px !important;
+    padding: 30px 25px !important;
+  }
+}
+
+/* iPad Pro landscape service fixes */
+@media (max-width: 1366px) and (min-width: 1025px) {
+  .svc-hero {
+    padding: 30px 25px 0;
+  }
+  
+  .svc-hero .svc-row,
+  .svc-hero .svc-row--reverse {
+    gap: 30px;
+  }
+  
+  .svc-text-col h1 {
+    margin-bottom: 25px;
+  }
+  
+  .svc-text-col .details-desc {
+    margin-bottom: 25px;
+  }
+  
+  .feat-cards {
+    margin-top: -35px !important;
+    margin-bottom: 40px !important;
+  }
+  
+  .back-to-services {
+    margin-top: 50px !important;
+    padding: 35px 30px !important;
+  }
+}
+
+/* Mobile (max 767px) */
+@media (max-width: 767px) {
   .svc-hero .svc-row,
   .svc-hero .svc-row--reverse {
     gap: 24px;
