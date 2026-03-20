@@ -19553,7 +19553,7 @@ html {
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
-    height: 500px;
+    height: 400px;
 }
 
 /* Individual truck cards */
@@ -19585,7 +19585,7 @@ html {
 /* Truck image container */
 .truck-card__img-container {
     position: relative;
-    height: 280px;
+    height: 200px;
     overflow: visible;
     display: flex;
     align-items: center;
@@ -19693,7 +19693,7 @@ html {
     }
     
     .truck-card__img-container {
-        height: 200px;
+        height: 150px;
     }
     
     .truck-card:hover .truck-card__img {
