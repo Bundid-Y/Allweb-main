@@ -15503,7 +15503,7 @@ body.page-vision {
 
 
 
-    content: 'โ€บ';
+    content: '\203A';
 
 
 
@@ -19553,7 +19553,7 @@ html {
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
-    height: 400px;
+    height: 360px;
 }
 
 /* Individual truck cards */
@@ -19578,8 +19578,8 @@ html {
 }
 
 .truck-card:not(:hover) {
-    opacity: 0.7;
-    transform: scale(0.95);
+    opacity: 1;
+    transform: scale(1);
 }
 
 /* Truck image container */
@@ -21417,13 +21417,13 @@ html {
     min-height: calc(100vh - 280px);
 }
 
-/* Grid ของ truck cards — ทับ trucktypes-interactive__grid เดิม */
+/* Grid of truck cards - scoped override */
 .page-trucktypes .trucktypes-interactive__grid {
     display: flex;
     gap: 1rem;
     max-width: 1400px;
     margin: 0 auto;
-    height: 420px;
+    height: 360px;
 }
 
 @media (max-width: 768px) {
@@ -21596,12 +21596,278 @@ html {
     margin-top: 0;
 }
 
-/* ป้องกัน footer ถูก padding ดึงออกไปไกล */
+/* Branches card footer spacing override */
 .page-trucktypes .trucktypes-cards-section,
 .page-branches .branches-layout,
 .page-contact .contact-section,
 .page-technology .card-ui-section {
     margin-bottom: 0;
     padding-bottom: 60px;
+}
+
+/* =========================================
+   Branches Card Layout
+   Compact card height to reduce scrolling
+   ========================================= */
+
+/* Branches page layout - two columns (image + cards) */
+.page-branches .branches-layout {
+    display: flex;
+    gap: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 30px 60px;
+}
+
+.page-branches .branches-image-section {
+    flex: 0 0 42%;
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
+    height: fit-content;
+}
+
+.page-branches .branches-image-wrapper {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(13, 45, 107, 0.15);
+}
+
+.page-branches .branches-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.page-branches .branches-image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 24px;
+    background: linear-gradient(to top, rgba(13, 45, 107, 0.85), transparent);
+    color: white;
+}
+
+.page-branches .branches-image-overlay h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 4px;
+}
+
+.page-branches .branches-image-overlay p {
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.85;
+}
+
+/* Branch cards - compact height */
+.page-branches .branches-cards-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.page-branches .branch-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 22px 26px;
+    border-left: 4px solid #0D2D6B;
+    box-shadow: 0 2px 16px rgba(13, 45, 107, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.page-branches .branch-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 28px rgba(13, 45, 107, 0.12);
+}
+
+.page-branches .branch-card__name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0D2D6B;
+    margin: 0 0 8px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgba(13, 45, 107, 0.12);
+}
+
+.page-branches .branch-card__desc {
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.6;
+    margin: 0 0 10px;
+}
+
+.page-branches .branch-card__services {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.page-branches .branch-card__services li {
+    background: linear-gradient(135deg, #0a1e4a 0%, #1e3a8a 100%);
+    color: white;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Branches responsive */
+@media (max-width: 992px) {
+    .page-branches .branches-layout {
+        flex-direction: column;
+        padding: 40px 20px 50px;
+        gap: 30px;
+    }
+
+    .page-branches .branches-image-section {
+        flex: none;
+        position: relative;
+        top: auto;
+        width: 100%;
+    }
+
+    .page-branches .branches-image-wrapper {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-branches .branch-card {
+        padding: 18px 20px;
+    }
+
+    .page-branches .branch-card__name {
+        font-size: 18px;
+    }
+
+    .page-branches .branch-card__desc {
+        font-size: 14px;
+    }
+
+    .page-branches .branch-card__services li {
+        font-size: 12px;
+        padding: 3px 10px;
+    }
+}
+
+/* =========================================
+   Partners Page - Subtle Blue Background
+   Behind the text area for visual depth
+   ========================================= */
+
+.partners-page-wrapper .col-md-6:first-child {
+    position: relative;
+    z-index: 1;
+}
+
+/* Subtle blue gradient background behind text column */
+.partners-page-wrapper .col-md-6:first-child::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: -20px;
+    right: 20px;
+    bottom: -30px;
+    background: linear-gradient(135deg, rgba(13, 45, 107, 0.04) 0%, rgba(30, 58, 138, 0.08) 50%, rgba(13, 45, 107, 0.03) 100%);
+    border-radius: 20px;
+    z-index: -1;
+    border: 1px solid rgba(13, 45, 107, 0.06);
+}
+
+/* Accent bar on left side of text area */
+.partners-page-wrapper .col-md-6:first-child::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    width: 4px;
+    height: 60%;
+    background: linear-gradient(to bottom, #0D2D6B, #1e3a8a, transparent);
+    border-radius: 2px;
+    z-index: 1;
+}
+
+/* Partners responsive - remove pseudo-elements on mobile */
+@media (max-width: 768px) {
+    .partners-page-wrapper .col-md-6:first-child::before {
+        left: -10px;
+        right: -10px;
+        top: -15px;
+        bottom: -15px;
+    }
+
+    .partners-page-wrapper .col-md-6:first-child::after {
+        left: -10px;
+        height: 50%;
+    }
+}
+
+/* =========================================
+   Contact Page - Blue Rectangle Behind Map
+   Adds visual prominence to the map area
+   ========================================= */
+
+.page-contact .contact-map-wrapper {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Blue rectangle background shape behind map */
+.page-contact .map-bg-shape {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: linear-gradient(135deg, #0a1e4a 0%, #0D2D6B 40%, #1e3a8a 100%);
+    border-radius: 20px;
+    z-index: 0;
+    box-shadow: 0 15px 50px rgba(13, 45, 107, 0.25);
+}
+
+.page-contact .contact-map-box {
+    position: relative;
+    height: 480px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(13, 45, 107, 0.15);
+    z-index: 1;
+}
+
+/* Contact map responsive */
+@media (max-width: 768px) {
+    .page-contact .map-bg-shape {
+        top: -12px;
+        left: -12px;
+        right: -12px;
+        bottom: -12px;
+        border-radius: 14px;
+    }
+
+    .page-contact .contact-map-box {
+        height: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-contact .map-bg-shape {
+        top: -8px;
+        left: -8px;
+        right: -8px;
+        bottom: -8px;
+    }
+
+    .page-contact .contact-map-box {
+        height: 260px;
+    }
 }
 
