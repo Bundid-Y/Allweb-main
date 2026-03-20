@@ -6618,43 +6618,6 @@ section.loop-images-quotation.vertical {
 
 
 
-.map-bg-shape {
-
-
-
-    position: absolute;
-
-
-
-    top: -70px;
-
-
-
-    right: -40px;
-
-
-
-    bottom: -70px;
-
-
-
-    left: 50%;
-
-
-
-    background-color: #0D2D6B;
-
-
-
-    z-index: -1;
-
-
-
-    clip-path: polygon(0 30px, 100% 0, 100% 100%, 0 calc(100% - 30px));
-
-
-
-}
 
 
 
@@ -6762,40 +6725,7 @@ section.loop-images-quotation.vertical {
 
 
 
-    .map-bg-shape {
-
-
-
-        left: 0 !important;
-
-
-
-        right: 0 !important;
-
-
-
-        top: 0 !important;
-
-
-
-        bottom: 0 !important;
-
-
-
-        height: 100% !important;
-
-
-
-        clip-path: none !important;
-
-
-
-        /* Make the background solidly wrap the map on mobile */
-
-
-
-    }
-
+    
 
 
 
@@ -21533,12 +21463,6 @@ html {
     line-height: 1.5;
 }
 
-/* กล่องแผนที่ */
-.page-contact .contact-map-wrapper {
-    position: relative;
-    max-width: 1000px;
-    margin: 0 auto;
-}
 
 .page-contact .contact-map-box {
     position: relative;
@@ -21817,23 +21741,18 @@ html {
 
 /* Blue rectangle background shape behind map */
 .page-contact .map-bg-shape {
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    right: -20px;
-    bottom: -20px;
-    background: linear-gradient(135deg, #0a1e4a 0%, #0D2D6B 40%, #1e3a8a 100%);
-    border-radius: 0px;
-    z-index: 0;
-    box-shadow: 0 15px 50px rgba(13, 45, 107, 0.25);
-    transform: none;
-    transform-origin: center;
-    aspect-ratio: 1/1;
-    width: 520px;
-    height: 520px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute !important;
+    top: -20px !important;
+    left: -20px !important;
+    right: -20px !important;
+    bottom: -20px !important;
+    background: linear-gradient(135deg, #0a1e4a 0%, #0D2D6B 40%, #1e3a8a 100%) !important;
+    border-radius: 0px !important;
+    z-index: 0 !important;
+    box-shadow: 0 15px 50px rgba(13, 45, 107, 0.25) !important;
+    display: block !important;
+    width: auto !important;
+    height: auto !important;
 }
 
 .page-contact .contact-map-box {
@@ -21848,9 +21767,10 @@ html {
 /* Contact map responsive */
 @media (max-width: 768px) {
     .page-contact .map-bg-shape {
-        width: 400px;
-        height: 400px;
-        transform: translate(-50%, -50%);
+        top: -15px;
+        left: -15px;
+        right: -15px;
+        bottom: -15px;
     }
 
     .page-contact .contact-map-box {
@@ -21861,9 +21781,10 @@ html {
 
 @media (max-width: 480px) {
     .page-contact .map-bg-shape {
-        width: 320px;
-        height: 320px;
-        transform: translate(-50%, -50%);
+        top: -12px;
+        left: -12px;
+        right: -12px;
+        bottom: -12px;
     }
 
     .page-contact .contact-map-box {

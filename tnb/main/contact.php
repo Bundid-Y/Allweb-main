@@ -101,7 +101,7 @@
 
             <!-- แผนที่ Google Maps -->
             <div class="contact-map-wrapper">
-                <!-- พื้นหลังรูปทรงสีแดงด้านหลังแผนที่ -->
+                <!-- พื้นหลังรูปทรงสีน้ำเงินด้านหลังแผนที่ -->
                 <div class="map-bg-shape"></div>
                 <div class="contact-map-box">
                     <iframe
