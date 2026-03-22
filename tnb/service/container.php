@@ -68,7 +68,7 @@
     <div class="feat-cards__grid">
 
       <!-- Card 1 -->
-      <div class="feat-cards__item fc-hidden">
+      <div class="feat-cards__item">
         <div class="feat-cards__img">
           <img src="../img/other/service/container/containerreceiving.png" alt="Container Receiving">
         </div>
@@ -82,7 +82,7 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="feat-cards__item fc-hidden">
+      <div class="feat-cards__item">
         <div class="feat-cards__img">
           <img src="../img/other/service/container/containeryard.png" alt="Container Yard">
         </div>
@@ -96,7 +96,7 @@
       </div>
 
       <!-- Card 3 -->
-      <div class="feat-cards__item fc-hidden">
+      <div class="feat-cards__item">
         <div class="feat-cards__img">
           <img src="../img/other/service/container/containerdispatch.png" alt="Container Dispatch">
         </div>

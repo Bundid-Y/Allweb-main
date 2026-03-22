@@ -69,7 +69,7 @@
     <div class="feat-cards__grid">
 
       <!-- Card 1 -->
-      <div class="feat-cards__item fc-hidden">
+      <div class="feat-cards__item">
         <div class="feat-cards__img">
           <img src="../img/other/service/domestic/Inboundlogistics.png" alt="Inbound Logistics">
         </div>
@@ -83,7 +83,7 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="feat-cards__item fc-hidden">
+      <div class="feat-cards__item">
         <div class="feat-cards__img">
           <img src="../img/other/service/domestic/distributioncenter.png" alt="Distribution Center">
         </div>
@@ -97,7 +97,7 @@
       </div>
 
       <!-- Card 3 -->
-      <div class="feat-cards__item fc-hidden">
+      <div class="feat-cards__item">
         <div class="feat-cards__img">
           <img src="../img/other/service/domestic/outboundlogistics.png" alt="Outbound Logistics">
         </div>
@@ -115,9 +115,9 @@
 
   <!-- Back to Services Button -->
   <div class="back-to-services" >
-    <a href="../main/index.php#services" class="back-to-services-btn" data-i18n="service.back_to_services">
+    <a href="../main/index.php#services" class="back-to-services-btn">
       <span class="back-icon">←</span>
-      กลับไปหน้าหลัก บริการของเรา
+      <span data-i18n="service.backToServices">กลับไปหน้าหลัก บริการของเรา</span>
     </a>
   </div>
 

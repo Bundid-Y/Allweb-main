@@ -68,7 +68,7 @@
     <div class="feat-cards__grid">
 
       <!-- Card 1 -->
-      <div class="feat-cards__item fc-hidden">
+      <div class="feat-cards__item">
         <div class="feat-cards__img">
           <img src="../img/other/service/shuttle/suppliersfactories.jpeg" alt="Suppliers and Factories">
         </div>
@@ -81,7 +81,7 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="feat-cards__item fc-hidden">
+      <div class="feat-cards__item">
         <div class="feat-cards__img">
           <img src="../img/other/service/shuttle/shuttletruckservice.jpeg" alt="Shuttle Truck Service">
         </div>
@@ -95,7 +95,7 @@
       </div>
 
       <!-- Card 3 -->
-      <div class="feat-cards__item fc-hidden">
+      <div class="feat-cards__item">
         <div class="feat-cards__img">
           <img src="../img/other/service/shuttle/destinationscustomers.jpeg" alt="Destinations and Customers">
         </div>
