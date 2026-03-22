@@ -38,7 +38,11 @@
 
     // ── Fetch + cache a language file ───────────────────────────────────────
     async function _loadLang(lang) {
-        if (_cache[lang]) return _cache[lang];
+        console.log('[tnbLang] Loading language file:', lang);
+        if (_cache[lang]) {
+            console.log('[tnbLang] Language file cached:', lang);
+            return _cache[lang];
+        }
 
         // Validate lang to prevent path traversal
         if (!SUPPORTED.includes(lang)) {
@@ -48,9 +52,11 @@
 
         try {
             const url = LANG_BASE + lang + '.json';
+            console.log('[tnbLang] Fetching:', url);
             const res = await fetch(url);
             if (!res.ok) throw new Error('HTTP ' + res.status);
             const data = await res.json();
+            console.log('[tnbLang] Language file loaded successfully:', lang);
             _cache[lang] = data;
             return data;
         } catch (err) {
@@ -140,6 +146,7 @@
 
     // ── Core: Set language ───────────────────────────────────────────────────
     async function setLang(lang) {
+        console.log('[tnbLang] Setting language to:', lang);
         // Validate
         if (!SUPPORTED.includes(lang)) {
             console.warn('[tnbLang] Unknown language:', lang, '— falling back to', DEFAULT_LANG);
@@ -195,8 +202,11 @@
 
     // ── Initialize ───────────────────────────────────────────────────────────
     async function init() {
+        console.log('[tnbLang] Initializing...');
         const lang = _getSavedLang();
+        console.log('[tnbLang] Saved language:', lang);
         await setLang(lang);
+        console.log('[tnbLang] Initialization complete');
     }
 
     // ── Public API ───────────────────────────────────────────────────────────

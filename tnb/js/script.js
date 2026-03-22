@@ -15,6 +15,15 @@ function _throttle(fn, wait) {
 
 document.addEventListener('DOMContentLoaded', () => {
     // ----------------------------------------------------
+    // Initialize i18n Language System
+    // ----------------------------------------------------
+    if (window.tnbLang && window.tnbLang._initialized) {
+        console.log('TNB i18n system ready');
+    } else {
+        console.warn('TNB i18n system not initialized');
+    }
+
+    // ----------------------------------------------------
     // TNB Home Slider — 7-Slide Carousel (Prev/Next/Dots/Autoplay/Keyboard)
     // Guard: ทำงานเฉพาะหน้าที่มี #tnbHomeSlider เท่านั้น
     // ----------------------------------------------------
