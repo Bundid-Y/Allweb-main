@@ -7374,8 +7374,8 @@ html {
 
 /* ULTRA HIGH SPECIFICITY - FORCE REDUCE SPACING */
 .content-section.feat-cards {
-  padding-top: 10px !important;
-  margin-top: -30px !important;
+  padding-top: 5px !important;
+  margin-top: -110px !important;
   width: 100%;
 }
 
@@ -7969,14 +7969,14 @@ html {
   }
 
   .svc-text-col h2 {
-    font-size: 18px;
+    font-size: 20px;
     word-wrap: break-word;
     overflow-wrap: break-word;
     margin-bottom: 6px;
   }
 
   .svc-text-col .details-desc {
-    font-size: 14px;
+    font-size: 20px !important;
     word-wrap: break-word;
     overflow-wrap: break-word;
     margin-bottom: 5px;
@@ -8061,7 +8061,7 @@ html {
   }
 
   .svc-text-col .details-desc {
-    font-size: 13px;
+    font-size: 20px !important;
   }
 
   .svc-image-wrapper img {
