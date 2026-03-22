@@ -7091,10 +7091,17 @@ html {
 
    ========================================= */
 
+/* ULTRA HIGH SPECIFICITY - FORCE REDUCE SPACING */
+.content-section.layout_padding.svc-hero {
+  margin-top: 120px !important;
+  padding-bottom: 0px !important;
+  padding-top: 40px !important;
+}
+
 .svc-hero {
-  margin-top: 140px;
-  padding-bottom: 60px;
-  padding-top: 40px;
+  margin-top: 120px !important;
+  padding-bottom: 0px !important;
+  padding-top: 40px !important;
 }
 
 .svc-hero .svc-row {
@@ -7180,7 +7187,7 @@ html {
 
   width: 95%;
 
-  height: 110%;
+  height: 105%;
 
   background-color: #0d2d6b;
 
@@ -7188,19 +7195,19 @@ html {
 }
 
 .svc-shape--left {
-  top: -5%;
+  top: -3%;
 
   left: -5%;
 
-  clip-path: polygon(0 5%, 85% 0, 85% 100%, 0 95%);
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
 }
 
 .svc-shape--right {
-  top: -5%;
+  top: -3%;
 
   right: -5%;
 
-  clip-path: polygon(100% 5%, 15% 0, 15% 100%, 100% 95%);
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .svc-image-wrapper img {
@@ -7365,9 +7372,16 @@ html {
    (เนเธเนเธเธฑเธ section Features เนเธเธ—เธธเธเธซเธเนเธฒ service)
    ========================================= */
 
+/* ULTRA HIGH SPECIFICITY - FORCE REDUCE SPACING */
+.content-section.feat-cards {
+  padding-top: 10px !important;
+  margin-top: -30px !important;
+  width: 100%;
+}
+
 .feat-cards {
-  padding-top: 20px;
-  margin-top: 20px !important;
+  padding-top: 10px !important;
+  margin-top: -30px !important;
   width: 100%;
 }
 
@@ -7758,9 +7772,14 @@ html {
     padding: 0 10px;
   }
   
-  .svc-hero {
-    padding: 20px 10px 0;
-  }
+  /* ULTRA HIGH SPECIFICITY - FORCE REDUCE SPACING */
+.content-section.layout_padding.svc-hero {
+  padding: 20px 10px 0px !important;
+}
+
+.svc-hero {
+  padding: 20px 10px 0px !important;
+}
   
   .svc-hero .svc-row,
   .svc-hero .svc-row--reverse {
@@ -7798,9 +7817,14 @@ html {
     padding: 0 15px;
   }
   
-  .svc-hero {
-    padding: 25px 15px 0;
-  }
+  /* ULTRA HIGH SPECIFICITY - FORCE REDUCE SPACING */
+.content-section.layout_padding.svc-hero {
+  padding: 25px 15px 0px !important;
+}
+
+.svc-hero {
+  padding: 25px 15px 0px !important;
+}
   
   .svc-hero .svc-row,
   .svc-hero .svc-row--reverse {
@@ -7833,9 +7857,14 @@ html {
 
 /* iPad Pro landscape service fixes */
 @media (max-width: 1366px) and (min-width: 1025px) {
-  .svc-hero {
-    padding: 30px 25px 0;
-  }
+  /* ULTRA HIGH SPECIFICITY - FORCE REDUCE SPACING */
+.content-section.layout_padding.svc-hero {
+  padding: 30px 25px 0px !important;
+}
+
+.svc-hero {
+  padding: 30px 25px 0px !important;
+}
   
   .svc-hero .svc-row,
   .svc-hero .svc-row--reverse {
@@ -7882,6 +7911,7 @@ html {
     left: 0 !important;
     right: 0 !important;
     width: 100% !important;
+    height: 110% !important;
   }
 
   .svc-shape--left {
@@ -7901,10 +7931,16 @@ html {
   }
   
   /* Hero section */
-  .svc-hero {
-    margin-top: 70px;
-    padding: 10px 8px 0;
-  }
+  /* ULTRA HIGH SPECIFICITY - FORCE REDUCE SPACING */
+.content-section.layout_padding.svc-hero {
+  margin-top: 90px !important;
+  padding: 10px 8px 0px !important;
+}
+
+.svc-hero {
+  margin-top: 90px !important;
+  padding: 10px 8px 0px !important;
+}
 
   .svc-hero .svc-row,
   .svc-hero .svc-row--reverse {
@@ -8005,10 +8041,16 @@ html {
     padding: 0 6px;
   }
   
-  .svc-hero {
-    margin-top: 60px;
-    padding: 8px 6px 0;
-  }
+  /* ULTRA HIGH SPECIFICITY - FORCE REDUCE SPACING */
+.content-section.layout_padding.svc-hero {
+  margin-top: 80px !important;
+  padding: 8px 6px 0px !important;
+}
+
+.svc-hero {
+  margin-top: 80px !important;
+  padding: 8px 6px 0px !important;
+}
 
   .svc-text-col h1 {
     font-size: 20px;
