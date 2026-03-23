@@ -7680,7 +7680,7 @@ html {
   .feat-cards__grid {
     grid-template-columns: 1fr;
     gap: 0.1rem !important;
-    padding: 0 !important;
+    padding: 0 12px !important; /* Added 12px horizontal padding */
   }
 
   .feat-cards__img {
@@ -8013,13 +8013,13 @@ html {
   .feat-cards {
     margin-top: 0 !important;
     margin-bottom: 0;
-    padding: 6px 4px !important;
+    padding: 6px 16px !important; /* Increased horizontal padding from 4px to 16px */
   }
 
   .feat-cards__grid {
     grid-template-columns: 1fr;
     gap: 0.1rem !important;
-    padding: 0 !important;
+    padding: 0 8px !important; /* Added 8px horizontal padding to grid */
   }
 
   .feat-cards__item {
@@ -8081,7 +8081,7 @@ html {
   }
 
   .feat-cards {
-    padding: 4px 2px !important;
+    padding: 4px 12px !important; /* Increased horizontal padding from 2px to 12px */
   }
 
   .back-to-services {

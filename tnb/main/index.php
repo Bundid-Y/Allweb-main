@@ -383,7 +383,7 @@
             height: 420px;
             z-index: 2;
             pointer-events: none;
-            clip-path: polygon(100% 0, 35% 10%, 35% 90%, 100% 100%);
+            clip-path: polygon(100% 0, 39% 9.4%, 37.9% 9.6%, 37% 10%, 36.3% 10.5%, 35.7% 11.2%, 35.3% 12%, 35.1% 12.9%, 35% 14%, 35% 86%, 35.1% 87.1%, 35.3% 88%, 35.7% 88.8%, 36.3% 89.5%, 37% 90%, 37.9% 90.4%, 39% 90.6%, 100% 100%);
             transform: translateY(var(--deco-y, 0));
             will-change: transform;
             padding-left: 30px;
