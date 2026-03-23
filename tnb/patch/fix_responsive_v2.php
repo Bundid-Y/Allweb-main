@@ -246,22 +246,23 @@ $newBlock = '/* ----- Service Pages: Comprehensive Responsive Fixes ----- */
 
 $pos = strpos($content, $oldBlock);
 if ($pos !== false) {
-    $content = str_replace($oldBlock, $newBlock, $content);
-    file_put_contents($cssFile, $content);
-    echo "SUCCESS: Replaced old responsive block with comprehensive fixes!\n";
-} else {
-    echo "WARNING: Could not find old responsive block. Trying to append...\n";
-    // Try to find just the marker
-    $marker = '.trucktypes-interactive {';
-    $mpos = strpos($content, $marker);
-    if ($mpos !== false) {
-        $commentStart = strrpos(substr($content, 0, $mpos), '/*');
-        if ($commentStart !== false) {
-            $content = substr($content, 0, $commentStart) . "\n" . $newBlock . "\n\n" . substr($content, $commentStart);
-            file_put_contents($cssFile, $content);
-            echo "SUCCESS: Injected comprehensive responsive fixes before trucktypes section.\n";
-        }
+  $content = str_replace($oldBlock, $newBlock, $content);
+  file_put_contents($cssFile, $content);
+  echo "SUCCESS: Replaced old responsive block with comprehensive fixes!\n";
+}
+else {
+  echo "WARNING: Could not find old responsive block. Trying to append...\n";
+  // Try to find just the marker
+  $marker = '.trucktypes-interactive {';
+  $mpos = strpos($content, $marker);
+  if ($mpos !== false) {
+    $commentStart = strrpos(substr($content, 0, $mpos), '/*');
+    if ($commentStart !== false) {
+      $content = substr($content, 0, $commentStart) . "\n" . $newBlock . "\n\n" . substr($content, $commentStart);
+      file_put_contents($cssFile, $content);
+      echo "SUCCESS: Injected comprehensive responsive fixes before trucktypes section.\n";
     }
+  }
 }
 
 echo "\nDone!\n";
