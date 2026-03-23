@@ -44,16 +44,16 @@
   <div class="content-section layout_padding svc-hero">
     <div class="svc-row svc-row--reverse">
       <div class="svc-img-col">
-        <div class="svc-image-wrapper">
+        <div class="svc-image-wrapper anim-zoom-in">
           <div class="svc-shape svc-shape--right"></div>
           <img src="../img/other/service/container/Container.png" alt="Container Arrangement and Container Yard">
         </div>
       </div>
       <div class="svc-text-col">
-        <h1 data-i18n="service.container_title">บริการจัดการตู้คอนเทนเนอร์และลานตู้สินค้า</h1>
-        <h2 data-i18n="service.container_subtitle">จัดการตู้สินค้าอย่างเป็นระบบและมีประสิทธิภาพ</h2>
-        <div class="svc-divider"></div>
-        <p class="details-desc" data-i18n="service.container_desc">
+        <h1 class="anim-fade-up" data-i18n="service.container_title">บริการจัดการตู้คอนเทนเนอร์และลานตู้สินค้า</h1>
+        <h2 class="anim-fade-up anim-delay-100" data-i18n="service.container_subtitle">จัดการตู้สินค้าอย่างเป็นระบบและมีประสิทธิภาพ</h2>
+        <div class="svc-divider anim-fade-up anim-delay-200"></div>
+        <p class="details-desc anim-fade-up anim-delay-300" data-i18n="service.container_desc">
           ให้บริการจัดการตู้คอนเทนเนอร์อย่างเป็นระบบ ตั้งแต่การรับตู้ การวางตู้ และการจัดเรียงตู้สินค้า
           มีพื้นที่ลานตู้สินค้าที่ได้มาตรฐาน รองรับทั้งตู้เปล่าและตู้บรรจุสินค้า
           ช่วยเพิ่มประสิทธิภาพในการบริหารจัดการพื้นที่และลดความแออัดของตู้คอนเทนเนอร์
@@ -68,7 +68,7 @@
     <div class="feat-cards__grid">
 
       <!-- Card 1 -->
-      <div class="feat-cards__item">
+      <div class="feat-cards__item anim-fade-up anim-delay-100">
         <div class="feat-cards__img">
           <img src="../img/other/service/container/containerreceiving.png" alt="Container Receiving">
         </div>
@@ -82,7 +82,7 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="feat-cards__item">
+      <div class="feat-cards__item anim-fade-up anim-delay-200">
         <div class="feat-cards__img">
           <img src="../img/other/service/container/containeryard.png" alt="Container Yard">
         </div>
@@ -96,7 +96,7 @@
       </div>
 
       <!-- Card 3 -->
-      <div class="feat-cards__item">
+      <div class="feat-cards__item anim-fade-up anim-delay-300">
         <div class="feat-cards__img">
           <img src="../img/other/service/container/containerdispatch.png" alt="Container Dispatch">
         </div>
