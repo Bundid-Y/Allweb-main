@@ -971,7 +971,10 @@ document.addEventListener('DOMContentLoaded', () => {
         let count = 0;
 
         if (items.length > 0 && nextItem && previousItem) {
+            const introSection = document.querySelector('.intro-section');
+
             function showNextItem() {
+                introSection.classList.add('slider-interacted');
                 items[count].classList.remove('active');
 
                 if(count < itemCount - 1) {
@@ -984,6 +987,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             function showPreviousItem() {
+                introSection.classList.add('slider-interacted');
                 items[count].classList.remove('active');
 
                 if(count > 0) {

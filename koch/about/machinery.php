@@ -41,7 +41,7 @@
     <script src="<?php echo $base; ?>js/script.js" defer></script>
 </head>
 
-<body>
+<body class="page-machinery">
 
     <?php include $base . 'component/menubar.php'; ?>
 

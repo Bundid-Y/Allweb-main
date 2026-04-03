@@ -12181,3 +12181,17 @@ html:not([lang="th"]) .page-vision .vision-desc strong {
   }
 
 }
+
+/* ปิด animation ของ slider content หลังจากกดลูกศรครั้งแรก
+   เพื่อไม่ให้ content fade-in/reveal ใหม่ทุกครั้งที่เปลี่ยน slide
+   ซึ่งเป็นสาเหตุที่ทำให้ footer ขยับ (layout shift) */
+.intro-section.slider-interacted .intro,
+.intro-section.slider-interacted .description {
+  opacity: 1 !important;
+  animation: none !important;
+}
+
+.intro-section.slider-interacted .active .image-holder::before {
+  animation: none !important;
+  display: none !important;
+}
