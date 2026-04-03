@@ -12182,6 +12182,13 @@ html:not([lang="th"]) .page-vision .vision-desc strong {
 
 }
 
+/* Tablet: ให้ข้อความ description ใช้เต็มความกว้างก่อนตัดบรรทัด */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .intro-section .column-md-9 {
+    grid-column: span 12;
+  }
+}
+
 /* ปิด animation ของ slider content หลังจากกดลูกศรครั้งแรก
    เพื่อไม่ให้ content fade-in/reveal ใหม่ทุกครั้งที่เปลี่ยน slide
    ซึ่งเป็นสาเหตุที่ทำให้ footer ขยับ (layout shift) */
